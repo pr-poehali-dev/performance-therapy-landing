@@ -154,7 +154,19 @@ export default function Index() {
           <h2 className="text-4xl font-heading font-bold text-center mb-4">Программа занятий</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">На курсе вы освоите</p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
+                  <Icon name="Drama" size={32} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-center mb-3">Актёрское мастерство</h3>
+                <p className="text-muted-foreground text-center leading-relaxed">
+                  Техника актёра, работа с ролью, сценическое движение и присутствие.
+                </p>
+              </CardContent>
+            </Card>
+
             <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
@@ -204,15 +216,28 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="mt-12 bg-secondary/30 rounded-2xl p-8">
-            <h3 className="text-2xl font-heading font-semibold text-center mb-6">
-              <Icon name="Award" className="inline mr-2 text-primary" size={28} />
-              Работаем со страхами
-            </h3>
-            <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Особое внимание уделяем преодолению страха публики и публичных выступлений. 
-              Создаём безопасное пространство для самовыражения и экспериментов.
-            </p>
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
+            <div className="bg-secondary/30 rounded-2xl p-8">
+              <h3 className="text-2xl font-heading font-semibold text-center mb-4">
+                <Icon name="Award" className="inline mr-2 text-primary" size={28} />
+                Работаем со страхами
+              </h3>
+              <p className="text-center text-lg text-muted-foreground leading-relaxed">
+                Особое внимание уделяем преодолению страха публики и публичных выступлений. 
+                Создаём безопасное пространство для самовыражения и экспериментов.
+              </p>
+            </div>
+            
+            <div className="bg-primary/10 rounded-2xl p-8 border-2 border-primary">
+              <h3 className="text-2xl font-heading font-semibold text-center mb-4">
+                <Icon name="Sparkle" className="inline mr-2 text-primary" size={28} />
+                Выпускной спектакль
+              </h3>
+              <p className="text-center text-lg text-foreground leading-relaxed">
+                Создаём пьесу специально под ваш запрос и играем выпускной спектакль 
+                <strong>на профессиональной сцене</strong>. Это кульминация вашего пути.
+              </p>
+            </div>
           </div>
         </div>
       </section>
