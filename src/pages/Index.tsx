@@ -204,9 +204,9 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4">
+      <section className="pt-28 md:pt-40 pb-12 md:pb-20 px-4">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="animate-fade-in">
               <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 rounded-full mb-3 md:mb-4 animate-pulse">
                 <span className="text-primary font-semibold text-sm md:text-base">Психологический актёрский курс</span>
@@ -338,8 +338,8 @@ export default function Index() {
       {/* Results Section */}
       <section id="results" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Что вы получите</h2>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Что вы получите</h2>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {[
               {
                 icon: "CheckCircle",
@@ -372,12 +372,12 @@ export default function Index() {
                 description: "Будете работать с опытным режиссёром и психологом в одном лице"
               }
             ].map((item, index) => (
-              <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="pt-6 flex gap-4">
-                  <Icon name={item.icon as any} className="text-primary flex-shrink-0" size={32} />
+              <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardContent className="pt-8 pb-8 flex gap-6">
+                  <Icon name={item.icon as any} className="text-primary flex-shrink-0" size={48} />
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">{item.title}</h3>
+                    <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">{item.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -389,7 +389,7 @@ export default function Index() {
       {/* Teacher Section */}
       <section id="teacher" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Ваш педагог</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Ваш педагог</h2>
           
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-stretch mb-12">
             <div className="animate-fade-in flex">
