@@ -3,13 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 export default function Index() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    message: ""
+    message: "",
+    consent: false
   });
 
   const [expandedReviews, setExpandedReviews] = useState<Record<number, boolean>>({});
@@ -749,7 +752,32 @@ export default function Index() {
                   />
                 </div>
                 
-                <Button type="submit" size="lg" className="w-full text-lg hover:scale-105 transition-transform duration-300">
+                <div className="flex items-start gap-3">
+                  <Checkbox
+                    id="consent"
+                    checked={formData.consent}
+                    onCheckedChange={(checked) => setFormData({ ...formData, consent: checked as boolean })}
+                    required
+                    className="mt-1"
+                  />
+                  <label htmlFor="consent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
+                    Я согласен на обработку персональных данных в соответствии с{" "}
+                    <Link to="/privacy" className="text-primary hover:underline" target="_blank">
+                      Политикой конфиденциальности
+                    </Link>
+                    {" "}и{" "}
+                    <Link to="/consent" className="text-primary hover:underline" target="_blank">
+                      Согласием на обработку персональных данных
+                    </Link>
+                    . Принимаю условия{" "}
+                    <Link to="/offer" className="text-primary hover:underline" target="_blank">
+                      Публичной оферты
+                    </Link>
+                    .
+                  </label>
+                </div>
+                
+                <Button type="submit" size="lg" className="w-full text-lg hover:scale-105 transition-transform duration-300" disabled={!formData.consent}>
                   Отправить заявку
                 </Button>
               </form>
