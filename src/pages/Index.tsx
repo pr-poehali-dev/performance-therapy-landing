@@ -506,39 +506,25 @@ export default function Index() {
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Наши выпускники</h2>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
             {[
-              {
-                photo: "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f16f7c69-c827-483f-b4e5-cc3b4d09a40f.jpg",
-                name: "Анна Петрова",
-                result: "Преодолела страх публичных выступлений",
-                quote: "Теперь я легко выступаю перед аудиторией и даже получаю от этого удовольствие!"
-              },
-              {
-                photo: "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c50d9efe-9bcc-4bb6-adcd-61fc1ae45b9f.jpg",
-                name: "Михаил Соколов",
-                result: "Раскрыл творческий потенциал",
-                quote: "Я и не знал, что во мне столько креативности. Курс изменил мою жизнь!"
-              },
-              {
-                photo: "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg",
-                name: "Елена Волкова",
-                result: "Обрела уверенность в себе",
-                quote: "После курса я чувствую себя совершенно другим человеком — сильным и свободным."
-              }
-            ].map((graduate, index) => (
-              <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-fade-in">
-                <CardContent className="pt-6">
-                  <img 
-                    src={graduate.photo} 
-                    alt={graduate.name}
-                    className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-primary/20 hover:scale-110 transition-transform duration-300"
-                  />
-                  <h3 className="text-xl font-heading font-semibold text-center mb-2">{graduate.name}</h3>
-                  <p className="text-primary text-center font-semibold mb-3 text-sm">{graduate.result}</p>
-                  <p className="text-muted-foreground text-center italic leading-relaxed">"{graduate.quote}"</p>
-                </CardContent>
-              </Card>
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f16f7c69-c827-483f-b4e5-cc3b4d09a40f.jpg",
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c50d9efe-9bcc-4bb6-adcd-61fc1ae45b9f.jpg",
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg",
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/0b8c93d9-b81f-4b05-9bd4-6f8eb9e5aa83.jpg",
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/85fd0b38-97f5-458d-a359-97a7ec9a1d76.jpg",
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/1fb881d9-f56e-4b93-a68c-77dd4e7dcbb4.jpg",
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/3a0a53e5-17dc-4eae-b1a2-5f98bfc748c4.jpg",
+              "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f5d3c64d-0d93-484e-9f42-d7e3e3e37de6.jpg"
+            ].map((photoUrl, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-xl aspect-square hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                <img 
+                  src={photoUrl} 
+                  alt={`Выпускник ${index + 1}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
             ))}
           </div>
 
@@ -547,18 +533,28 @@ export default function Index() {
             
             {[
               {
-                name: "Мария К.",
-                text: "Курс «Перформанс-терапия» стал для меня настоящим открытием. Я всегда боялась сцены, а теперь это моё любимое место! Светлана Алексеевна создала такую атмосферу доверия и поддержки, что я смогла раскрыться полностью. Особенно запомнился выпускной спектакль — это было невероятно! Я не только преодолела свои страхи, но и обрела новых друзей и уверенность в себе. Рекомендую всем, кто хочет измениться к лучшему!",
+                name: "Алина",
+                text: "Здравствуйте. Хочу выразить благодарность Светлане Алексеевне за курс перформанс- терапии. Это было очень интересно и познавательно. Я узнала много нового о себе. Раскрепостилась, стала более уверенной в себе. Мне понравилось заниматься с психологом и режиссером в одном лице. Спасибо за знания и опыт!",
                 rating: 5
               },
               {
-                name: "Дмитрий С.",
-                text: "Никогда не думал, что театр может так повлиять на мою жизнь. Пришёл на курс по совету друга, скептически настроенный. Но уже после первых занятий почувствовал изменения. Работа с голосом, импровизация, создание своего персонажа — всё это помогло мне лучше понять себя. Теперь я более уверен в общении с людьми, научился выражать свои мысли и эмоции. Светлана — потрясающий педагог и психолог. Спасибо за этот опыт!",
+                name: "Ирина",
+                text: "Добрый вечер. Впечатление от курса \"Перформанс-терапия\" самые замечательные! Все занятия прошли в творческой, доброжелательной обстановке, под четким руководством. Появились новые знакомства. Результат превзошел все ожидания: я увидела себя с другой стороны, а главное - поверила в свои возможности. Спасибо огромное Светлане Алексеевне за профессионализм, чуткость и внимательное отношение к каждому!",
                 rating: 5
               },
               {
-                name: "Ольга Н.",
-                text: "Это был самый трансформирующий опыт в моей жизни! На курсе я не просто научилась актёрскому мастерству, но и проработала глубинные психологические блоки, которые мешали мне годами. Методика Светланы уникальна — она сочетает профессиональный театральный подход с глубокой психотерапией. Каждое занятие — это маленькое чудо. Я стала более открытой, креативной и счастливой. Выпускной спектакль на профессиональной сцене — это было как символ моего внутреннего преображения. Безгранично благодарна!",
+                name: "Наталья",
+                text: "Здравствуйте! Хочу выразить огромную признательность Светлане Алексеевне за курс перформанс-терапии. Курс прошел на одном дыхании. Не смотря на то,что я очень стеснительный человек, во время занятий раскрепостилась. Узнала себя с другой стороны. Получила массу положительных эмоций. Спасибо большое!",
+                rating: 5
+              },
+              {
+                name: "Татьяна",
+                text: "Светлана Алексеевна, большое спасибо Вам за курс перформанс-терапии. Он, действительно, помогает раскрыться и побороть страхи. Занятия всегда проходили в очень доброжелательной, тёплой обстановке. Я получила массу положительных эмоций. Благодарю за Ваш профессионализм!",
+                rating: 5
+              },
+              {
+                name: "Елена",
+                text: "Светлана Алексеевна, огромное спасибо за курс перформанс-терапии! Занятия проходили в очень комфортной обстановке. Вы создали атмосферу доверия и творчества. Я многое узнала о себе, смогла раскрыться и поверить в свои силы. Это был уникальный опыт! Спасибо за Ваш профессионализм и внимание к каждому участнику!",
                 rating: 5
               }
             ].map((review, index) => (
