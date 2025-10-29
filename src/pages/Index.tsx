@@ -56,18 +56,6 @@ export default function Index() {
     {
       url: "https://cdn.poehali.dev/files/d5b2fd71-7de4-4da6-b518-215a71bda06a.JPG",
       alt: "Театр Комильфо - спектакль 10"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/3b4f7208-c730-4076-a801-fefb84583192.png",
-      alt: "Перекрёстки орбит любви"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/4dbe887b-29bf-4286-a762-7ab6f9dc31fe.jpg",
-      alt: "Актёрское мастерство и импровизация - выпускной показ курса"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/5e1adffb-295c-4a04-90aa-8d5540df0622.JPG",
-      alt: "Группа участников курса"
     }
   ];
 
@@ -79,7 +67,10 @@ export default function Index() {
     "https://cdn.poehali.dev/files/c61636a7-21ea-43e1-9bcb-e80b994064e0.JPG",
     "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f16f7c69-c827-483f-b4e5-cc3b4d09a40f.jpg",
     "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c50d9efe-9bcc-4bb6-adcd-61fc1ae45b9f.jpg",
-    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg"
+    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg",
+    "https://cdn.poehali.dev/files/3b4f7208-c730-4076-a801-fefb84583192.png",
+    "https://cdn.poehali.dev/files/4dbe887b-29bf-4286-a762-7ab6f9dc31fe.jpg",
+    "https://cdn.poehali.dev/files/5e1adffb-295c-4a04-90aa-8d5540df0622.JPG"
   ];
 
   const reviews = [
@@ -559,11 +550,11 @@ export default function Index() {
           
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
             {graduatePhotos.map((photoUrl, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-xl aspect-square hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+              <div key={index} className="group relative overflow-hidden rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-2xl" style={{ height: '300px' }}>
                 <img 
                   src={photoUrl} 
                   alt={`Выпускник ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-contain bg-secondary transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
