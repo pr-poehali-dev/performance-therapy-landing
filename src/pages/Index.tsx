@@ -60,14 +60,14 @@ export default function Index() {
   ];
 
   const graduatePhotos = [
+    "https://cdn.poehali.dev/files/32d39b07-3f9a-4d02-9d1d-596316293f18.JPG",
+    "https://cdn.poehali.dev/files/abedb96f-85de-46db-8eed-7cdb33fc3554.JPG",
+    "https://cdn.poehali.dev/files/0d92556c-4064-4cdf-a4c1-8e2407c61ab2.JPG",
+    "https://cdn.poehali.dev/files/857df142-765f-412b-aea6-c6ada8faaab8.JPG",
+    "https://cdn.poehali.dev/files/c61636a7-21ea-43e1-9bcb-e80b994064e0.JPG",
     "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f16f7c69-c827-483f-b4e5-cc3b4d09a40f.jpg",
     "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c50d9efe-9bcc-4bb6-adcd-61fc1ae45b9f.jpg",
-    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg",
-    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/0b8c93d9-b81f-4b05-9bd4-6f8eb9e5aa83.jpg",
-    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/85fd0b38-97f5-458d-a359-97a7ec9a1d76.jpg",
-    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/1fb881d9-f56e-4b93-a68c-77dd4e7dcbb4.jpg",
-    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/3a0a53e5-17dc-4eae-b1a2-5f98bfc748c4.jpg",
-    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f5d3c64d-0d93-484e-9f42-d7e3e3e37de6.jpg"
+    "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg"
   ];
 
   const reviews = [
@@ -242,28 +242,55 @@ export default function Index() {
       <section id="about" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Что такое перформанс-терапия?</h2>
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12">
-            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-slide-in-left">
-              <CardContent className="pt-6">
-                <Icon name="Drama" className="text-primary mb-4" size={48} />
-                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">Творческий подход</h3>
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
-                  Мы объединяем психологию и актёрское мастерство. Вы создаёте персонажа, воплощаете его в образе, 
-                  проживаете его историю — и через это решаете собственные внутренние задачи
+          
+          <div className="mb-12">
+            <Card className="border-2 border-primary/20">
+              <CardContent className="pt-8 pb-8">
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
+                  Это уникальный курс актерского мастерства: театротерапия, психотерапевтическая практика, направленная на обретение контакта с собой и миром, проявленности и уверенности в себе.
                 </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-slide-in-right">
-              <CardContent className="pt-6">
-                <Icon name="Heart" className="text-primary mb-4" size={48} />
-                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">Безопасная среда</h3>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
+                  Перформанс (с англ. "выступление, показ") учит нас свободе самовыражения, помогает прожить невыраженные эмоции и расширить репертуар своих жизненных ролей.
+                </p>
                 <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
-                  Занятия проходят в атмосфере доверия и поддержки. Здесь можно экспериментировать, ошибаться 
-                  и открывать новые грани себя без страха осуждения
+                  На курсе учимся справляться со страхом публики; работаем с голосом и речью; осваиваем навыки импровизации; занимаемся вокалом; танцевально-двигательной терапией.
                 </p>
               </CardContent>
             </Card>
           </div>
+
+          <div className="mb-12">
+            <Card className="border-2 border-primary/20">
+              <CardContent className="pt-8 pb-8">
+                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-6 text-primary">Перформанс-терапия — главное здесь слово «терапия»</h3>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
+                  Это программа для взрослых, которые на время забыли, что они талантливы, для тех, кто хочет овладеть актерским мастерством «для жизни», проработав свои детские травмы, связанные с тем, что «закрывали рот» или жестко одергивали яркие проявления вовне.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mb-12">
+            <Card className="border-2 border-primary/20">
+              <CardContent className="pt-8 pb-8">
+                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-6 text-primary">Как мы работаем</h3>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
+                  По-разному можно решать свои психологические задачи. Мы это делаем с удовольствием на курсе «Перформанс-терапия». На нем мы с каждым подбираем материал для проработки психологического запроса. И потом через творческое самовыражение прорабатываем проблемы клиента мягко, креативно и эффективно.
+                </p>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
+                  Сначала каждый с помощью специальных упражнений выполняет поиск своей идеальной роли (идеальное Я). Это имеющаяся в потенциале, но не проявленная субличность, проявление которой актуально именно сейчас.
+                </p>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
+                  Это те качества личности 💪, которые уже есть у человека, но они или недостаточно развиты или неосознаваемы. А они нужны для полноценного репертуара жизненных ролей, чтобы быть более уверенным, адаптивным, результативным и, как следствие, успешным и счастливым.
+                </p>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
+                  Итак, своя идеальная предпочитаемая, но не проЯвленная от неуверенности роль найдена. Затем создаем с каждым его персонажа для пьесы. И даже пьеса создается под этих героев и под конкретную группу.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12">
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary">
               <Icon name="Users" className="text-primary mb-4" size={56} />
