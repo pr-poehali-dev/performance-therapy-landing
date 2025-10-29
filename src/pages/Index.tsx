@@ -131,14 +131,14 @@ export default function Index() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
-          <h1 className="text-lg md:text-2xl font-heading font-bold text-primary">Перформанс-терапия</h1>
-          <nav className="hidden md:flex gap-6">
-            <a href="#about" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">О курсе</a>
-            <a href="#program" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Программа</a>
-            <a href="#results" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Результаты</a>
-            <a href="#teacher" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Педагог</a>
-            <a href="#graduates" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Выпускники</a>
-            <a href="#price" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Стоимость</a>
+          <h1 className="text-2xl md:text-3xl font-heading font-bold text-primary">Перформанс-терапия</h1>
+          <nav className="hidden md:flex gap-8">
+            <a href="#about" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">О курсе</a>
+            <a href="#program" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Программа</a>
+            <a href="#results" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Результаты</a>
+            <a href="#teacher" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Педагог</a>
+            <a href="#graduates" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Выпускники</a>
+            <a href="#price" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Стоимость</a>
           </nav>
           <Button asChild className="hidden md:inline-flex hover:scale-105 transition-transform duration-300">
             <a href="#signup">Записаться</a>
@@ -211,10 +211,10 @@ export default function Index() {
               <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 rounded-full mb-3 md:mb-4 animate-pulse">
                 <span className="text-primary font-semibold text-sm md:text-base">Психологический актёрский курс</span>
               </div>
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4 md:mb-6 leading-tight">
-                Решайте психологические задачи через <span className="text-primary">творчество</span>
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground mb-4 md:mb-6 leading-tight">
+                Решайте психологические задачи через <span className="text-primary text-4xl md:text-6xl lg:text-7xl">творчество</span>
               </h2>
-              <p className="text-base md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-muted-foreground mb-6 md:mb-8 leading-relaxed font-medium">
                 На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
                 мягко, креативно и эффективно
               </p>
@@ -241,13 +241,13 @@ export default function Index() {
       {/* About Section */}
       <section id="about" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Что такое перформанс-терапия?</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Что такое перформанс-терапия?</h2>
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12">
             <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-slide-in-left">
               <CardContent className="pt-6">
                 <Icon name="Drama" className="text-primary mb-4" size={48} />
-                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Творческий подход</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">Творческий подход</h3>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
                   Мы объединяем психологию и актёрское мастерство. Вы создаёте персонажа, воплощаете его в образе, 
                   проживаете его историю — и через это решаете собственные внутренние задачи
                 </p>
@@ -256,8 +256,8 @@ export default function Index() {
             <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-slide-in-right">
               <CardContent className="pt-6">
                 <Icon name="Heart" className="text-primary mb-4" size={48} />
-                <h3 className="text-xl md:text-2xl font-heading font-bold mb-3">Безопасная среда</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">Безопасная среда</h3>
+                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
                   Занятия проходят в атмосфере доверия и поддержки. Здесь можно экспериментировать, ошибаться 
                   и открывать новые грани себя без страха осуждения
                 </p>
@@ -265,20 +265,20 @@ export default function Index() {
             </Card>
           </div>
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
-            <div className="flex flex-col items-center text-center p-4 md:p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in">
-              <Icon name="Users" className="text-primary mb-3" size={40} />
-              <h4 className="font-semibold mb-2">Групповой формат</h4>
-              <p className="text-sm text-muted-foreground">Работа в группе до 12 человек</p>
+            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary">
+              <Icon name="Users" className="text-primary mb-4" size={56} />
+              <h4 className="font-bold mb-3 text-xl md:text-2xl">Групповой формат</h4>
+              <p className="text-lg md:text-xl text-muted-foreground font-medium">Работа в группе до 12 человек</p>
             </div>
-            <div className="flex flex-col items-center text-center p-4 md:p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <Icon name="Clock" className="text-primary mb-3" size={40} />
-              <h4 className="font-semibold mb-2">Регулярные занятия</h4>
-              <p className="text-sm text-muted-foreground">1 раз в неделю по 3 часа</p>
+            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary" style={{ animationDelay: '0.1s' }}>
+              <Icon name="Clock" className="text-primary mb-4" size={56} />
+              <h4 className="font-bold mb-3 text-xl md:text-2xl">Регулярные занятия</h4>
+              <p className="text-lg md:text-xl text-muted-foreground font-medium">1 раз в неделю по 3 часа</p>
             </div>
-            <div className="flex flex-col items-center text-center p-4 md:p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <Icon name="Calendar" className="text-primary mb-3" size={40} />
-              <h4 className="font-semibold mb-2">Длительность</h4>
-              <p className="text-sm text-muted-foreground">3 месяца (12 занятий)</p>
+            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary" style={{ animationDelay: '0.2s' }}>
+              <Icon name="Calendar" className="text-primary mb-4" size={56} />
+              <h4 className="font-bold mb-3 text-xl md:text-2xl">Длительность</h4>
+              <p className="text-lg md:text-xl text-muted-foreground font-medium">3 месяца (12 занятий)</p>
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ export default function Index() {
       {/* Program Section */}
       <section id="program" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Программа курса</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Программа курса</h2>
           <div className="space-y-4 md:space-y-6">
             {[
               {
@@ -321,12 +321,12 @@ export default function Index() {
                 description: "Показываем спектакль на сцене театра — кульминация всего пройденного пути"
               }
             ].map((item, index) => (
-              <Card key={index} className="border-l-4 border-l-primary hover:shadow-lg transition-all duration-300 hover:-translate-x-2 animate-slide-in-right" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="pt-6 flex gap-4">
-                  <Icon name={item.icon as any} className="text-primary flex-shrink-0 mt-1" size={32} />
+              <Card key={index} className="border-l-4 border-l-primary hover:shadow-xl transition-all duration-300 hover:-translate-x-2 animate-slide-in-right border-2 border-transparent hover:border-primary" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardContent className="pt-8 pb-8 flex gap-6">
+                  <Icon name={item.icon as any} className="text-primary flex-shrink-0 mt-1" size={48} />
                   <div>
-                    <h3 className="text-lg md:text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                    <h3 className="text-xl md:text-2xl font-bold mb-3">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">{item.description}</p>
                   </div>
                 </CardContent>
               </Card>
