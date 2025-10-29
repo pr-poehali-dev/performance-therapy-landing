@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "name": "Handle OPTIONS request",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Send notification successfully",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Тестов",
+        "phone": "+7 900 123 45 67",
+        "message": "Хочу записаться на курс"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

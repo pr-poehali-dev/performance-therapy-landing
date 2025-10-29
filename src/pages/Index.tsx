@@ -120,20 +120,44 @@ export default function Index() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    toast({
-      title: "Заявка отправлена!",
-      description: "Мы свяжемся с вами в ближайшее время.",
-    });
-    
-    setFormData({
-      name: "",
-      phone: "",
-      message: "",
-      consent: false
-    });
+    try {
+      const response = await fetch('https://functions.poehali.dev/05b3e540-3118-4da8-8150-65f1fa867e59', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          message: formData.message
+        })
+      });
+      
+      if (response.ok) {
+        toast({
+          title: "Заявка отправлена!",
+          description: "Мы свяжемся с вами в ближайшее время.",
+        });
+        
+        setFormData({
+          name: "",
+          phone: "",
+          message: "",
+          consent: false
+        });
+      } else {
+        throw new Error('Failed to send');
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка отправки",
+        description: "Попробуйте позже или свяжитесь с нами по телефону.",
+        variant: "destructive"
+      });
+    }
   };
 
   useEffect(() => {
