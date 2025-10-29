@@ -261,36 +261,68 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="mb-12">
-            <Card className="border-2 border-primary/20">
-              <CardContent className="pt-8 pb-8">
-                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-6 text-primary">Перформанс-терапия — главное здесь слово «терапия»</h3>
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
-                  Это программа для взрослых, которые на время забыли, что они талантливы, для тех, кто хочет овладеть актерским мастерством «для жизни», проработав свои детские травмы, связанные с тем, что «закрывали рот» или жестко одергивали яркие проявления вовне.
+          <div className="mb-12 grid md:grid-cols-2 gap-6">
+            <Card className="border-2 border-primary/20 hover:shadow-xl transition-all duration-300">
+              <CardContent className="pt-6 pb-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <Icon name="Heart" className="text-primary flex-shrink-0 mt-1" size={32} />
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Что такое перформанс-терапия?</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Программа для взрослых, которые хотят вспомнить о своих талантах и овладеть актерским мастерством «для жизни», проработав психологические барьеры и раскрыв свой потенциал.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20 hover:shadow-xl transition-all duration-300">
+              <CardContent className="pt-6 pb-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <Icon name="Target" className="text-primary flex-shrink-0 mt-1" size={32} />
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Главная цель</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Через творческое самовыражение мягко, креативно и эффективно проработать психологические запросы, найти и проявить скрытые грани личности.
                 </p>
               </CardContent>
             </Card>
           </div>
 
-          <div className="mb-12">
-            <Card className="border-2 border-primary/20">
-              <CardContent className="pt-8 pb-8">
-                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-6 text-primary">Как мы работаем</h3>
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
-                  По-разному можно решать свои психологические задачи. Мы это делаем с удовольствием на курсе «Перформанс-терапия». На нем мы с каждым подбираем материал для проработки психологического запроса. И потом через творческое самовыражение прорабатываем проблемы клиента мягко, креативно и эффективно.
-                </p>
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
-                  Сначала каждый с помощью специальных упражнений выполняет поиск своей идеальной роли (идеальное Я). Это имеющаяся в потенциале, но не проявленная субличность, проявление которой актуально именно сейчас.
-                </p>
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
-                  Это те качества личности 💪, которые уже есть у человека, но они или недостаточно развиты или неосознаваемы. А они нужны для полноценного репертуара жизненных ролей, чтобы быть более уверенным, адаптивным, результативным и, как следствие, успешным и счастливым.
-                </p>
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
-                  Итак, своя идеальная предпочитаемая, но не проЯвленная от неуверенности роль найдена. Затем создаем с каждым его персонажа для пьесы. И даже пьеса создается под этих героев и под конкретную группу.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+          <Card className="mb-12 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+            <CardContent className="pt-8 pb-8">
+              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-6 text-center text-primary">Как проходит работа</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="space-y-3">
+                  <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
+                    1
+                  </div>
+                  <h4 className="font-bold text-lg">Поиск идеальной роли</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    С помощью специальных упражнений находим вашу идеальную роль — скрытые качества, которые нужно раскрыть для уверенности и успеха.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
+                    2
+                  </div>
+                  <h4 className="font-bold text-lg">Создание персонажа</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Создаём уникального персонажа для пьесы на основе вашего запроса. Пьеса пишется под конкретную группу и её участников.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
+                    3
+                  </div>
+                  <h4 className="font-bold text-lg">Трансформация через игру</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Проживая роль на сцене, развиваете недостающие качества и становитесь более уверенными, адаптивными и результативными.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
           
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary">
