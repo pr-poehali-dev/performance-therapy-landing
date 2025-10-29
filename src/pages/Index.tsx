@@ -437,7 +437,7 @@ export default function Index() {
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Наша команда</p>
+                <p className="text-white font-semibold">Выпускники сентябрь 2025 г.</p>
               </div>
             </div>
 
