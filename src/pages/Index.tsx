@@ -482,7 +482,6 @@ export default function Index() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">Мария Савицкая</h3>
-                    <p className="text-sm text-muted-foreground">Знаток города 3 уровня</p>
                     <div className="flex gap-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
@@ -504,7 +503,6 @@ export default function Index() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">Анастасия И.</h3>
-                    <p className="text-sm text-muted-foreground">Знаток города 3 уровня</p>
                     <div className="flex gap-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
@@ -526,7 +524,6 @@ export default function Index() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">Анна А.</h3>
-                    <p className="text-sm text-muted-foreground">Знаток города 3 уровня</p>
                     <div className="flex gap-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
@@ -548,7 +545,6 @@ export default function Index() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">ShuvаlovаNnаtаliа</h3>
-                    <p className="text-sm text-muted-foreground">Знаток города 2 уровня</p>
                     <div className="flex gap-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
@@ -570,7 +566,6 @@ export default function Index() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">Марина М</h3>
-                    <p className="text-sm text-muted-foreground">Знаток города 2 уровня</p>
                     <div className="flex gap-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
@@ -592,7 +587,6 @@ export default function Index() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">Светлана</h3>
-                    <p className="text-sm text-muted-foreground">Знаток города 3 уровня</p>
                     <div className="flex gap-1 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
