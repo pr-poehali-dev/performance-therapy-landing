@@ -391,17 +391,17 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Ваш педагог</h2>
           
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start mb-12">
-            <div className="animate-fade-in">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-stretch mb-12">
+            <div className="animate-fade-in flex">
               <img 
                 src="https://cdn.poehali.dev/files/e048cea5-239f-455c-9303-f01fe07b3d63.JPG" 
-                alt="Светлана Алексеевна Котлова"
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
+                alt="Светлана Алексеевна Кузикова"
+                className="rounded-2xl shadow-xl w-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="space-y-4 md:space-y-6 animate-slide-in-right">
+            <div className="space-y-4 md:space-y-6 animate-slide-in-right flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">Светлана Алексеевна Котлова</h3>
+                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">Светлана Алексеевна Кузикова</h3>
                 <p className="text-primary font-semibold text-lg">Режиссёр театра «Комильфо», психолог</p>
               </div>
               <p className="text-muted-foreground leading-relaxed">
@@ -412,6 +412,10 @@ export default function Index() {
               <div className="space-y-3">
                 <div className="flex gap-3 items-start">
                   <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-muted-foreground">Сертифицированный гештальт-терапевт, арт-терапевт, преподаватель психологии</p>
+                </div>
+                <div className="flex gap-3 items-start">
+                  <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-muted-foreground">Образование: психолог, режиссёр театральных постановок, дополнительное профессиональное обучение по арт-терапии в Германии и Америке</p>
                 </div>
                 <div className="flex gap-3 items-start">
@@ -419,7 +423,7 @@ export default function Index() {
                   <p className="text-muted-foreground">Опыт работы психолога: 15 лет</p>
                 </div>
                 <div className="flex gap-3 items-start">
-                  <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-muted-foreground">Член Российской арт-терапевтической Ассоциации</p>
                 </div>
                 <div className="flex gap-3 items-start">
