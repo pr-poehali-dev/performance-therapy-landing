@@ -391,7 +391,7 @@ export default function Index() {
               <img 
                 src={theaterPhotos[currentSlide].url}
                 alt={theaterPhotos[currentSlide].alt}
-                className="w-full h-full object-cover transition-all duration-500"
+                className="w-full h-full object-contain transition-all duration-500"
               />
             </div>
             
