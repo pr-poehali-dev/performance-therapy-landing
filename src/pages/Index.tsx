@@ -762,8 +762,8 @@ export default function Index() {
                 <Icon name="Phone" className="text-primary flex-shrink-0" size={24} />
                 <div>
                   <h3 className="font-semibold mb-1">Телефон</h3>
-                  <a href="tel:+79000000000" className="text-muted-foreground hover:text-primary transition-colors">
-                    +7 (900) 000-00-00
+                  <a href="tel:+79183111712" className="text-muted-foreground hover:text-primary transition-colors">
+                    +7 918 311 17 12
                   </a>
                 </div>
               </CardContent>
@@ -774,8 +774,8 @@ export default function Index() {
                 <Icon name="Mail" className="text-primary flex-shrink-0" size={24} />
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <a href="mailto:info@komilfo-theatre.ru" className="text-muted-foreground hover:text-primary transition-colors break-all">
-                    info@komilfo-theatre.ru
+                  <a href="mailto:s_kuzikova@mail.ru" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                    s_kuzikova@mail.ru
                   </a>
                 </div>
               </CardContent>
@@ -800,11 +800,15 @@ export default function Index() {
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Icon name="Phone" size={16} />
-                  <a href="tel:+79000000000" className="hover:text-primary transition-colors">+7 (900) 000-00-00</a>
+                  <a href="tel:+79183111712" className="hover:text-primary transition-colors">+7 918 311 17 12</a>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Icon name="Mail" size={16} />
-                  <a href="mailto:info@komilfo-theatre.ru" className="hover:text-primary transition-colors">info@komilfo-theatre.ru</a>
+                  <a href="mailto:s_kuzikova@mail.ru" className="hover:text-primary transition-colors">s_kuzikova@mail.ru</a>
+                </div>
+                <div className="flex items-start gap-2 text-muted-foreground">
+                  <Icon name="MapPin" size={16} className="mt-0.5" />
+                  <span>г. Краснодар, ул. Горького, 104, офис 26</span>
                 </div>
               </div>
             </div>
@@ -820,8 +824,21 @@ export default function Index() {
             </div>
           </div>
           
-          <div className="pt-6 border-t text-center text-sm text-muted-foreground">
-            <p>© 2024 Театр «Комильфо». Все права защищены.</p>
+          <div className="pt-6 border-t space-y-4">
+            <div className="text-center text-xs text-muted-foreground space-y-1">
+              <p className="font-semibold">ИП Кузикова Светлана Алексеевна</p>
+              <p>ОГРНИП: 318237500160591</p>
+              <p>Адрес: г. Краснодар, ул. Горького, 104, офис 26</p>
+              <p>Телефон: +7 918 311 17 12 | E-mail: s_kuzikova@mail.ru</p>
+            </div>
+            
+            <div className="flex flex-wrap justify-center gap-4 text-xs">
+              <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Политика конфиденциальности</a>
+              <a href="/offer" className="text-muted-foreground hover:text-primary transition-colors">Публичная оферта</a>
+              <a href="/consent" className="text-muted-foreground hover:text-primary transition-colors">Согласие на обработку персональных данных</a>
+            </div>
+            
+            <p className="text-center text-sm text-muted-foreground">© 2018-2025 гг. Все права защищены.</p>
           </div>
         </div>
       </footer>
