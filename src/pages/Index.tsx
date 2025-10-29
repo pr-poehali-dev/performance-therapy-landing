@@ -462,6 +462,17 @@ export default function Index() {
                 <p className="text-white font-semibold">Творческая атмосфера</p>
               </div>
             </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 md:col-span-2 lg:col-span-3">
+              <img 
+                src="https://cdn.poehali.dev/files/7d5ffb79-167e-4b9a-8942-aad4fd7da929.jpg" 
+                alt="Выпускники июнь 2024"
+                className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white font-semibold text-xl">Выпускники июнь 2024 г.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
