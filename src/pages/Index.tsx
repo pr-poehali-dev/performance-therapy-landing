@@ -13,6 +13,38 @@ export default function Index() {
   });
 
   const [expandedReviews, setExpandedReviews] = useState<Record<number, boolean>>({});
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const theaterPhotos = [
+    {
+      url: "https://cdn.poehali.dev/files/ad4aa480-c288-4180-870a-3fa60ea89d60.JPG",
+      alt: "Театр Комильфо - спектакль 1"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/4264aae9-273f-486e-bc34-2f4e95de3ea0.JPG",
+      alt: "Театр Комильфо - спектакль 2"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/4a4aea76-2e59-4edc-a50e-3974a27f85fb.JPG",
+      alt: "Театр Комильфо - спектакль 3"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/65e254ce-c3ca-4262-9469-bdc95143509a.jpg",
+      alt: "Театр Комильфо - спектакль 4"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/f073a76f-c1ab-4f58-b847-9e59d047d576.JPG",
+      alt: "Театр Комильфо - спектакль 5"
+    }
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % theaterPhotos.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + theaterPhotos.length) % theaterPhotos.length);
+  };
 
   const toggleReview = (index: number) => {
     setExpandedReviews(prev => ({
@@ -317,6 +349,64 @@ export default function Index() {
                 className="rounded-2xl shadow-2xl w-full object-cover aspect-[3/4]"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-secondary/30">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl font-heading font-bold text-center mb-4">Театр «Комильфо»</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Профессиональные постановки выпускников школы</p>
+          
+          <div className="relative">
+            <div className="overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src={theaterPhotos[currentSlide].url}
+                alt={theaterPhotos[currentSlide].alt}
+                className="w-full h-[500px] object-cover transition-all duration-500"
+              />
+            </div>
+            
+            <button
+              onClick={prevSlide}
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
+              aria-label="Предыдущее фото"
+            >
+              <Icon name="ChevronLeft" size={24} className="text-primary" />
+            </button>
+            
+            <button
+              onClick={nextSlide}
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
+              aria-label="Следующее фото"
+            >
+              <Icon name="ChevronRight" size={24} className="text-primary" />
+            </button>
+
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              {theaterPhotos.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    currentSlide === index ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
+                  }`}
+                  aria-label={`Перейти к фото ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <a 
+              href="https://kamer-theatre-komilfo--preview.poehali.dev/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:underline text-lg font-medium"
+            >
+              Узнать больше о театре
+              <Icon name="ExternalLink" size={20} />
+            </a>
           </div>
         </div>
       </section>
