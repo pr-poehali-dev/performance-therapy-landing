@@ -381,37 +381,37 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-secondary/30">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-4">Театр «Комильфо»</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Профессиональные постановки выпускников школы</p>
+      <section className="py-16 px-4 bg-secondary/30">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3">Театр «Комильфо»</h2>
+          <p className="text-center text-muted-foreground mb-8 text-base md:text-lg">Профессиональные постановки выпускников школы</p>
           
           <div className="relative">
-            <div className="overflow-hidden rounded-2xl shadow-2xl bg-black">
+            <div className="overflow-hidden rounded-xl shadow-xl bg-black">
               <img 
                 src={theaterPhotos[currentSlide].url}
                 alt={theaterPhotos[currentSlide].alt}
-                className="w-full h-[500px] md:h-[600px] object-contain transition-all duration-500"
+                className="w-full h-[350px] md:h-[450px] object-contain transition-all duration-500"
               />
             </div>
             
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
               aria-label="Предыдущее фото"
             >
-              <Icon name="ChevronLeft" size={24} className="text-primary" />
+              <Icon name="ChevronLeft" size={20} className="text-primary" />
             </button>
             
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
               aria-label="Следующее фото"
             >
-              <Icon name="ChevronRight" size={24} className="text-primary" />
+              <Icon name="ChevronRight" size={20} className="text-primary" />
             </button>
 
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
               {theaterPhotos.map((_, index) => (
                 <button
                   key={index}
@@ -425,7 +425,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-6 text-center">
             <a 
               href="https://kamer-theatre-komilfo--preview.poehali.dev/" 
               target="_blank" 
