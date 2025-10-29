@@ -12,6 +12,15 @@ export default function Index() {
     message: ""
   });
 
+  const [expandedReviews, setExpandedReviews] = useState<Record<number, boolean>>({});
+
+  const toggleReview = (index: number) => {
+    setExpandedReviews(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
@@ -485,7 +494,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-4">
+                <div className="flex items-start gap-4 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-2xl flex-shrink-0">
                     🎓
                   </div>
@@ -498,15 +507,21 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className={`text-muted-foreground leading-relaxed ${expandedReviews[0] ? '' : 'line-clamp-3'}`}>
                   Прошла курс ораторского искусства и импровизации у Светланы Кузиковой по рекомендации подруги. Безумна рада, что в нужный момент я узнала именно об этой школе 🎭 Светлана настоящий профессионал! Страх и сопротивление рассеялись сразу после первого занятия! Светлана создает комфортную и теплую атмосферу в группе, передает огромное количество знаний, упражнений, которые уже сразу начинаешь практиковать как в обычной жизни, так и в публичных выступлениях. По окончании курса трансформации не заставляют себя ждать! Однозначно, рекомендую «kuzikova_school»!
                 </p>
+                <button 
+                  onClick={() => toggleReview(0)}
+                  className="text-primary hover:underline text-sm mt-2 font-medium"
+                >
+                  {expandedReviews[0] ? 'Скрыть' : 'Читать полностью'}
+                </button>
               </CardContent>
             </Card>
 
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-4">
+                <div className="flex items-start gap-4 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-2xl flex-shrink-0">
                     🎓
                   </div>
@@ -519,15 +534,21 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className={`text-muted-foreground leading-relaxed ${expandedReviews[1] ? '' : 'line-clamp-3'}`}>
                   Только что прошла курс Перформанс терапия у Светланы. Хочу сказать, что это уникальный человек, который умеет вытаскивать из людей их скрытые или давно забытые таланты. Открывать новые грани у каждого, кто пришёл к ней тот или иной курс. Занятия проходят очень интересно, вовлекаешься в процесс так, что время пролетает незаметно. Светлана настоящий профессионал своего дела, удивительный и интересный человек. Я очень довольна, что узнала об этой школе, попала на курс и именно в нашу замечательную группу. Буду дальше посещать другие направления в этой школе!
                 </p>
+                <button 
+                  onClick={() => toggleReview(1)}
+                  className="text-primary hover:underline text-sm mt-2 font-medium"
+                >
+                  {expandedReviews[1] ? 'Скрыть' : 'Читать полностью'}
+                </button>
               </CardContent>
             </Card>
 
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-4">
+                <div className="flex items-start gap-4 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center text-2xl flex-shrink-0">
                     ✨
                   </div>
@@ -540,15 +561,21 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className={`text-muted-foreground leading-relaxed ${expandedReviews[2] ? '' : 'line-clamp-3'}`}>
                   Это потрясающее место, где открываются таланты, открываешь себя настоящую... Курс «Перформанс» терапия и поавда изменила мою жизнь, где я увидела и прожила свои разные грани, чувства и эмоции. В этой поддерживающей атмосфере, которую создает Светлана, мы с нашей группой обрели теплое и дружеское окружение, тут как дома - тепло, искренне и по-настоящему... где тебя поддержут и вдохновят. Этот курс и эти эмоции сцены - останутся навсегда в моем сердце и намерена еще вернуться, как оказалось, сначала страшно сцены, а потом ты попадаешь в приятную зависимость от этих чувств и получаешь удовольствие.
                 </p>
+                <button 
+                  onClick={() => toggleReview(2)}
+                  className="text-primary hover:underline text-sm mt-2 font-medium"
+                >
+                  {expandedReviews[2] ? 'Скрыть' : 'Читать полностью'}
+                </button>
               </CardContent>
             </Card>
 
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-4">
+                <div className="flex items-start gap-4 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-yellow-500 flex items-center justify-center text-2xl flex-shrink-0">
                     🦋
                   </div>
@@ -561,9 +588,15 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className={`text-muted-foreground leading-relaxed ${expandedReviews[3] ? '' : 'line-clamp-3'}`}>
                   Что наша жизнь? Игра! И все мы в ней актеры. Наши роли постоянно меняются, принося массу вопросов - Кто я?, Как мне общаться дома с подростком?, Как выстраивать и сохранять теплые отношения с партнером?, Как вести по работе переговоры и выгодно заключать сделки? На все эти вопросы вы получите ответы в пространстве Школы Светланы Кузиковой. Она, как дипломированный психолог и режиссёр, поможет вам гармонично и легко общаться с миром, раскрыть массу ваших достоинств и возможностей, и просто даже провести незабываемое яркое время в стенах актерской школы. Однозначно рекомендую всем, независимо от возраста, статуса и профессии. Спасибо Светлане Алексеевне за ее индивидуальный подход и профессионализм!
                 </p>
+                <button 
+                  onClick={() => toggleReview(3)}
+                  className="text-primary hover:underline text-sm mt-2 font-medium"
+                >
+                  {expandedReviews[3] ? 'Скрыть' : 'Читать полностью'}
+                </button>
               </CardContent>
             </Card>
 
@@ -590,7 +623,7 @@ export default function Index() {
 
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-4">
+                <div className="flex items-start gap-4 mb-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center text-2xl flex-shrink-0">
                     👏
                   </div>
@@ -603,9 +636,15 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className={`text-muted-foreground leading-relaxed ${expandedReviews[5] ? '' : 'line-clamp-3'}`}>
                   Прошла курс Перформанс терапии у Светланы, и открыла для себя новый мир ощущений, эмоций и энергий 👏 Узнала, как нужно готовиться к роли, что важно знать и над чем нужно работать. Светлана - великолепный преподаватель, еще и психолог, который знает все нюансы актерского мастерства, помогает Вам раскрыть ваши таланты и сделать это виртуозно и восхитительно 🙌❤️
                 </p>
+                <button 
+                  onClick={() => toggleReview(5)}
+                  className="text-primary hover:underline text-sm mt-2 font-medium"
+                >
+                  {expandedReviews[5] ? 'Скрыть' : 'Читать полностью'}
+                </button>
               </CardContent>
             </Card>
           </div>
