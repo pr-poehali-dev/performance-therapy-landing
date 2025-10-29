@@ -454,23 +454,12 @@ export default function Index() {
 
             <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
               <img 
-                src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c425d149-7ace-4a20-aaf3-1254f2130d9d.jpg" 
-                alt="Участники курса"
+                src="https://cdn.poehali.dev/files/7d5ffb79-167e-4b9a-8942-aad4fd7da929.jpg" 
+                alt="Выпускники июнь 2024"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Творческая атмосфера</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 md:col-span-2 lg:col-span-3">
-              <img 
-                src="https://cdn.poehali.dev/files/7d5ffb79-167e-4b9a-8942-aad4fd7da929.jpg" 
-                alt="Выпускники июнь 2024"
-                className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold text-xl">Выпускники июнь 2024 г.</p>
+                <p className="text-white font-semibold">Выпускники июнь 2024 г.</p>
               </div>
             </div>
           </div>
