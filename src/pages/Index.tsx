@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Index() {
   const [formData, setFormData] = useState({
@@ -35,6 +35,26 @@ export default function Index() {
     {
       url: "https://cdn.poehali.dev/files/f073a76f-c1ab-4f58-b847-9e59d047d576.JPG",
       alt: "Театр Комильфо - спектакль 5"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/b88f21da-53fa-4f39-b154-b72a9f939065.JPG",
+      alt: "Театр Комильфо - спектакль 6"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/9cfce0a4-1bcf-4d36-ba21-d3d387b99db2.JPG",
+      alt: "Театр Комильфо - спектакль 7"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/536cf790-5698-4395-a9e7-8fad63b9403e.jpg",
+      alt: "Театр Комильфо - спектакль 8"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/bcc6fc52-1ffb-40f4-aa05-83c30b192b18.JPG",
+      alt: "Театр Комильфо - спектакль 9"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/d5b2fd71-7de4-4da6-b518-215a71bda06a.JPG",
+      alt: "Театр Комильфо - спектакль 10"
     }
   ];
 
@@ -45,6 +65,14 @@ export default function Index() {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + theaterPhotos.length) % theaterPhotos.length);
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [currentSlide]);
 
   const toggleReview = (index: number) => {
     setExpandedReviews(prev => ({
@@ -359,11 +387,11 @@ export default function Index() {
           <p className="text-center text-muted-foreground mb-12 text-lg">Профессиональные постановки выпускников школы</p>
           
           <div className="relative">
-            <div className="overflow-hidden rounded-2xl shadow-2xl">
+            <div className="overflow-hidden rounded-2xl shadow-2xl bg-black">
               <img 
                 src={theaterPhotos[currentSlide].url}
                 alt={theaterPhotos[currentSlide].alt}
-                className="w-full h-[500px] object-cover transition-all duration-500"
+                className="w-full h-[500px] md:h-[600px] object-contain transition-all duration-500"
               />
             </div>
             
