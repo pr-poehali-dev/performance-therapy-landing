@@ -89,8 +89,8 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-heading font-bold text-primary">Перформанс-терапия</h1>
+        <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
+          <h1 className="text-lg md:text-2xl font-heading font-bold text-primary">Перформанс-терапия</h1>
           <nav className="hidden md:flex gap-6">
             <a href="#about" className="text-sm hover:text-primary transition-colors">О курсе</a>
             <a href="#program" className="text-sm hover:text-primary transition-colors">Программа</a>
@@ -101,28 +101,31 @@ export default function Index() {
           <Button asChild className="hidden md:inline-flex">
             <a href="#signup">Записаться</a>
           </Button>
+          <Button asChild size="sm" className="md:hidden">
+            <a href="#signup">Запись</a>
+          </Button>
         </div>
       </header>
 
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-                <span className="text-primary font-semibold">Психологический актёрский курс</span>
+              <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 rounded-full mb-3 md:mb-4">
+                <span className="text-primary font-semibold text-sm md:text-base">Психологический актёрский курс</span>
               </div>
-              <h2 className="text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 Решайте психологические задачи через <span className="text-primary">творчество</span>
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
                 мягко, креативно и эффективно
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg px-8" asChild>
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+                <Button size="lg" className="text-base md:text-lg px-6 md:px-8" asChild>
                   <a href="#signup">Записаться на курс</a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8" asChild>
+                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8" asChild>
                   <a href="#about">Узнать подробнее</a>
                 </Button>
               </div>
@@ -138,10 +141,10 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4 bg-secondary/30">
+      <section id="about" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-12">О курсе</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12">О курсе</h2>
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
             <Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
               <CardContent className="pt-6">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
@@ -182,33 +185,33 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-            <h3 className="text-2xl font-heading font-bold text-center mb-6">Как это работает?</h3>
-            <div className="space-y-6 max-w-4xl mx-auto">
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">1</div>
-                <p className="text-lg leading-relaxed">
+          <div className="bg-white rounded-xl md:rounded-2xl p-6 md:p-12 shadow-lg">
+            <h3 className="text-xl md:text-2xl font-heading font-bold text-center mb-4 md:mb-6">Как это работает?</h3>
+            <div className="space-y-4 md:space-y-6 max-w-4xl mx-auto">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">1</div>
+                <p className="text-base md:text-lg leading-relaxed">
                   <strong>Находим вашу идеальную роль.</strong> С помощью специальных упражнений ищем скрытую субличность — 
                   ваше идеальное Я, которое есть в потенциале, но ещё не проявлено.
                 </p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">2</div>
-                <p className="text-lg leading-relaxed">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">2</div>
+                <p className="text-base md:text-lg leading-relaxed">
                   <strong>Раскрываем ваши качества.</strong> Это те способности, которые уже есть у вас, но недостаточно развиты или неосознаваемы. 
                   Они нужны для полноценного репертуара жизненных ролей — чтобы быть уверенным, адаптивным и успешным.
                 </p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">3</div>
-                <p className="text-lg leading-relaxed">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">3</div>
+                <p className="text-base md:text-lg leading-relaxed">
                   <strong>Создаём персонажа и пьесу.</strong> Под каждого участника мы создаём его уникального героя. 
                   Даже пьеса создаётся под конкретную группу и ваши запросы.
                 </p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">4</div>
-                <p className="text-lg leading-relaxed">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">4</div>
+                <p className="text-base md:text-lg leading-relaxed">
                   <strong>Прорабатываем через творчество.</strong> Через актёрское мастерство, речь, вокал и импровизацию 
                   мягко и эффективно решаем ваши психологические задачи.
                 </p>
@@ -218,12 +221,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="program" className="py-20 px-4">
+      <section id="program" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-4">Программа занятий</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">На курсе вы освоите</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Программа занятий</h2>
+          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">На курсе вы освоите</p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
@@ -297,12 +300,12 @@ export default function Index() {
               </p>
             </div>
             
-            <div className="bg-primary/10 rounded-2xl p-8 border-2 border-primary">
-              <h3 className="text-2xl font-heading font-semibold text-center mb-4">
-                <Icon name="Sparkle" className="inline mr-2 text-primary" size={28} />
+            <div className="bg-primary/10 rounded-xl md:rounded-2xl p-6 md:p-8 border-2 border-primary">
+              <h3 className="text-xl md:text-2xl font-heading font-semibold text-center mb-3 md:mb-4">
+                <Icon name="Sparkle" className="inline mr-2 text-primary" size={24} />
                 Выпускной спектакль
               </h3>
-              <p className="text-center text-lg text-foreground leading-relaxed">
+              <p className="text-center text-base md:text-lg text-foreground leading-relaxed">
                 Создаём пьесу специально под ваш запрос и играем выпускной спектакль 
                 <strong>на профессиональной сцене</strong>. Это кульминация вашего пути.
               </p>
@@ -311,49 +314,49 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="teacher" className="py-20 px-4 bg-secondary/30">
+      <section id="teacher" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-12">Ваш преподаватель</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12">Ваш преподаватель</h2>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-5xl mx-auto">
             <div className="order-2 lg:order-1">
-              <h3 className="text-3xl font-heading font-bold mb-4">Светлана Алексеевна Кузикова</h3>
-              <div className="space-y-4 mb-6">
-                <div className="flex items-start gap-3">
-                  <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Профессиональный театральный режиссёр</p>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">Светлана Алексеевна Кузикова</h3>
+              <div className="space-y-3 md:space-y-4 mb-6">
+                <div className="flex items-start gap-2 md:gap-3">
+                  <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">Профессиональный театральный режиссёр</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Heart" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Дипломированный психолог с опытом более 15 лет</p>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <Icon name="Heart" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">Дипломированный психолог с опытом более 15 лет</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Star" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Сертифицированный гештальт-терапевт и арт-терапевт</p>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <Icon name="Star" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">Сертифицированный гештальт-терапевт и арт-терапевт</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Член Российской арт-терапевтической Ассоциации</p>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">Член Российской арт-терапевтической Ассоциации</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Globe" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Дополнительное обучение по арт-терапии в Германии и Америке</p>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <Icon name="Globe" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">Дополнительное обучение по арт-терапии в Германии и Америке</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Drama" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">В 2017 году создала театр «Комильфо» из выпускников курсов</p>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <Icon name="Drama" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">В 2017 году создала театр «Комильфо» из выпускников курсов</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Sparkles" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Поставила более 20 профессиональных спектаклей</p>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <Icon name="Sparkles" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">Поставила более 20 профессиональных спектаклей</p>
                 </div>
               </div>
-              <p className="text-muted-foreground leading-relaxed mb-6">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
                 Светлана — уникальный специалист, сочетающий глубокие знания театрального искусства 
                 с профессиональными навыками психотерапии. Её подход позволяет участникам не просто 
                 освоить актёрское мастерство, но и проработать внутренние блоки, мешающие самовыражению.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <a 
                   href="https://kamer-theatre-komilfo--preview.poehali.dev/" 
                   target="_blank" 
@@ -439,12 +442,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="results" className="py-20 px-4">
+      <section id="results" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-4">Результаты курса</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Что вы получите</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Результаты курса</h2>
+          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">Что вы получите</p>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto">
             <Card className="border-2 hover:border-primary transition-all">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
@@ -545,90 +548,90 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-secondary/30">
+      <section className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-4">Наши выпускники</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Фотографии прошлых выпусков курса</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Наши выпускники</h2>
+          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">Фотографии прошлых выпусков курса</p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
               <img 
                 src="https://cdn.poehali.dev/files/3c3fd079-28d0-4b2a-a635-3ebe13b3d3ad.JPG" 
                 alt="Выпускники курса на сцене"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Выпускной спектакль</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                <p className="text-white font-semibold text-sm md:text-base">Выпускной спектакль</p>
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
               <img 
                 src="https://cdn.poehali.dev/files/2124d121-a7f3-4613-b7a1-79421efb347b.JPG" 
                 alt="Выпускники с сертификатами"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Вручение сертификатов</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                <p className="text-white font-semibold text-sm md:text-base">Вручение сертификатов</p>
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
               <img 
                 src="https://cdn.poehali.dev/files/2cd32c98-f1dc-4e61-ad42-b84dffb2b1aa.JPG" 
                 alt="Эмоции выпускников"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Радость достижений</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                <p className="text-white font-semibold text-sm md:text-base">Радость достижений</p>
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
               <img 
                 src="https://cdn.poehali.dev/files/4cef3fff-ec4f-4f37-b80a-81b9efbf2f7f.JPG" 
                 alt="Групповое фото выпускников"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Выпускники сентябрь 2025 г.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                <p className="text-white font-semibold text-sm md:text-base">Выпускники сентябрь 2025 г.</p>
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
               <img 
                 src="https://cdn.poehali.dev/files/ec7f400d-3655-4fef-b8a8-ade028909dc0.JPG" 
                 alt="Тренировки и занятия"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Процесс занятий</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                <p className="text-white font-semibold text-sm md:text-base">Процесс занятий</p>
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
               <img 
                 src="https://cdn.poehali.dev/files/7d5ffb79-167e-4b9a-8942-aad4fd7da929.jpg" 
                 alt="Выпускники июнь 2024"
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white font-semibold">Выпускники июнь 2024 г.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                <p className="text-white font-semibold text-sm md:text-base">Выпускники июнь 2024 г.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-secondary/30">
+      <section className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-4">Отзывы выпускников</h2>
-          <p className="text-center text-muted-foreground mb-8 text-lg">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Отзывы выпускников</h2>
+          <p className="text-center text-muted-foreground mb-6 md:mb-8 text-base md:text-lg">
             Реальные истории людей, прошедших наши курсы
           </p>
 
-          <div className="flex justify-center mb-12">
-            <Button variant="outline" size="lg" asChild>
+          <div className="flex justify-center mb-8 md:mb-12">
+            <Button variant="outline" size="default" className="md:text-base" asChild>
               <a href="https://yandex.ru/profile/108893235678?intent=reviews" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Icon name="ExternalLink" size={20} />
                 Все отзывы на Яндекс Картах
@@ -802,40 +805,40 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="price" className="py-20 px-4">
+      <section id="price" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-12">Стоимость участия</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12">Стоимость участия</h2>
           
           <Card className="border-2 border-primary shadow-2xl">
-            <CardContent className="pt-8 pb-8">
-              <div className="text-center mb-8">
-                <h3 className="text-3xl font-heading font-bold mb-4">Курс «Перформанс-терапия»</h3>
-                <div className="text-5xl font-heading font-bold text-primary mb-2">
+            <CardContent className="pt-6 md:pt-8 pb-6 md:pb-8">
+              <div className="text-center mb-6 md:mb-8">
+                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 md:mb-4">Курс «Перформанс-терапия»</h3>
+                <div className="text-4xl md:text-5xl font-heading font-bold text-primary mb-2">
                   Уточняйте
                 </div>
                 <p className="text-muted-foreground">Стоимость и расписание обсуждаются индивидуально</p>
               </div>
 
-              <div className="space-y-4 mb-8">
+              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
                 <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={24} />
-                  <span>Групповые занятия в безопасной атмосфере</span>
+                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
+                  <span className="text-sm md:text-base">Групповые занятия в безопасной атмосфере</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={24} />
-                  <span>Профессиональное сопровождение психолога</span>
+                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
+                  <span className="text-sm md:text-base">Профессиональное сопровождение психолога</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={24} />
-                  <span>Комплексная программа развития</span>
+                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
+                  <span className="text-sm md:text-base">Комплексная программа развития</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={24} />
-                  <span>Все материалы для занятий включены</span>
+                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
+                  <span className="text-sm md:text-base">Все материалы для занятий включены</span>
                 </div>
               </div>
 
-              <Button size="lg" className="w-full text-lg" asChild>
+              <Button size="lg" className="w-full text-base md:text-lg" asChild>
                 <a href="#signup">Записаться на курс</a>
               </Button>
             </CardContent>
@@ -843,15 +846,15 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="signup" className="py-20 px-4">
+      <section id="signup" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-2xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-4">Запись на курс</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Запись на курс</h2>
+          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">
             Оставьте заявку, и мы свяжемся с вами для уточнения деталей
           </p>
 
           <Card className="border-2 shadow-xl">
-            <CardContent className="pt-8 pb-8">
+            <CardContent className="pt-6 md:pt-8 pb-6 md:pb-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2">Ваше имя</label>
@@ -884,7 +887,7 @@ export default function Index() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full text-lg">
+                <Button type="submit" size="lg" className="w-full text-base md:text-lg">
                   Отправить заявку
                 </Button>
 
@@ -897,37 +900,37 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="bg-foreground/5 py-12 px-4">
+      <footer className="bg-foreground/5 py-8 md:py-12 px-4">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div>
-              <h3 className="text-xl font-heading font-bold mb-4">Перформанс-терапия</h3>
-              <p className="text-muted-foreground mb-4">
+              <h3 className="text-lg md:text-xl font-heading font-bold mb-3 md:mb-4">Перформанс-терапия</h3>
+              <p className="text-sm md:text-base text-muted-foreground mb-4">
                 Уникальный курс актёрского мастерства и театротерапии в Краснодаре
               </p>
             </div>
 
             <div>
-              <h4 className="font-heading font-semibold mb-4">Контакты</h4>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Icon name="MapPin" size={20} />
+              <h4 className="text-base md:text-lg font-heading font-semibold mb-3 md:mb-4">Контакты</h4>
+              <div className="space-y-2 md:space-y-3">
+                <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
+                  <Icon name="MapPin" size={18} />
                   <span>г. Краснодар</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Icon name="Phone" size={20} />
+                <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
+                  <Icon name="Phone" size={18} />
                   <span>+7 (___) ___-__-__</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Icon name="Mail" size={20} />
+                <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
+                  <Icon name="Mail" size={18} />
                   <span>info@example.ru</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <h4 className="font-heading font-semibold mb-4">Преподаватель</h4>
-              <p className="text-muted-foreground">
+              <h4 className="text-base md:text-lg font-heading font-semibold mb-3 md:mb-4">Преподаватель</h4>
+              <p className="text-sm md:text-base text-muted-foreground">
                 Светлана Алексеевна Кузикова<br/>
                 Театральный режиссёр, психолог,<br/>
                 арт-терапевт, гештальт-терапевт
@@ -935,7 +938,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="border-t mt-8 pt-8 text-center text-muted-foreground text-sm">
+          <div className="border-t mt-6 md:mt-8 pt-6 md:pt-8 text-center text-muted-foreground text-xs md:text-sm">
             © 2024 Перформанс-терапия. Все права защищены.
           </div>
         </div>
