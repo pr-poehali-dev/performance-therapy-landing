@@ -243,19 +243,15 @@ export default function Index() {
       {/* About Section */}
       <section id="about" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Что такое перформанс-терапия?</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-6 animate-fade-in">Что такое перформанс-терапия?</h2>
           
-          <div className="mb-12">
-            <Card className="border-2 border-primary/20">
-              <CardContent className="pt-8 pb-8">
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl mb-6">
-                  Это уникальный курс актерского мастерства: театротерапия, психотерапевтическая практика, направленная на обретение контакта с собой и миром, проявленности и уверенности в себе.
-                </p>
-                <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
-                  Перформанс (с англ. "выступление, показ") учит нас свободе самовыражения, помогает прожить невыраженные эмоции и расширить репертуар своих жизненных ролей.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
+            <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
+              Это уникальный курс актерского мастерства: театротерапия, психотерапевтическая практика, направленная на обретение контакта с собой и миром, проявленности и уверенности в себе.
+            </p>
+            <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
+              Перформанс (с англ. "выступление, показ") учит нас свободе самовыражения, помогает прожить невыраженные эмоции и расширить репертуар своих жизненных ролей.
+            </p>
           </div>
 
           <div className="mb-12 grid md:grid-cols-2 gap-6">
@@ -263,7 +259,7 @@ export default function Index() {
               <CardContent className="pt-6 pb-6">
                 <div className="flex items-start gap-4 mb-4">
                   <Icon name="Heart" className="text-primary flex-shrink-0 mt-1" size={32} />
-                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Что такое перформанс-терапия?</h3>
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Для кого этот курс?</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
                   Программа для взрослых, которые хотят вспомнить о своих талантах и овладеть актерским мастерством «для жизни», проработав психологические барьеры и раскрыв свой потенциал.
@@ -359,8 +355,18 @@ export default function Index() {
               },
               {
                 icon: "Theater",
-                title: "Занятия по актёрскому мастерству",
-                description: "Осваиваем основы актёрского мастерства, сценическую речь, вокал, импровизацию и речевую креативность"
+                title: "Актёрское мастерство",
+                description: "Осваиваем основы сценического мастерства: работа с эмоциями, взаимодействие с партнёрами, создание образа"
+              },
+              {
+                icon: "Mic",
+                title: "Сценическая речь и вокал",
+                description: "Работаем с голосом, дикцией, интонациями. Осваиваем вокальные техники для сцены"
+              },
+              {
+                icon: "Lightbulb",
+                title: "Импровизация и креативность",
+                description: "Развиваем спонтанность, речевую креативность, умение действовать в неожиданных ситуациях"
               },
               {
                 icon: "Music",
