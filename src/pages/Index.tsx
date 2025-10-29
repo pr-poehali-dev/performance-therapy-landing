@@ -169,20 +169,44 @@ export default function Index() {
   }, [currentSlide]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative overflow-x-hidden">
+      {/* Theatrical curtain top decoration */}
+      <div className="fixed top-0 left-0 right-0 h-8 bg-gradient-to-b from-accent to-transparent z-40 border-b-2 border-primary/50" />
+      
+      {/* Stage lights effect */}
+      <div className="fixed inset-0 bg-stage-lights pointer-events-none z-0 animate-spotlight" />
+      
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm">
+      <header className="fixed top-8 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-primary/30 shadow-xl">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
-          <h1 className="text-2xl md:text-3xl font-heading font-bold text-primary">Перформанс-терапия</h1>
+          <h1 className="text-2xl md:text-3xl font-heading font-bold text-primary tracking-wider drop-shadow-lg">🎭 Перформанс-терапия</h1>
           <nav className="hidden md:flex gap-8">
-            <a href="#about" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">О курсе</a>
-            <a href="#program" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Программа</a>
-            <a href="#results" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Результаты</a>
-            <a href="#teacher" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Педагог</a>
-            <a href="#graduates" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Выпускники</a>
-            <a href="#price" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium">Стоимость</a>
+            <a href="#about" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
+              О курсе
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#program" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
+              Программа
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#results" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
+              Результаты
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#teacher" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
+              Педагог
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#graduates" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
+              Выпускники
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#price" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
+              Стоимость
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </a>
           </nav>
-          <Button asChild className="hidden md:inline-flex hover:scale-105 transition-transform duration-300">
+          <Button asChild className="hidden md:inline-flex hover:scale-105 transition-transform duration-300 bg-primary text-primary-foreground shadow-lg shadow-primary/50">
             <a href="#signup">Записаться</a>
           </Button>
           <button
@@ -194,7 +218,7 @@ export default function Index() {
           </button>
         </div>
         
-        <div className={`md:hidden bg-white border-t overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className={`md:hidden bg-card border-t border-primary/30 overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
             <a 
               href="#about" 
@@ -246,34 +270,36 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-40 pb-12 md:pb-20 px-4">
-        <div className="container mx-auto max-w-7xl">
+      <section className="pt-28 md:pt-40 pb-12 md:pb-20 px-4 relative">
+        <div className="absolute inset-0 bg-velvet-texture bg-[length:20px_20px] opacity-20" />
+        <div className="container mx-auto max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="animate-fade-in">
-              <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 rounded-full mb-3 md:mb-4 animate-pulse">
-                <span className="text-primary font-semibold text-sm md:text-base">Психологический актёрский курс</span>
+              <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/20 border border-primary/50 rounded-full mb-3 md:mb-4 animate-shimmer bg-[length:200%_100%] bg-gold-shimmer">
+                <span className="text-primary font-semibold text-sm md:text-base tracking-wider">✨ Психологический актёрский курс</span>
               </div>
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground mb-4 md:mb-6 leading-tight">
-                Решайте психологические задачи через <span className="text-primary text-4xl md:text-6xl lg:text-7xl">творчество</span>
+                Решайте психологические задачи через <span className="text-primary text-4xl md:text-6xl lg:text-7xl drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]">творчество</span>
               </h2>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-6 md:mb-8 leading-relaxed font-medium">
+              <p className="text-xl md:text-2xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
                 мягко, креативно и эффективно
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                <Button size="lg" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-transform duration-300" asChild>
-                  <a href="#signup">Записаться на курс</a>
+                <Button size="lg" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/50" asChild>
+                  <a href="#signup">🎭 Записаться на курс</a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-transform duration-300" asChild>
+                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-all duration-300 border-primary/50 hover:bg-primary/10" asChild>
                   <a href="#about">Узнать подробнее</a>
                 </Button>
               </div>
             </div>
-            <div className="animate-scale-in">
+            <div className="animate-scale-in relative">
+              <div className="absolute -inset-4 bg-primary/20 blur-2xl rounded-full" />
               <img 
                 src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/4bcfeacf-95c5-4147-a3d3-55655fc50ed7.jpg" 
                 alt="Перформанс-терапия"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500"
+                className="rounded-2xl shadow-2xl shadow-primary/30 w-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500 border-2 border-primary/30 relative z-10"
               />
             </div>
           </div>
@@ -281,9 +307,10 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-12 md:py-20 px-4 bg-secondary/30">
-        <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-6 animate-fade-in">Что такое перформанс-терапия?</h2>
+      <section id="about" className="py-12 md:py-20 px-4 bg-secondary/50 border-y-2 border-primary/30 relative">
+        <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-6 animate-fade-in text-primary drop-shadow-lg">🎭 Что такое перформанс-терапия?</h2>
           
           <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
             <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
@@ -295,7 +322,7 @@ export default function Index() {
           </div>
 
           <div className="mb-12 grid md:grid-cols-2 gap-6">
-            <Card className="border-2 border-primary/20 hover:shadow-xl transition-all duration-300">
+            <Card className="border-2 border-primary/30 hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 bg-card/80 backdrop-blur-sm hover:scale-105">
               <CardContent className="pt-6 pb-6">
                 <div className="flex items-start gap-4 mb-4">
                   <Icon name="Heart" className="text-primary flex-shrink-0 mt-1" size={32} />

@@ -64,8 +64,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Open Sans', 'system-ui', 'sans-serif'],
-				heading: ['Montserrat', 'system-ui', 'sans-serif'],
+				sans: ['Cormorant Garamond', 'serif'],
+				heading: ['Playfair Display', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -96,13 +96,33 @@ export default {
 				'scale-in': {
 					'0%': { transform: 'scale(0.95)', opacity: '0' },
 					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'spotlight': {
+					'0%, 100%': { opacity: '0.4' },
+					'50%': { opacity: '0.8' }
+				},
+				'curtain': {
+					'0%': { transform: 'scaleY(0)', transformOrigin: 'top' },
+					'100%': { transform: 'scaleY(1)', transformOrigin: 'top' }
+				},
+				'shimmer': {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'scale-in': 'scale-in 0.4s ease-out'
+				'scale-in': 'scale-in 0.4s ease-out',
+				'spotlight': 'spotlight 3s ease-in-out infinite',
+				'curtain': 'curtain 0.8s ease-out',
+				'shimmer': 'shimmer 3s linear infinite'
+			},
+			backgroundImage: {
+				'velvet-texture': 'linear-gradient(45deg, rgba(139, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(139, 0, 0, 0.1) 75%, rgba(139, 0, 0, 0.1)), linear-gradient(45deg, rgba(139, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(139, 0, 0, 0.1) 75%, rgba(139, 0, 0, 0.1))',
+				'stage-lights': 'radial-gradient(ellipse at top, rgba(255, 215, 0, 0.3) 0%, transparent 60%)',
+				'gold-shimmer': 'linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent)'
 			}
 		}
 	},
