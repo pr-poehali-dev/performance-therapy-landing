@@ -14,6 +14,7 @@ export default function Index() {
 
   const [expandedReviews, setExpandedReviews] = useState<Record<number, boolean>>({});
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const theaterPhotos = [
     {
@@ -101,10 +102,59 @@ export default function Index() {
           <Button asChild className="hidden md:inline-flex">
             <a href="#signup">Записаться</a>
           </Button>
-          <Button asChild size="sm" className="md:hidden">
-            <a href="#signup">Запись</a>
-          </Button>
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 hover:bg-secondary rounded-lg transition-colors"
+            aria-label="Меню"
+          >
+            <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} className="text-primary" />
+          </button>
         </div>
+        
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t">
+            <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <a 
+                href="#about" 
+                className="text-base hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                О курсе
+              </a>
+              <a 
+                href="#program" 
+                className="text-base hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Программа
+              </a>
+              <a 
+                href="#teacher" 
+                className="text-base hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Преподаватель
+              </a>
+              <a 
+                href="#results" 
+                className="text-base hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Результаты
+              </a>
+              <a 
+                href="#price" 
+                className="text-base hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Стоимость
+              </a>
+              <Button asChild className="w-full" onClick={() => setMobileMenuOpen(false)}>
+                <a href="#signup">Записаться на курс</a>
+              </Button>
+            </nav>
+          </div>
+        )}
       </header>
 
       <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4">
