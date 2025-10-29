@@ -473,17 +473,7 @@ export default function Index() {
             Реальные истории людей, прошедших наши курсы
           </p>
 
-          <div className="flex flex-col items-center gap-4 mb-12">
-            <div className="flex items-center gap-3 bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-lg">
-              <div className="flex items-center gap-2">
-                <Icon name="Star" size={32} className="fill-yellow-400 text-yellow-400" />
-                <span className="text-3xl font-bold">4.9</span>
-              </div>
-              <div className="border-l border-gray-300 dark:border-gray-600 pl-4">
-                <p className="text-sm text-muted-foreground">Рейтинг на Яндекс Картах</p>
-                <p className="text-xs text-muted-foreground">На основе отзывов клиентов</p>
-              </div>
-            </div>
+          <div className="flex justify-center mb-12">
             <Button variant="outline" size="lg" asChild>
               <a href="https://yandex.ru/profile/108893235678?intent=reviews" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Icon name="ExternalLink" size={20} />
