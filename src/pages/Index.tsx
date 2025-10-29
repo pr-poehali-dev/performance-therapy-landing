@@ -265,11 +265,27 @@ export default function Index() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Heart" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Дипломированный психолог, арт-терапевт</p>
+                  <p className="text-lg">Дипломированный психолог с опытом более 15 лет</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Star" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Сертифицированный гештальт-терапевт</p>
+                  <p className="text-lg">Сертифицированный гештальт-терапевт и арт-терапевт</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">Член Российской арт-терапевтической Ассоциации</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Globe" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">Дополнительное обучение по арт-терапии в Германии и Америке</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Drama" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">В 2017 году создала театр «Комильфо» из выпускников курсов</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Sparkles" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">Поставила более 20 профессиональных спектаклей</p>
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -277,17 +293,28 @@ export default function Index() {
                 с профессиональными навыками психотерапии. Её подход позволяет участникам не просто 
                 освоить актёрское мастерство, но и проработать внутренние блоки, мешающие самовыражению.
               </p>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Icon name="MapPin" size={20} />
-                <span>г. Краснодар</span>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://kamer-theatre-komilfo--preview.poehali.dev/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                >
+                  <Icon name="Drama" size={20} />
+                  Театр «Комильфо»
+                </a>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Icon name="MapPin" size={20} />
+                  <span>г. Краснодар</span>
+                </div>
               </div>
             </div>
 
             <div className="order-1 lg:order-2">
               <img 
-                src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f984e21c-d32b-4762-9cd5-661a0862245f.jpg" 
+                src="https://cdn.poehali.dev/files/10246c1d-8e41-4821-a12f-c937196ac040.JPG" 
                 alt="Светлана Алексеевна Кузикова"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-square"
+                className="rounded-2xl shadow-2xl w-full object-cover aspect-[3/4]"
               />
             </div>
           </div>
