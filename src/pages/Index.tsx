@@ -4,10 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
+import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 export default function Index() {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -120,7 +122,18 @@ export default function Index() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    
+    toast({
+      title: "Заявка отправлена!",
+      description: "Мы свяжемся с вами в ближайшее время.",
+    });
+    
+    setFormData({
+      name: "",
+      phone: "",
+      message: "",
+      consent: false
+    });
   };
 
   useEffect(() => {
