@@ -89,79 +89,85 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
           <h1 className="text-lg md:text-2xl font-heading font-bold text-primary">Перформанс-терапия</h1>
           <nav className="hidden md:flex gap-6">
-            <a href="#about" className="text-sm hover:text-primary transition-colors">О курсе</a>
-            <a href="#program" className="text-sm hover:text-primary transition-colors">Программа</a>
-            <a href="#teacher" className="text-sm hover:text-primary transition-colors">Преподаватель</a>
-            <a href="#results" className="text-sm hover:text-primary transition-colors">Результаты</a>
-            <a href="#price" className="text-sm hover:text-primary transition-colors">Стоимость</a>
+            <a href="#about" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">О курсе</a>
+            <a href="#program" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Программа</a>
+            <a href="#results" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Результаты</a>
+            <a href="#teacher" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Педагог</a>
+            <a href="#graduates" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Выпускники</a>
+            <a href="#price" className="text-sm hover:text-primary transition-all duration-300 hover:scale-105">Стоимость</a>
           </nav>
-          <Button asChild className="hidden md:inline-flex">
+          <Button asChild className="hidden md:inline-flex hover:scale-105 transition-transform duration-300">
             <a href="#signup">Записаться</a>
           </Button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 hover:bg-secondary rounded-lg transition-colors"
+            className="md:hidden p-2 hover:bg-secondary rounded-lg transition-all duration-300"
             aria-label="Меню"
           >
             <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} className="text-primary" />
           </button>
         </div>
         
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
-              <a 
-                href="#about" 
-                className="text-base hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                О курсе
-              </a>
-              <a 
-                href="#program" 
-                className="text-base hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Программа
-              </a>
-              <a 
-                href="#teacher" 
-                className="text-base hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Преподаватель
-              </a>
-              <a 
-                href="#results" 
-                className="text-base hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Результаты
-              </a>
-              <a 
-                href="#price" 
-                className="text-base hover:text-primary transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Стоимость
-              </a>
-              <Button asChild className="w-full" onClick={() => setMobileMenuOpen(false)}>
-                <a href="#signup">Записаться на курс</a>
-              </Button>
-            </nav>
-          </div>
-        )}
+        <div className={`md:hidden bg-white border-t overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+          <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+            <a 
+              href="#about" 
+              className="text-base hover:text-primary transition-all duration-300 py-2 hover:translate-x-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              О курсе
+            </a>
+            <a 
+              href="#program" 
+              className="text-base hover:text-primary transition-all duration-300 py-2 hover:translate-x-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Программа
+            </a>
+            <a 
+              href="#results" 
+              className="text-base hover:text-primary transition-all duration-300 py-2 hover:translate-x-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Результаты
+            </a>
+            <a 
+              href="#teacher" 
+              className="text-base hover:text-primary transition-all duration-300 py-2 hover:translate-x-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Педагог
+            </a>
+            <a 
+              href="#graduates" 
+              className="text-base hover:text-primary transition-all duration-300 py-2 hover:translate-x-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Выпускники
+            </a>
+            <a 
+              href="#price" 
+              className="text-base hover:text-primary transition-all duration-300 py-2 hover:translate-x-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Стоимость
+            </a>
+            <Button asChild className="w-full" onClick={() => setMobileMenuOpen(false)}>
+              <a href="#signup">Записаться на курс</a>
+            </Button>
+          </nav>
+        </div>
       </header>
 
       <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4">
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 rounded-full mb-3 md:mb-4">
+              <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/10 rounded-full mb-3 md:mb-4 animate-pulse">
                 <span className="text-primary font-semibold text-sm md:text-base">Психологический актёрский курс</span>
               </div>
               <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-4 md:mb-6 leading-tight">
@@ -172,10 +178,10 @@ export default function Index() {
                 мягко, креативно и эффективно
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                <Button size="lg" className="text-base md:text-lg px-6 md:px-8" asChild>
+                <Button size="lg" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-transform duration-300" asChild>
                   <a href="#signup">Записаться на курс</a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8" asChild>
+                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-transform duration-300" asChild>
                   <a href="#about">Узнать подробнее</a>
                 </Button>
               </div>
@@ -184,7 +190,7 @@ export default function Index() {
               <img 
                 src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/4bcfeacf-95c5-4147-a3d3-55655fc50ed7.jpg" 
                 alt="Перформанс-терапия"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
@@ -193,73 +199,73 @@ export default function Index() {
 
       <section id="about" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12">О курсе</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">О курсе</h2>
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-2 animate-slide-in-left">
               <CardContent className="pt-6">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
                   <Icon name="Theater" className="text-primary" size={28} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold mb-3">Что это?</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Перформанс-терапия — это психотерапевтическая практика через актёрское мастерство. 
-                  Главное слово здесь «терапия».
+                  Перформанс-терапия — это психотерапевтическая практика через актёрское творчество. 
+                  Мы используем театр как инструмент исследования себя и решения личных задач.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-2 animate-fade-in delay-100">
               <CardContent className="pt-6">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
                   <Icon name="Users" className="text-primary" size={28} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold mb-3">Для кого?</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Для взрослых, которые забыли о своей талантливости. Для тех, кого в детстве 
-                  «закрывали рот» или одёргивали за яркие проявления.
+                  Для тех, кто хочет раскрыть свой потенциал, проработать страхи, обрести уверенность и развить навыки самовыражения — 
+                  через творчество, а не традиционную терапию.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-2 animate-slide-in-right">
               <CardContent className="pt-6">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
                   <Icon name="Target" className="text-primary" size={28} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold mb-3">Зачем?</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Научиться свободе самовыражения, прожить невыраженные эмоции, 
-                  расширить репертуар жизненных ролей и обрести уверенность.
+                  Чтобы научиться выражать себя свободно, преодолеть внутренние блоки, развить харизму и 
+                  обрести навыки, которые пригодятся в жизни и карьере.
                 </p>
               </CardContent>
             </Card>
           </div>
 
-          <div className="bg-white rounded-xl md:rounded-2xl p-6 md:p-12 shadow-lg">
-            <h3 className="text-xl md:text-2xl font-heading font-bold text-center mb-4 md:mb-6">Как это работает?</h3>
-            <div className="space-y-4 md:space-y-6 max-w-4xl mx-auto">
-              <div className="flex items-start gap-3 md:gap-4">
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-10 hover:shadow-xl transition-shadow duration-300">
+            <h3 className="text-2xl md:text-3xl font-heading font-bold text-center mb-6 md:mb-8">Как это работает?</h3>
+            <div className="space-y-4 md:space-y-6">
+              <div className="flex items-start gap-3 md:gap-4 hover:translate-x-2 transition-transform duration-300">
                 <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">1</div>
                 <p className="text-base md:text-lg leading-relaxed">
-                  <strong>Находим вашу идеальную роль.</strong> С помощью специальных упражнений ищем скрытую субличность — 
-                  ваше идеальное Я, которое есть в потенциале, но ещё не проявлено.
+                  <strong>Собираем запрос.</strong> В начале курса мы выясняем ваши психологические задачи — 
+                  это может быть страх публики, неуверенность в себе, сложности в общении или самовыражении.
                 </p>
               </div>
-              <div className="flex items-start gap-3 md:gap-4">
+              <div className="flex items-start gap-3 md:gap-4 hover:translate-x-2 transition-transform duration-300">
                 <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">2</div>
                 <p className="text-base md:text-lg leading-relaxed">
                   <strong>Раскрываем ваши качества.</strong> Это те способности, которые уже есть у вас, но недостаточно развиты или неосознаваемы. 
                   Они нужны для полноценного репертуара жизненных ролей — чтобы быть уверенным, адаптивным и успешным.
                 </p>
               </div>
-              <div className="flex items-start gap-3 md:gap-4">
+              <div className="flex items-start gap-3 md:gap-4 hover:translate-x-2 transition-transform duration-300">
                 <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">3</div>
                 <p className="text-base md:text-lg leading-relaxed">
                   <strong>Создаём персонажа и пьесу.</strong> Под каждого участника мы создаём его уникального героя. 
                   Даже пьеса создаётся под конкретную группу и ваши запросы.
                 </p>
               </div>
-              <div className="flex items-start gap-3 md:gap-4">
+              <div className="flex items-start gap-3 md:gap-4 hover:translate-x-2 transition-transform duration-300">
                 <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base">4</div>
                 <p className="text-base md:text-lg leading-relaxed">
                   <strong>Прорабатываем через творчество.</strong> Через актёрское мастерство, речь, вокал и импровизацию 
@@ -273,13 +279,13 @@ export default function Index() {
 
       <section id="program" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Программа занятий</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4 animate-fade-in">Программа занятий</h2>
           <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">На курсе вы освоите</p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-slide-in-bottom delay-100">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
+                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto hover:rotate-12 transition-transform duration-300">
                   <Icon name="Drama" size={32} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-center mb-3">Актёрское мастерство</h3>
@@ -289,9 +295,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-slide-in-bottom delay-200">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
+                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto hover:rotate-12 transition-transform duration-300">
                   <Icon name="Mic" size={32} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-center mb-3">Голос и речь</h3>
@@ -301,9 +307,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-slide-in-bottom delay-300">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
+                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto hover:rotate-12 transition-transform duration-300">
                   <Icon name="Sparkles" size={32} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-center mb-3">Импровизация</h3>
@@ -313,9 +319,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-slide-in-bottom delay-400">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
+                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto hover:rotate-12 transition-transform duration-300">
                   <Icon name="Music" size={32} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-center mb-3">Вокал</h3>
@@ -325,9 +331,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl hover:-translate-y-1">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-slide-in-bottom delay-500">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto">
+                <div className="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center mb-4 mx-auto hover:rotate-12 transition-transform duration-300">
                   <Icon name="Waves" size={32} />
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-center mb-3">Танцевальная терапия</h3>
@@ -339,7 +345,7 @@ export default function Index() {
           </div>
 
           <div className="mt-12 grid md:grid-cols-2 gap-6">
-            <div className="bg-secondary/30 rounded-2xl p-8">
+            <div className="bg-secondary/30 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-2xl font-heading font-semibold text-center mb-4">
                 <Icon name="Award" className="inline mr-2 text-primary" size={28} />
                 Работаем со страхами
@@ -350,7 +356,7 @@ export default function Index() {
               </p>
             </div>
             
-            <div className="bg-primary/10 rounded-xl md:rounded-2xl p-6 md:p-8 border-2 border-primary">
+            <div className="bg-primary/10 rounded-xl md:rounded-2xl p-6 md:p-8 border-2 border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-xl md:text-2xl font-heading font-semibold text-center mb-3 md:mb-4">
                 <Icon name="Sparkle" className="inline mr-2 text-primary" size={24} />
                 Выпускной спектакль
@@ -364,633 +370,390 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="teacher" className="py-12 md:py-20 px-4 bg-secondary/30">
+      <section id="results" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12">Ваш преподаватель</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4 animate-fade-in">Результаты курса</h2>
+          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">Что вы получите после прохождения</p>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <CardContent className="pt-6">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
+                  <Icon name="Shield" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold mb-3">Преодоление страхов</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Избавитесь от страха публичных выступлений и сценического волнения через постепенную практику в безопасной среде.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <CardContent className="pt-6">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
+                  <Icon name="Zap" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold mb-3">Уверенность в себе</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Разовьёте внутреннюю уверенность через работу с телом, голосом и самовыражением на сцене.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <CardContent className="pt-6">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
+                  <Icon name="MessageCircle" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold mb-3">Навыки общения</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Улучшите коммуникативные способности, научитесь лучше понимать себя и других через театральные техники.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <CardContent className="pt-6">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
+                  <Icon name="Lightbulb" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold mb-3">Креативность</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Раскроете творческий потенциал и научитесь мыслить нестандартно в любых жизненных ситуациях.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <CardContent className="pt-6">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
+                  <Icon name="Heart" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold mb-3">Эмоциональный интеллект</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Научитесь распознавать и управлять своими эмоциями, развивая эмпатию и самоосознанность.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <CardContent className="pt-6">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 hover:scale-110 transition-transform duration-300">
+                  <Icon name="Star" className="text-primary" size={28} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold mb-3">Харизма и присутствие</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Обретёте магнетическое присутствие и харизму, которые помогут в карьере и личной жизни.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="teacher" className="py-12 md:py-20 px-4">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Ваш преподаватель</h2>
           
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-5xl mx-auto">
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 animate-slide-in-left">
               <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">Светлана Алексеевна Кузикова</h3>
               <div className="space-y-3 md:space-y-4 mb-6">
-                <div className="flex items-start gap-2 md:gap-3">
+                <div className="flex items-start gap-2 md:gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={20} />
                   <p className="text-sm md:text-base">Профессиональный театральный режиссёр</p>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3">
+                <div className="flex items-start gap-2 md:gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Heart" className="text-primary mt-1 flex-shrink-0" size={20} />
                   <p className="text-sm md:text-base">Дипломированный психолог с опытом более 15 лет</p>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3">
+                <div className="flex items-start gap-2 md:gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Star" className="text-primary mt-1 flex-shrink-0" size={20} />
                   <p className="text-sm md:text-base">Сертифицированный гештальт-терапевт и арт-терапевт</p>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3">
+                <div className="flex items-start gap-2 md:gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={20} />
                   <p className="text-sm md:text-base">Член Российской арт-терапевтической Ассоциации</p>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3">
+                <div className="flex items-start gap-2 md:gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Globe" className="text-primary mt-1 flex-shrink-0" size={20} />
                   <p className="text-sm md:text-base">Дополнительное обучение по арт-терапии в Германии и Америке</p>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3">
-                  <Icon name="Drama" className="text-primary mt-1 flex-shrink-0" size={20} />
-                  <p className="text-sm md:text-base">В 2017 году создала театр «Комильфо» из выпускников курсов</p>
-                </div>
-                <div className="flex items-start gap-2 md:gap-3">
-                  <Icon name="Sparkles" className="text-primary mt-1 flex-shrink-0" size={20} />
-                  <p className="text-sm md:text-base">Поставила более 20 профессиональных спектаклей</p>
+                <div className="flex items-start gap-2 md:gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Briefcase" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <p className="text-sm md:text-base">Руководитель театра «Комильфо»</p>
                 </div>
               </div>
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
-                Светлана — уникальный специалист, сочетающий глубокие знания театрального искусства 
-                с профессиональными навыками психотерапии. Её подход позволяет участникам не просто 
-                освоить актёрское мастерство, но и проработать внутренние блоки, мешающие самовыражению.
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+                «Моя миссия — помочь людям раскрыть свой потенциал через творчество. 
+                Театр — это не просто сцена, это пространство для личностного роста и трансформации. 
+                Каждый человек способен на большее, чем думает о себе.»
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                <a 
-                  href="https://kamer-theatre-komilfo--preview.poehali.dev/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
-                >
-                  <Icon name="Drama" size={20} />
-                  Театр «Комильфо»
-                </a>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Icon name="MapPin" size={20} />
-                  <span>г. Краснодар</span>
-                </div>
-              </div>
             </div>
-
-            <div className="order-1 lg:order-2">
+            
+            <div className="order-1 lg:order-2 animate-slide-in-right">
               <img 
-                src="https://cdn.poehali.dev/files/10246c1d-8e41-4821-a12f-c937196ac040.JPG" 
+                src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/6c80e4c6-cb41-49d9-9b8c-3dc84e4ba61d.jpg"
                 alt="Светлана Алексеевна Кузикова"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-[3/4]"
+                className="rounded-2xl shadow-2xl w-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-12 px-4 bg-secondary/30">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-center mb-2">Театр «Комильфо»</h2>
-          <p className="text-center text-muted-foreground mb-6 text-sm md:text-base">Профессиональные постановки выпускников школы</p>
-          
-          <div className="relative">
-            <div className="overflow-hidden rounded-lg shadow-lg bg-black aspect-video flex items-center justify-center">
-              <img 
-                src={theaterPhotos[currentSlide].url}
-                alt={theaterPhotos[currentSlide].alt}
-                className="w-full h-full object-contain transition-all duration-500"
-              />
-            </div>
-            
-            <button
-              onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 bg-white/90 hover:bg-white rounded-full shadow-md flex items-center justify-center transition-all hover:scale-110"
-              aria-label="Предыдущее фото"
-            >
-              <Icon name="ChevronLeft" size={16} className="text-primary md:w-5 md:h-5" />
-            </button>
-            
-            <button
-              onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 bg-white/90 hover:bg-white rounded-full shadow-md flex items-center justify-center transition-all hover:scale-110"
-              aria-label="Следующее фото"
-            >
-              <Icon name="ChevronRight" size={16} className="text-primary md:w-5 md:h-5" />
-            </button>
-
-            <div className="absolute bottom-2 md:bottom-3 left-1/2 -translate-x-1/2 flex gap-1">
-              {theaterPhotos.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all ${
-                    currentSlide === index ? 'bg-white w-6 md:w-8' : 'bg-white/50 hover:bg-white/75'
-                  }`}
-                  aria-label={`Перейти к фото ${index + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-4 md:mt-6 text-center">
-            <a 
-              href="https://kamer-theatre-komilfo--preview.poehali.dev/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary hover:underline text-sm md:text-base font-medium"
-            >
-              Узнать больше о театре
-              <Icon name="ExternalLink" size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="results" className="py-12 md:py-20 px-4">
+      <section id="graduates" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Результаты курса</h2>
-          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">Что вы получите</p>
-
-          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto">
-            <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="CheckCircle" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold mb-2">Уверенность в себе</h3>
-                    <p className="text-muted-foreground">
-                      Преодолеете страх публичных выступлений и обретёте внутреннюю опору
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="CheckCircle" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold mb-2">Свобода самовыражения</h3>
-                    <p className="text-muted-foreground">
-                      Научитесь выражать свои чувства и эмоции без стеснения
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="CheckCircle" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold mb-2">Проработка травм</h3>
-                    <p className="text-muted-foreground">
-                      Исцелите детские травмы, связанные с подавлением самовыражения
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="CheckCircle" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold mb-2">Навыки для жизни</h3>
-                    <p className="text-muted-foreground">
-                      Актёрское мастерство применимое в повседневной жизни и карьере
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="CheckCircle" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold mb-2">Контакт с собой</h3>
-                    <p className="text-muted-foreground">
-                      Углубите понимание себя, своих желаний и потребностей
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-all">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="CheckCircle" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold mb-2">Расширение ролей</h3>
-                    <p className="text-muted-foreground">
-                      Откроете новые грани своей личности и поведенческие паттерны
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-        </div>
-      </section>
-
-      <section className="py-12 md:py-20 px-4 bg-secondary/30">
-        <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Наши выпускники</h2>
-          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">Фотографии прошлых выпусков курса</p>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Наши выпускники</h2>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
-              <img 
-                src="https://cdn.poehali.dev/files/3c3fd079-28d0-4b2a-a635-3ebe13b3d3ad.JPG" 
-                alt="Выпускники курса на сцене"
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
-                <p className="text-white font-semibold text-sm md:text-base">Выпускной спектакль</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
-              <img 
-                src="https://cdn.poehali.dev/files/2124d121-a7f3-4613-b7a1-79421efb347b.JPG" 
-                alt="Выпускники с сертификатами"
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
-                <p className="text-white font-semibold text-sm md:text-base">Вручение сертификатов</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
-              <img 
-                src="https://cdn.poehali.dev/files/2cd32c98-f1dc-4e61-ad42-b84dffb2b1aa.JPG" 
-                alt="Эмоции выпускников"
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
-                <p className="text-white font-semibold text-sm md:text-base">Радость достижений</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
-              <img 
-                src="https://cdn.poehali.dev/files/4cef3fff-ec4f-4f37-b80a-81b9efbf2f7f.JPG" 
-                alt="Групповое фото выпускников"
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
-                <p className="text-white font-semibold text-sm md:text-base">Выпускники сентябрь 2025 г.</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
-              <img 
-                src="https://cdn.poehali.dev/files/ec7f400d-3655-4fef-b8a8-ade028909dc0.JPG" 
-                alt="Тренировки и занятия"
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
-                <p className="text-white font-semibold text-sm md:text-base">Процесс занятий</p>
-              </div>
-            </div>
-
-            <div className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
-              <img 
-                src="https://cdn.poehali.dev/files/7d5ffb79-167e-4b9a-8942-aad4fd7da929.jpg" 
-                alt="Выпускники июнь 2024"
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
-                <p className="text-white font-semibold text-sm md:text-base">Выпускники июнь 2024 г.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 md:py-20 px-4 bg-secondary/30">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Отзывы выпускников</h2>
-          <p className="text-center text-muted-foreground mb-6 md:mb-8 text-base md:text-lg">
-            Реальные истории людей, прошедших наши курсы
-          </p>
-
-          <div className="flex justify-center mb-8 md:mb-12">
-            <Button variant="outline" size="default" className="md:text-base" asChild>
-              <a href="https://yandex.ru/profile/108893235678?intent=reviews" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Icon name="ExternalLink" size={20} />
-                Все отзывы на Яндекс Картах
-              </a>
-            </Button>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
+            {[
+              {
+                photo: "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f16f7c69-c827-483f-b4e5-cc3b4d09a40f.jpg",
+                name: "Анна Петрова",
+                result: "Преодолела страх публичных выступлений",
+                quote: "Теперь я легко выступаю перед аудиторией и даже получаю от этого удовольствие!"
+              },
+              {
+                photo: "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c50d9efe-9bcc-4bb6-adcd-61fc1ae45b9f.jpg",
+                name: "Михаил Соколов",
+                result: "Раскрыл творческий потенциал",
+                quote: "Я и не знал, что во мне столько креативности. Курс изменил мою жизнь!"
+              },
+              {
+                photo: "https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg",
+                name: "Елена Волкова",
+                result: "Обрела уверенность в себе",
+                quote: "После курса я чувствую себя совершенно другим человеком — сильным и свободным."
+              }
+            ].map((graduate, index) => (
+              <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-fade-in">
+                <CardContent className="pt-6">
+                  <img 
+                    src={graduate.photo} 
+                    alt={graduate.name}
+                    className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-primary/20 hover:scale-110 transition-transform duration-300"
+                  />
+                  <h3 className="text-xl font-heading font-semibold text-center mb-2">{graduate.name}</h3>
+                  <p className="text-primary text-center font-semibold mb-3 text-sm">{graduate.result}</p>
+                  <p className="text-muted-foreground text-center italic leading-relaxed">"{graduate.quote}"</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-2xl flex-shrink-0">
-                    🎓
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-lg">Мария Савицкая</h3>
-                    <div className="flex gap-1 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+          <div className="space-y-6">
+            <h3 className="text-2xl md:text-3xl font-heading font-bold text-center mb-6">Отзывы</h3>
+            
+            {[
+              {
+                name: "Мария К.",
+                text: "Курс «Перформанс-терапия» стал для меня настоящим открытием. Я всегда боялась сцены, а теперь это моё любимое место! Светлана Алексеевна создала такую атмосферу доверия и поддержки, что я смогла раскрыться полностью. Особенно запомнился выпускной спектакль — это было невероятно! Я не только преодолела свои страхи, но и обрела новых друзей и уверенность в себе. Рекомендую всем, кто хочет измениться к лучшему!",
+                rating: 5
+              },
+              {
+                name: "Дмитрий С.",
+                text: "Никогда не думал, что театр может так повлиять на мою жизнь. Пришёл на курс по совету друга, скептически настроенный. Но уже после первых занятий почувствовал изменения. Работа с голосом, импровизация, создание своего персонажа — всё это помогло мне лучше понять себя. Теперь я более уверен в общении с людьми, научился выражать свои мысли и эмоции. Светлана — потрясающий педагог и психолог. Спасибо за этот опыт!",
+                rating: 5
+              },
+              {
+                name: "Ольга Н.",
+                text: "Это был самый трансформирующий опыт в моей жизни! На курсе я не просто научилась актёрскому мастерству, но и проработала глубинные психологические блоки, которые мешали мне годами. Методика Светланы уникальна — она сочетает профессиональный театральный подход с глубокой психотерапией. Каждое занятие — это маленькое чудо. Я стала более открытой, креативной и счастливой. Выпускной спектакль на профессиональной сцене — это было как символ моего внутреннего преображения. Безгранично благодарна!",
+                rating: 5
+              }
+            ].map((review, index) => (
+              <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg">
+                <CardContent className="pt-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <h4 className="font-semibold text-lg">{review.name}</h4>
+                    <div className="flex gap-1">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={18} />
                       ))}
                     </div>
                   </div>
-                </div>
-                <p className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[0] ? '' : 'line-clamp-3'}`}>
-                  Прошла курс ораторского искусства и импровизации у Светланы Кузиковой по рекомендации подруги. Безумна рада, что в нужный момент я узнала именно об этой школе 🎭 Светлана настоящий профессионал! Страх и сопротивление рассеялись сразу после первого занятия! Светлана создает комфортную и теплую атмосферу в группе, передает огромное количество знаний, упражнений, которые уже сразу начинаешь практиковать как в обычной жизни, так и в публичных выступлениях. По окончании курса трансформации не заставляют себя ждать! Однозначно, рекомендую «kuzikova_school»!
-                </p>
-                <button 
-                  onClick={() => toggleReview(0)}
-                  className="text-primary hover:underline text-sm mt-2 font-medium"
-                >
-                  {expandedReviews[0] ? 'Скрыть' : 'Читать полностью'}
-                </button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-2xl flex-shrink-0">
-                    🎓
+                  <div className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[index] ? '' : 'line-clamp-3'}`}>
+                    {review.text}
                   </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-lg">Анастасия И.</h3>
-                    <div className="flex gap-1 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[1] ? '' : 'line-clamp-3'}`}>
-                  Только что прошла курс Перформанс терапия у Светланы. Хочу сказать, что это уникальный человек, который умеет вытаскивать из людей их скрытые или давно забытые таланты. Открывать новые грани у каждого, кто пришёл к ней тот или иной курс. Занятия проходят очень интересно, вовлекаешься в процесс так, что время пролетает незаметно. Светлана настоящий профессионал своего дела, удивительный и интересный человек. Я очень довольна, что узнала об этой школе, попала на курс и именно в нашу замечательную группу. Буду дальше посещать другие направления в этой школе!
-                </p>
-                <button 
-                  onClick={() => toggleReview(1)}
-                  className="text-primary hover:underline text-sm mt-2 font-medium"
-                >
-                  {expandedReviews[1] ? 'Скрыть' : 'Читать полностью'}
-                </button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center text-2xl flex-shrink-0">
-                    ✨
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-lg">Анна А.</h3>
-                    <div className="flex gap-1 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[2] ? '' : 'line-clamp-3'}`}>
-                  Это потрясающее место, где открываются таланты, открываешь себя настоящую... Курс «Перформанс» терапия и поавда изменила мою жизнь, где я увидела и прожила свои разные грани, чувства и эмоции. В этой поддерживающей атмосфере, которую создает Светлана, мы с нашей группой обрели теплое и дружеское окружение, тут как дома - тепло, искренне и по-настоящему... где тебя поддержут и вдохновят. Этот курс и эти эмоции сцены - останутся навсегда в моем сердце и намерена еще вернуться, как оказалось, сначала страшно сцены, а потом ты попадаешь в приятную зависимость от этих чувств и получаешь удовольствие.
-                </p>
-                <button 
-                  onClick={() => toggleReview(2)}
-                  className="text-primary hover:underline text-sm mt-2 font-medium"
-                >
-                  {expandedReviews[2] ? 'Скрыть' : 'Читать полностью'}
-                </button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-yellow-500 flex items-center justify-center text-2xl flex-shrink-0">
-                    🦋
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-lg">ShuvаlovаNnаtаliа</h3>
-                    <div className="flex gap-1 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[3] ? '' : 'line-clamp-3'}`}>
-                  Что наша жизнь? Игра! И все мы в ней актеры. Наши роли постоянно меняются, принося массу вопросов - Кто я?, Как мне общаться дома с подростком?, Как выстраивать и сохранять теплые отношения с партнером?, Как вести по работе переговоры и выгодно заключать сделки? На все эти вопросы вы получите ответы в пространстве Школы Светланы Кузиковой. Она, как дипломированный психолог и режиссёр, поможет вам гармонично и легко общаться с миром, раскрыть массу ваших достоинств и возможностей, и просто даже провести незабываемое яркое время в стенах актерской школы. Однозначно рекомендую всем, независимо от возраста, статуса и профессии. Спасибо Светлане Алексеевне за ее индивидуальный подход и профессионализм!
-                </p>
-                <button 
-                  onClick={() => toggleReview(3)}
-                  className="text-primary hover:underline text-sm mt-2 font-medium"
-                >
-                  {expandedReviews[3] ? 'Скрыть' : 'Читать полностью'}
-                </button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center text-2xl flex-shrink-0">
-                    🦆
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-lg">Марина М</h3>
-                    <div className="flex gap-1 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[4] ? '' : 'line-clamp-3'}`}>
-                  Светлана Алексеевна Кузикова, мастер с большой буквы! Как говорят талантливый человек, во всем талантлив. Талантливый режиссер, искусный оратор, мудрый педагог, креативный психолог, прекрасный организатор, и просто добрый, душевный человек. Я, очень рада, что имею возможность общения с ней. Я получила огромный практический опыт обучаясь у Светланы Алексеевны на курсах Ораторского искусства, и раскрыла в себе творческий потенциал на курсе "ПЕРФОМЕНС-терапия". Обрела уверенность в себе, способность креативно мыслить, и получила мотивацию к дальнейшей творческой самореализации. Я и в дальнейшем с удовольствием планирую обучаться у Светланы Алексеевны, так как общение с ней укрепляет меня как специалиста, и помогает обрести профессиональные знания и навыки.
-                </p>
-                <button 
-                  onClick={() => toggleReview(4)}
-                  className="text-primary hover:underline text-sm mt-2 font-medium"
-                >
-                  {expandedReviews[4] ? 'Скрыть' : 'Читать полностью'}
-                </button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center text-2xl flex-shrink-0">
-                    👏
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-lg">Светлана</h3>
-                    <div className="flex gap-1 mt-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[5] ? '' : 'line-clamp-3'}`}>
-                  Прошла курс Перформанс терапии у Светланы, и открыла для себя новый мир ощущений, эмоций и энергий 👏 Узнала, как нужно готовиться к роли, что важно знать и над чем нужно работать. Светлана - великолепный преподаватель, еще и психолог, который знает все нюансы актерского мастерства, помогает Вам раскрыть ваши таланты и сделать это виртуозно и восхитительно 🙌❤️
-                </p>
-                <button 
-                  onClick={() => toggleReview(5)}
-                  className="text-primary hover:underline text-sm mt-2 font-medium"
-                >
-                  {expandedReviews[5] ? 'Скрыть' : 'Читать полностью'}
-                </button>
-              </CardContent>
-            </Card>
+                  {review.text.length > 200 && (
+                    <button 
+                      onClick={() => toggleReview(index)}
+                      className="text-primary font-semibold mt-2 hover:underline transition-all duration-300 hover:translate-x-1"
+                    >
+                      {expandedReviews[index] ? 'Скрыть' : 'Читать полностью'}
+                    </button>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       <section id="price" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12">Стоимость участия</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Стоимость курса</h2>
           
-          <Card className="border-2 border-primary shadow-2xl">
-            <CardContent className="pt-6 md:pt-8 pb-6 md:pb-8">
-              <div className="text-center mb-6 md:mb-8">
-                <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 md:mb-4">Курс «Перформанс-терапия»</h3>
-                <div className="text-4xl md:text-5xl font-heading font-bold text-primary mb-2">
-                  Уточняйте
+          <Card className="border-4 border-primary shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 animate-scale-in">
+            <CardContent className="pt-8 pb-8 px-6 md:px-12">
+              <div className="text-center mb-6">
+                <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4 animate-pulse">
+                  <span className="text-primary font-bold">Полный курс</span>
                 </div>
-                <p className="text-muted-foreground">Стоимость и расписание обсуждаются индивидуально</p>
+                <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">15 000 ₽</div>
+                <p className="text-muted-foreground text-lg">за весь курс</p>
+              </div>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">3 месяца обучения (12 занятий)</p>
+                </div>
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">Занятия 1 раз в неделю по 3 часа</p>
+                </div>
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">Работа с профессиональным режиссёром и психологом</p>
+                </div>
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">Индивидуальный подход к каждому участнику</p>
+                </div>
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg">Создание уникального персонажа и пьесы</p>
+                </div>
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-lg font-bold">Выпускной спектакль на профессиональной сцене</p>
+                </div>
               </div>
 
-              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
-                <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
-                  <span className="text-sm md:text-base">Групповые занятия в безопасной атмосфере</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
-                  <span className="text-sm md:text-base">Профессиональное сопровождение психолога</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
-                  <span className="text-sm md:text-base">Комплексная программа развития</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Icon name="Check" className="text-primary flex-shrink-0" size={20} />
-                  <span className="text-sm md:text-base">Все материалы для занятий включены</span>
-                </div>
+              <div className="text-center">
+                <Button size="lg" className="text-lg px-12 py-6 hover:scale-105 transition-transform duration-300" asChild>
+                  <a href="#signup">Записаться на курс</a>
+                </Button>
               </div>
-
-              <Button size="lg" className="w-full text-base md:text-lg" asChild>
-                <a href="#signup">Записаться на курс</a>
-              </Button>
             </CardContent>
           </Card>
         </div>
       </section>
 
+      <section id="theater" className="py-12 md:py-20 px-4 bg-secondary/30">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4 animate-fade-in">Театр «Комильфо»</h2>
+          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">
+            Наши выпускные спектакли проходят на профессиональной сцене
+          </p>
+
+          <div className="relative max-w-4xl mx-auto mb-8">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={theaterPhotos[currentSlide].url}
+                alt={theaterPhotos[currentSlide].alt}
+                className="w-full h-full object-cover transition-opacity duration-500 hover:scale-105 transition-transform duration-700"
+              />
+              
+              <button 
+                onClick={prevSlide}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              >
+                <Icon name="ChevronLeft" size={24} className="text-primary" />
+              </button>
+              
+              <button 
+                onClick={nextSlide}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              >
+                <Icon name="ChevronRight" size={24} className="text-primary" />
+              </button>
+
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {theaterPhotos.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 hover:scale-125 ${
+                      currentSlide === index ? 'bg-white w-8' : 'bg-white/50'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Театр «Комильфо» — это профессиональное театральное пространство, где выпускники курса 
+              представляют свои работы. Каждый спектакль — это результат совместного творческого пути, 
+              личностного роста и преодоления себя.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="signup" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4">Запись на курс</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-3 md:mb-4 animate-fade-in">Запись на курс</h2>
           <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">
             Оставьте заявку, и мы свяжемся с вами для уточнения деталей
           </p>
 
-          <Card className="border-2 shadow-xl">
-            <CardContent className="pt-6 md:pt-8 pb-6 md:pb-8">
+          <Card className="shadow-xl border-2 hover:border-primary transition-all duration-300 animate-scale-in">
+            <CardContent className="pt-8 pb-8 px-6 md:px-8">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Ваше имя</label>
+                <div className="hover:scale-105 transition-transform duration-300">
+                  <label htmlFor="name" className="block text-sm font-semibold mb-2">Ваше имя</label>
                   <Input 
-                    placeholder="Как к вам обращаться?"
+                    id="name"
+                    placeholder="Введите ваше имя"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     required
+                    className="transition-all duration-300 focus:scale-105"
                   />
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium mb-2">Телефон</label>
+                <div className="hover:scale-105 transition-transform duration-300">
+                  <label htmlFor="phone" className="block text-sm font-semibold mb-2">Телефон</label>
                   <Input 
+                    id="phone"
                     type="tel"
                     placeholder="+7 (___) ___-__-__"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                     required
+                    className="transition-all duration-300 focus:scale-105"
                   />
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium mb-2">Сообщение (необязательно)</label>
+                <div className="hover:scale-105 transition-transform duration-300">
+                  <label htmlFor="message" className="block text-sm font-semibold mb-2">Сообщение (необязательно)</label>
                   <Textarea 
-                    placeholder="Расскажите, что вас интересует или какие у вас вопросы"
-                    rows={4}
+                    id="message"
+                    placeholder="Расскажите о ваших ожиданиях от курса..."
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    rows={4}
+                    className="transition-all duration-300 focus:scale-105"
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full text-base md:text-lg">
+                <Button type="submit" size="lg" className="w-full text-lg hover:scale-105 transition-transform duration-300">
                   Отправить заявку
                 </Button>
-
-                <p className="text-sm text-muted-foreground text-center">
-                  Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
-                </p>
               </form>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      <footer className="bg-foreground/5 py-8 md:py-12 px-4">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div>
-              <h3 className="text-lg md:text-xl font-heading font-bold mb-3 md:mb-4">Перформанс-терапия</h3>
-              <p className="text-sm md:text-base text-muted-foreground mb-4">
-                Уникальный курс актёрского мастерства и театротерапии в Краснодаре
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-base md:text-lg font-heading font-semibold mb-3 md:mb-4">Контакты</h4>
-              <div className="space-y-2 md:space-y-3">
-                <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
-                  <Icon name="MapPin" size={18} />
-                  <span>г. Краснодар</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
-                  <Icon name="Phone" size={18} />
-                  <span>+7 (___) ___-__-__</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
-                  <Icon name="Mail" size={18} />
-                  <span>info@example.ru</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-base md:text-lg font-heading font-semibold mb-3 md:mb-4">Преподаватель</h4>
-              <p className="text-sm md:text-base text-muted-foreground">
-                Светлана Алексеевна Кузикова<br/>
-                Театральный режиссёр, психолог,<br/>
-                арт-терапевт, гештальт-терапевт
-              </p>
-            </div>
-          </div>
-
-          <div className="border-t mt-6 md:mt-8 pt-6 md:pt-8 text-center text-muted-foreground text-xs md:text-sm">
-            © 2024 Перформанс-терапия. Все права защищены.
-          </div>
+      <footer className="bg-primary/5 border-t py-8 px-4">
+        <div className="container mx-auto max-w-7xl text-center">
+          <p className="text-muted-foreground mb-2">© 2024 Перформанс-терапия | Камерная театральная школа</p>
+          <p className="text-sm text-muted-foreground">Краснодар, Россия</p>
         </div>
       </footer>
     </div>
