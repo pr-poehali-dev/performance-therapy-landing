@@ -341,60 +341,60 @@ export default function Index() {
       <section id="program" className="py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Программа курса</h2>
-          <div className="space-y-4 md:space-y-6">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6">
             {[
               {
                 icon: "Lightbulb",
                 title: "Знакомство и диагностика",
-                description: "Определяем запрос каждого участника, формируем групповую динамику, начинаем создавать персонажей"
+                description: "Определяем запрос каждого участника и создаём персонажей"
               },
               {
                 icon: "Palette",
                 title: "Создание образа",
-                description: "Разрабатываем внешность, характер, историю вашего персонажа — через рисунок, коллаж, письменные практики"
+                description: "Разрабатываем характер и историю вашего персонажа"
               },
               {
                 icon: "Theater",
                 title: "Актёрское мастерство",
-                description: "Осваиваем основы сценического мастерства: работа с эмоциями, взаимодействие с партнёрами, создание образа"
+                description: "Работа с эмоциями, взаимодействие с партнёрами"
               },
               {
                 icon: "Mic",
                 title: "Сценическая речь и вокал",
-                description: "Работаем с голосом, дикцией, интонациями. Осваиваем вокальные техники для сцены"
+                description: "Голос, дикция, интонации, вокальные техники"
               },
               {
-                icon: "Lightbulb",
+                icon: "Sparkles",
                 title: "Импровизация и креативность",
-                description: "Развиваем спонтанность, речевую креативность, умение действовать в неожиданных ситуациях"
+                description: "Развиваем спонтанность и речевую креативность"
               },
               {
                 icon: "Music",
                 title: "Танцевально-двигательная терапия",
-                description: "Работаем с телом, движением и эмоциями через танец, снимаем зажимы и обретаем свободу самовыражения"
+                description: "Работа с телом и эмоциями через движение"
               },
               {
                 icon: "Pen",
                 title: "Написание пьесы",
-                description: "Создаём общую историю, где каждый персонаж играет свою уникальную роль"
+                description: "Создаём общую историю для всех персонажей"
               },
               {
                 icon: "Users",
                 title: "Репетиции",
-                description: "Отрабатываем сцены, углубляем образы, прорабатываем сложные моменты"
+                description: "Отрабатываем сцены и углубляем образы"
               },
               {
-                icon: "Sparkles",
+                icon: "Star",
                 title: "Финальное выступление",
-                description: "Показываем спектакль на сцене театра — кульминация всего пройденного пути"
+                description: "Показываем спектакль на сцене театра"
               }
             ].map((item, index) => (
-              <Card key={index} className="border-l-4 border-l-primary hover:shadow-xl transition-all duration-300 hover:-translate-x-2 animate-slide-in-right border-2 border-transparent hover:border-primary" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="pt-8 pb-8 flex gap-6">
-                  <Icon name={item.icon as any} className="text-primary flex-shrink-0 mt-1" size={48} />
+              <Card key={index} className="border-l-4 border-l-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="pt-5 pb-5 flex gap-4">
+                  <Icon name={item.icon as any} className="text-primary flex-shrink-0" size={32} />
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">{item.description}</p>
+                    <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                   </div>
                 </CardContent>
               </Card>
