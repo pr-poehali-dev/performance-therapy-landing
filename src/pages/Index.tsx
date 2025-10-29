@@ -388,17 +388,85 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="mt-12 text-center">
-            <img 
-              src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c425d149-7ace-4a20-aaf3-1254f2130d9d.jpg" 
-              alt="Участники курса"
-              className="rounded-2xl shadow-2xl w-full max-w-4xl mx-auto object-cover aspect-video"
-            />
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-secondary/30">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-4xl font-heading font-bold text-center mb-4">Наши выпускники</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Фотографии прошлых выпусков курса</p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <img 
+                src="https://cdn.poehali.dev/files/3c3fd079-28d0-4b2a-a635-3ebe13b3d3ad.JPG" 
+                alt="Выпускники курса на сцене"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white font-semibold">Выпускной спектакль</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <img 
+                src="https://cdn.poehali.dev/files/2124d121-a7f3-4613-b7a1-79421efb347b.JPG" 
+                alt="Выпускники с сертификатами"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white font-semibold">Вручение сертификатов</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <img 
+                src="https://cdn.poehali.dev/files/2cd32c98-f1dc-4e61-ad42-b84dffb2b1aa.JPG" 
+                alt="Эмоции выпускников"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white font-semibold">Радость достижений</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <img 
+                src="https://cdn.poehali.dev/files/4cef3fff-ec4f-4f37-b80a-81b9efbf2f7f.JPG" 
+                alt="Групповое фото выпускников"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white font-semibold">Наша команда</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <img 
+                src="https://cdn.poehali.dev/files/ec7f400d-3655-4fef-b8a8-ade028909dc0.JPG" 
+                alt="Тренировки и занятия"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white font-semibold">Процесс занятий</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+              <img 
+                src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/c425d149-7ace-4a20-aaf3-1254f2130d9d.jpg" 
+                alt="Участники курса"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white font-semibold">Творческая атмосфера</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="price" className="py-20 px-4 bg-secondary/30">
+      <section id="price" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-heading font-bold text-center mb-12">Стоимость участия</h2>
           
