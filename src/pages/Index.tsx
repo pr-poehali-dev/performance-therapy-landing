@@ -394,7 +394,7 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start mb-12">
             <div className="animate-fade-in">
               <img 
-                src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a78e8ca7-7a31-4d0c-8d18-7a31d2b3b3f8.jpg" 
+                src="https://cdn.poehali.dev/files/e048cea5-239f-455c-9303-f01fe07b3d63.JPG" 
                 alt="Светлана Алексеевна Котлова"
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-500"
               />
@@ -412,16 +412,38 @@ export default function Index() {
               <div className="space-y-3">
                 <div className="flex gap-3 items-start">
                   <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Образование: психолог, режиссёр театральных постановок</p>
+                  <p className="text-muted-foreground">Образование: психолог, режиссёр театральных постановок, дополнительное профессиональное обучение по арт-терапии в Германии и Америке</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Briefcase" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Опыт работы: более 10 лет в психологии и театре</p>
+                  <p className="text-muted-foreground">Опыт работы психолога: 15 лет</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Основатель и руководитель театра «Комильфо»</p>
+                  <p className="text-muted-foreground">Член Российской арт-терапевтической Ассоциации</p>
                 </div>
+                <div className="flex gap-3 items-start">
+                  <Icon name="Theater" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-muted-foreground">В 2017 году создала театр «Комильфо» из выпускников своих курсов, поставила более 20 спектаклей</p>
+                </div>
+                <div className="flex gap-3 items-start">
+                  <Icon name="Mic" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-muted-foreground">Автор курсов по ораторскому искусству и импровизации</p>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                <Button asChild variant="outline" className="hover:scale-105 transition-transform duration-300">
+                  <a href="https://kamer-theatre-komilfo--preview.poehali.dev/" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Theater" size={20} className="mr-2" />
+                    Театр «Комильфо»
+                  </a>
+                </Button>
+                <Button asChild variant="outline" className="hover:scale-105 transition-transform duration-300">
+                  <a href="https://orator-site-creation--preview.poehali.dev/" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Mic" size={20} className="mr-2" />
+                    Курсы ораторства
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
