@@ -56,6 +56,18 @@ export default function Index() {
     {
       url: "https://cdn.poehali.dev/files/d5b2fd71-7de4-4da6-b518-215a71bda06a.JPG",
       alt: "Театр Комильфо - спектакль 10"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/3b4f7208-c730-4076-a801-fefb84583192.png",
+      alt: "Перекрёстки орбит любви"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/4dbe887b-29bf-4286-a762-7ab6f9dc31fe.jpg",
+      alt: "Актёрское мастерство и импровизация - выпускной показ курса"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/5e1adffb-295c-4a04-90aa-8d5540df0622.JPG",
+      alt: "Группа участников курса"
     }
   ];
 
@@ -485,7 +497,7 @@ export default function Index() {
               Каждая постановка — результат совместной работы участников курса перформанс-терапии.
             </p>
             
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video group">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group" style={{ height: '600px' }}>
               {theaterPhotos.map((photo, index) => (
                 <div
                   key={index}
@@ -498,7 +510,7 @@ export default function Index() {
                   <img
                     src={photo.url}
                     alt={photo.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-black"
                   />
                 </div>
               ))}
