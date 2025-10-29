@@ -39,12 +39,15 @@ export default function Index() {
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
+              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
+                <span className="text-primary font-semibold">Психологический актёрский курс</span>
+              </div>
               <h2 className="text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
-                Раскройте свой <span className="text-primary">талант</span> через театротерапию
+                Решайте психологические задачи через <span className="text-primary">творчество</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Уникальный курс актерского мастерства для взрослых. Обретите контакт с собой, 
-                свободу самовыражения и уверенность в публичных выступлениях
+                На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
+                мягко, креативно и эффективно
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8" asChild>
@@ -110,13 +113,38 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <p className="text-lg text-center text-foreground leading-relaxed max-w-4xl mx-auto">
-              <strong className="text-primary">Перформанс</strong> (с англ. «выступление, показ») учит нас свободе самовыражения, 
-              помогает прожить невыраженные эмоции и расширить репертуар своих жизненных ролей. 
-              Это программа для тех, кто хочет овладеть актёрским мастерством «для жизни», 
-              проработав свои детские травмы.
-            </p>
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+            <h3 className="text-2xl font-heading font-bold text-center mb-6">Как это работает?</h3>
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <p className="text-lg leading-relaxed">
+                  <strong>Находим вашу идеальную роль.</strong> С помощью специальных упражнений ищем скрытую субличность — 
+                  ваше идеальное Я, которое есть в потенциале, но ещё не проявлено.
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <p className="text-lg leading-relaxed">
+                  <strong>Раскрываем ваши качества.</strong> Это те способности, которые уже есть у вас, но недостаточно развиты или неосознаваемы. 
+                  Они нужны для полноценного репертуара жизненных ролей — чтобы быть уверенным, адаптивным и успешным.
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <p className="text-lg leading-relaxed">
+                  <strong>Создаём персонажа и пьесу.</strong> Под каждого участника мы создаём его уникального героя. 
+                  Даже пьеса создаётся под конкретную группу и ваши запросы.
+                </p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <p className="text-lg leading-relaxed">
+                  <strong>Прорабатываем через творчество.</strong> Через актёрское мастерство, речь, вокал и импровизацию 
+                  мягко и эффективно решаем ваши психологические задачи.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
