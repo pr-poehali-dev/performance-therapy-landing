@@ -898,7 +898,7 @@ export default function Index() {
                   <Icon name="Mail" size={16} />
                   <a href="mailto:s_kuzikova@mail.ru" className="hover:text-primary transition-colors">s_kuzikova@mail.ru</a>
                 </div>
-                <div className="flex items-start gap-2 text-foreground"
+                <div className="flex items-start gap-2 text-foreground">
                   <Icon name="MapPin" size={16} className="mt-0.5" />
                   <span>г. Краснодар, ул. Горького, 104, офис 26</span>
                 </div>
