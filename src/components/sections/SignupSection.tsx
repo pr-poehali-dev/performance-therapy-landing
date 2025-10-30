@@ -20,7 +20,7 @@ interface SignupSectionProps {
 
 export default function SignupSection({ formData, setFormData, handleSubmit }: SignupSectionProps) {
   return (
-    <section id="signup" className="py-12 md:py-20 px-4 bg-secondary/30">
+    <section id="signup" className="py-12 md:py-20 px-4 bg-secondary/30 scroll-mt-20">
       <div className="container mx-auto max-w-2xl">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4 animate-fade-in">Запишитесь на курс</h2>
         <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">
