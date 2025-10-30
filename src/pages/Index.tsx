@@ -69,7 +69,10 @@ export default function Index() {
     "https://cdn.poehali.dev/files/abedb96f-85de-46db-8eed-7cdb33fc3554.JPG",
     "https://cdn.poehali.dev/files/0d92556c-4064-4cdf-a4c1-8e2407c61ab2.JPG",
     "https://cdn.poehali.dev/files/857df142-765f-412b-aea6-c6ada8faaab8.JPG",
-    "https://cdn.poehali.dev/files/c61636a7-21ea-43e1-9bcb-e80b994064e0.JPG"
+    "https://cdn.poehali.dev/files/c61636a7-21ea-43e1-9bcb-e80b994064e0.JPG",
+    "https://cdn.poehali.dev/files/4c9aa5a5-4445-4df8-9aa6-5a05c0521d2b.jpg",
+    "https://cdn.poehali.dev/files/ae33bd80-be03-4b35-b9d5-ff9531c0f580.jpg",
+    "https://cdn.poehali.dev/files/c7b02962-6572-4083-8001-46fff30c31e5.jpg"
   ];
 
   const reviews = [
@@ -597,7 +600,7 @@ export default function Index() {
               Каждая постановка — результат совместной работы участников курса перформанс-терапии.
             </p>
             
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group" style={{ height: '600px' }}>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group max-w-4xl mx-auto" style={{ height: '450px' }}>
               {theaterPhotos.map((photo, index) => (
                 <div
                   key={index}
