@@ -728,35 +728,35 @@ export default function Index() {
             <CardContent className="pt-8 pb-8 px-6 md:px-12">
               <div className="text-center mb-6">
                 <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4 animate-pulse">
-                  <span className="text-primary font-bold">Полный курс</span>
+                  <span className="text-primary font-bold">Помесячная оплата</span>
                 </div>
-                <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">15 000 ₽</div>
-                <p className="text-foreground text-xl md:text-2xl font-medium">за весь курс</p>
+                <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">9 500 ₽</div>
+                <p className="text-foreground text-xl md:text-2xl font-medium">в месяц</p>
               </div>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
-                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-xl md:text-2xl">3 месяца обучения (12 занятий)</p>
+                  <Icon name="Calendar" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-xl md:text-2xl">3 месяца обучения (24 занятия)</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
-                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-xl md:text-2xl">Занятия 1 раз в неделю по 3 часа</p>
+                  <Icon name="Clock" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-xl md:text-2xl">Занятия 2 раза в неделю по 2 часа</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
-                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <Icon name="CreditCard" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-xl md:text-2xl">Различные формы оплаты: онлайн, наличные, картой, QR-код</p>
+                </div>
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="UserCheck" className="text-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-xl md:text-2xl">Работа с профессиональным режиссёром и психологом</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
-                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-xl md:text-2xl">Индивидуальный подход к каждому участнику</p>
-                </div>
-                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
-                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <Icon name="Sparkles" className="text-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-xl md:text-2xl">Создание уникального персонажа и пьесы</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
-                  <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <Icon name="Star" className="text-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-xl md:text-2xl">Выступление на сцене театра «Комильфо»</p>
                 </div>
               </div>
@@ -768,7 +768,7 @@ export default function Index() {
           </Card>
 
           <div className="mt-8 text-center text-foreground">
-            <p className="text-lg md:text-xl font-medium">Возможна оплата частями. Подробности уточняйте при записи.</p>
+            <p className="text-lg md:text-xl font-medium">Итоговая стоимость курса: 28 500 ₽ за 3 месяца</p>
           </div>
         </div>
       </section>
