@@ -182,7 +182,14 @@ export default function Index() {
       {/* Header */}
       <header className="fixed top-8 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-primary/30 shadow-xl">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
-          <h1 className="text-2xl md:text-3xl font-heading font-bold text-primary tracking-wider drop-shadow-lg">🎭 Перформанс-терапия</h1>
+          <div className="flex items-center gap-3 md:gap-4">
+            <img 
+              src="https://cdn.poehali.dev/files/d2f56f8d-e933-4cb2-87e4-c664e879c628.PNG" 
+              alt="Комильфо Театр Студия" 
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+            <h1 className="text-xl md:text-2xl font-heading font-bold text-primary tracking-wider drop-shadow-lg">Перформанс-терапия</h1>
+          </div>
           <nav className="hidden md:flex gap-8">
             <a href="#about" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
               О курсе
