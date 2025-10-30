@@ -449,11 +449,6 @@ export default function Index() {
                 icon: "Users",
                 title: "Репетиции",
                 description: "Отрабатываем сцены и углубляем образы"
-              },
-              {
-                icon: "Star",
-                title: "Финальное выступление",
-                description: "Показываем спектакль на сцене театра"
               }
             ].map((item, index) => (
               <Card key={index} className="border-l-4 border-l-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -466,6 +461,18 @@ export default function Index() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          <div className="flex justify-center mt-4 md:mt-6">
+            <Card className="border-l-4 border-l-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1 w-full md:w-1/2">
+              <CardContent className="pt-5 pb-5 flex gap-4">
+                <Icon name="Star" className="text-primary flex-shrink-0" size={32} />
+                <div>
+                  <h3 className="font-heading text-xl md:text-2xl font-bold mb-2">Финальное выступление</h3>
+                  <p className="text-foreground text-lg md:text-xl leading-relaxed">Показываем спектакль на сцене театра</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
