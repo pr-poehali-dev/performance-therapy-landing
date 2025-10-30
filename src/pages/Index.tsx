@@ -313,10 +313,10 @@ export default function Index() {
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-6 animate-fade-in text-primary drop-shadow-lg">🎭 Что такое перформанс-терапия?</h2>
           
           <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
-            <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
+            <p className="text-foreground leading-relaxed text-xl md:text-2xl font-medium">
               Это уникальный курс актерского мастерства: театротерапия, психотерапевтическая практика, направленная на обретение контакта с собой и миром, проявленности и уверенности в себе.
             </p>
-            <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
+            <p className="text-foreground leading-relaxed text-xl md:text-2xl font-medium">
               Перформанс (с англ. "выступление, показ") учит нас свободе самовыражения, помогает прожить невыраженные эмоции и расширить репертуар своих жизненных ролей.
             </p>
           </div>
@@ -328,7 +328,7 @@ export default function Index() {
                   <Icon name="Heart" className="text-primary flex-shrink-0 mt-1" size={32} />
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Для кого этот курс?</h3>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-lg">
                   Программа для взрослых, которые хотят вспомнить о своих талантах и овладеть актерским мастерством «для жизни», проработав психологические барьеры и раскрыв свой потенциал.
                 </p>
               </CardContent>
@@ -340,7 +340,7 @@ export default function Index() {
                   <Icon name="Target" className="text-primary flex-shrink-0 mt-1" size={32} />
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Главная цель</h3>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-lg">
                   Через творческое самовыражение мягко, креативно и эффективно проработать психологические запросы, найти и проявить скрытые грани личности.
                 </p>
               </CardContent>
@@ -355,8 +355,8 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     1
                   </div>
-                  <h4 className="font-bold text-lg">Поиск идеальной роли</h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h4 className="font-bold text-xl">Поиск идеальной роли</h4>
+                  <p className="text-foreground leading-relaxed text-lg">
                     С помощью специальных упражнений находим вашу идеальную роль — скрытые качества, которые нужно раскрыть для уверенности и успеха.
                   </p>
                 </div>
@@ -365,8 +365,8 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     2
                   </div>
-                  <h4 className="font-bold text-lg">Создание персонажа</h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h4 className="font-bold text-xl">Создание персонажа</h4>
+                  <p className="text-foreground leading-relaxed text-lg">
                     Создаём уникального персонажа для пьесы на основе вашего запроса. Пьеса пишется под конкретную группу и её участников.
                   </p>
                 </div>
@@ -375,8 +375,8 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     3
                   </div>
-                  <h4 className="font-bold text-lg">Трансформация через игру</h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h4 className="font-bold text-xl">Трансформация через игру</h4>
+                  <p className="text-foreground leading-relaxed text-lg">
                     Проживая роль на сцене, развиваете недостающие качества и становитесь более уверенными, адаптивными и результативными.
                   </p>
                 </div>
@@ -385,20 +385,20 @@ export default function Index() {
           </Card>
           
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
-            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary">
+            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary">
               <Icon name="Users" className="text-primary mb-4" size={56} />
-              <h4 className="font-bold mb-3 text-xl md:text-2xl">Групповой формат</h4>
-              <p className="text-lg md:text-xl text-muted-foreground font-medium">Работа в группе до 12 человек</p>
+              <h4 className="font-bold mb-3 text-xl md:text-2xl text-foreground">Групповой формат</h4>
+              <p className="text-lg md:text-xl text-foreground font-medium">Работа в группе до 12 человек</p>
             </div>
-            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary" style={{ animationDelay: '0.1s' }}>
+            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.1s' }}>
               <Icon name="Clock" className="text-primary mb-4" size={56} />
-              <h4 className="font-bold mb-3 text-xl md:text-2xl">Регулярные занятия</h4>
-              <p className="text-lg md:text-xl text-muted-foreground font-medium">1 раз в неделю по 3 часа</p>
+              <h4 className="font-bold mb-3 text-xl md:text-2xl text-foreground">Регулярные занятия</h4>
+              <p className="text-lg md:text-xl text-foreground font-medium">1 раз в неделю по 3 часа</p>
             </div>
-            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-transparent hover:border-primary" style={{ animationDelay: '0.2s' }}>
+            <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.2s' }}>
               <Icon name="Calendar" className="text-primary mb-4" size={56} />
-              <h4 className="font-bold mb-3 text-xl md:text-2xl">Длительность</h4>
-              <p className="text-lg md:text-xl text-muted-foreground font-medium">3 месяца (12 занятий)</p>
+              <h4 className="font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
+              <p className="text-lg md:text-xl text-foreground font-medium">3 месяца (12 занятий)</p>
             </div>
           </div>
         </div>
