@@ -533,7 +533,7 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Ваш педагог</h2>
           
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-stretch mb-12">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-8 items-stretch mb-8">
             <div className="animate-fade-in flex">
               <img 
                 src="https://cdn.poehali.dev/files/e048cea5-239f-455c-9303-f01fe07b3d63.JPG" 
@@ -541,17 +541,13 @@ export default function Index() {
                 className="rounded-2xl shadow-xl w-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="space-y-4 md:space-y-6 animate-slide-in-right flex flex-col justify-between">
+            <div className="space-y-3 md:space-y-4 animate-slide-in-right flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">Светлана Алексеевна Кузикова</h3>
                 <p className="text-primary font-semibold text-xl md:text-2xl">Режиссёр театра «Комильфо», психолог</p>
               </div>
-              <p className="text-foreground leading-relaxed text-lg md:text-xl font-medium">
-                Светлана Алексеевна — практикующий психолог с режиссёрским образованием. 
-                Она создала уникальную методику перформанс-терапии, которая помогает людям 
-                решать психологические задачи через творчество.
-              </p>
-              <div className="space-y-3">
+
+              <div className="space-y-2">
                 <div className="flex gap-3 items-start">
                   <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-foreground text-lg md:text-xl">Сертифицированный гештальт-терапевт, арт-терапевт, преподаватель психологии</p>
@@ -574,19 +570,19 @@ export default function Index() {
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Mic" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Автор курсов по ораторскому искусству и импровизации</p>
+                  <p className="text-foreground text-lg md:text-xl">Автор курсов по ораторскому искусству и импровизации</p>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                <Button asChild variant="outline" className="hover:scale-105 transition-transform duration-300">
+              <div className="flex flex-col sm:flex-row gap-3 mt-4">
+                <Button asChild variant="outline" size="lg" className="hover:scale-105 transition-transform duration-300 text-lg">
                   <a href="https://kamer-theatre-komilfo--preview.poehali.dev/" target="_blank" rel="noopener noreferrer">
-                    <Icon name="Theater" size={20} className="mr-2" />
+                    <Icon name="Theater" size={22} className="mr-2" />
                     Театр «Комильфо»
                   </a>
                 </Button>
-                <Button asChild variant="outline" className="hover:scale-105 transition-transform duration-300">
+                <Button asChild variant="outline" size="lg" className="hover:scale-105 transition-transform duration-300 text-lg">
                   <a href="https://orator-site-creation--preview.poehali.dev/" target="_blank" rel="noopener noreferrer">
-                    <Icon name="Mic" size={20} className="mr-2" />
+                    <Icon name="Mic" size={22} className="mr-2" />
                     Курсы ораторства
                   </a>
                 </Button>
