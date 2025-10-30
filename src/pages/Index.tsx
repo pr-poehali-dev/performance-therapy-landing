@@ -355,7 +355,7 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     1
                   </div>
-                  <h4 className="font-bold text-xl">Поиск идеальной роли</h4>
+                  <h4 className="font-heading font-bold text-xl">Поиск идеальной роли</h4>
                   <p className="text-foreground leading-relaxed text-lg">
                     С помощью специальных упражнений находим вашу идеальную роль — скрытые качества, которые нужно раскрыть для уверенности и успеха.
                   </p>
@@ -365,7 +365,7 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     2
                   </div>
-                  <h4 className="font-bold text-xl">Создание персонажа</h4>
+                  <h4 className="font-heading font-bold text-xl">Создание персонажа</h4>
                   <p className="text-foreground leading-relaxed text-lg">
                     Создаём уникального персонажа для пьесы на основе вашего запроса. Пьеса пишется под конкретную группу и её участников.
                   </p>
@@ -375,7 +375,7 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     3
                   </div>
-                  <h4 className="font-bold text-xl">Трансформация через игру</h4>
+                  <h4 className="font-heading font-bold text-xl">Трансформация через игру</h4>
                   <p className="text-foreground leading-relaxed text-lg">
                     Проживая роль на сцене, развиваете недостающие качества и становитесь более уверенными, адаптивными и результативными.
                   </p>
@@ -387,17 +387,17 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary">
               <Icon name="Users" className="text-primary mb-4" size={56} />
-              <h4 className="font-bold mb-3 text-xl md:text-2xl text-foreground">Групповой формат</h4>
+              <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Групповой формат</h4>
               <p className="text-lg md:text-xl text-foreground font-medium">Работа в группе до 12 человек</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.1s' }}>
               <Icon name="Clock" className="text-primary mb-4" size={56} />
-              <h4 className="font-bold mb-3 text-xl md:text-2xl text-foreground">Регулярные занятия</h4>
+              <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Регулярные занятия</h4>
               <p className="text-lg md:text-xl text-foreground font-medium">1 раз в неделю по 3 часа</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.2s' }}>
               <Icon name="Calendar" className="text-primary mb-4" size={56} />
-              <h4 className="font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
+              <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
               <p className="text-lg md:text-xl text-foreground font-medium">3 месяца (12 занятий)</p>
             </div>
           </div>
@@ -460,7 +460,7 @@ export default function Index() {
                 <CardContent className="pt-5 pb-5 flex gap-4">
                   <Icon name={item.icon as any} className="text-primary flex-shrink-0" size={32} />
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
+                    <h3 className="font-heading text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
                     <p className="text-foreground text-lg md:text-xl leading-relaxed">{item.description}</p>
                   </div>
                 </CardContent>
@@ -511,7 +511,7 @@ export default function Index() {
                 <CardContent className="pt-8 pb-8 flex gap-6">
                   <Icon name={item.icon as any} className="text-primary flex-shrink-0" size={48} />
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-3">{item.title}</h3>
+                    <h3 className="font-heading text-xl md:text-2xl font-bold mb-3">{item.title}</h3>
                     <p className="text-foreground text-lg md:text-xl leading-relaxed font-medium">{item.description}</p>
                   </div>
                 </CardContent>
@@ -675,7 +675,7 @@ export default function Index() {
                 <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                   <CardContent className="pt-6">
                     <div className="flex items-center justify-between mb-3">
-                      <h4 className="font-semibold text-xl md:text-2xl">{review.name}</h4>
+                      <h4 className="font-heading font-semibold text-xl md:text-2xl">{review.name}</h4>
                       <div className="flex gap-1">
                         {[...Array(review.rating)].map((_, i) => (
                           <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={18} />
@@ -853,7 +853,7 @@ export default function Index() {
               <CardContent className="pt-6 flex gap-4">
                 <Icon name="Phone" className="text-primary flex-shrink-0" size={24} />
                 <div>
-                  <h3 className="font-semibold text-xl md:text-2xl mb-1">Телефон</h3>
+                  <h3 className="font-heading font-semibold text-xl md:text-2xl mb-1">Телефон</h3>
                   <a href="tel:+79183111712" className="text-foreground text-lg md:text-xl hover:text-primary transition-colors">
                     +7 918 311 17 12
                   </a>
@@ -865,7 +865,7 @@ export default function Index() {
               <CardContent className="pt-6 flex gap-4">
                 <Icon name="Mail" className="text-primary flex-shrink-0" size={24} />
                 <div>
-                  <h3 className="font-semibold text-xl md:text-2xl mb-1">Email</h3>
+                  <h3 className="font-heading font-semibold text-xl md:text-2xl mb-1">Email</h3>
                   <a href="mailto:s_kuzikova@mail.ru" className="text-foreground text-lg md:text-xl hover:text-primary transition-colors break-all">
                     s_kuzikova@mail.ru
                   </a>
@@ -888,7 +888,7 @@ export default function Index() {
             </div>
             
             <div>
-              <h4 className="font-semibold text-xl md:text-2xl mb-3">Контакты</h4>
+              <h4 className="font-heading font-semibold text-xl md:text-2xl mb-3">Контакты</h4>
               <div className="space-y-2 text-lg md:text-xl">
                 <div className="flex items-center gap-2 text-foreground">
                   <Icon name="Phone" size={16} />
@@ -906,7 +906,7 @@ export default function Index() {
             </div>
             
             <div>
-              <h4 className="font-semibold text-xl md:text-2xl mb-3">Навигация</h4>
+              <h4 className="font-heading font-semibold text-xl md:text-2xl mb-3">Навигация</h4>
               <nav className="space-y-2 text-lg md:text-xl">
                 <a href="#about" className="block text-foreground hover:text-primary transition-colors">О курсе</a>
                 <a href="#program" className="block text-foreground hover:text-primary transition-colors">Программа</a>
