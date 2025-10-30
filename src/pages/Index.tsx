@@ -7,6 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
+import FAQSection from "@/components/sections/FAQSection";
 
 export default function Index() {
   const { toast } = useToast();
@@ -895,6 +896,9 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Footer */}
       <footer className="py-8 md:py-12 px-4 bg-secondary/50 border-t">
