@@ -276,20 +276,20 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="animate-fade-in">
               <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/20 border border-primary/50 rounded-full mb-3 md:mb-4 animate-shimmer bg-[length:200%_100%] bg-gold-shimmer">
-                <span className="text-primary font-semibold text-sm md:text-base tracking-wider">✨ Психологический актёрский курс</span>
+                <span className="text-primary font-semibold text-base md:text-lg tracking-wider">✨ Психологический актёрский курс</span>
               </div>
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 Решайте психологические задачи через <span className="text-primary text-4xl md:text-6xl lg:text-7xl drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]">творчество</span>
               </h2>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
+              <p className="text-2xl md:text-3xl text-foreground mb-6 md:mb-8 leading-relaxed font-medium">
                 На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
                 мягко, креативно и эффективно
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                <Button size="lg" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/50" asChild>
+                <Button size="lg" className="text-lg md:text-xl px-6 md:px-8 hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/50" asChild>
                   <a href="#signup">🎭 Записаться на курс</a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 hover:scale-105 transition-all duration-300 border-primary/50 hover:bg-primary/10" asChild>
+                <Button size="lg" variant="outline" className="text-lg md:text-xl px-6 md:px-8 hover:scale-105 transition-all duration-300 border-primary/50 hover:bg-primary/10" asChild>
                   <a href="#about">Узнать подробнее</a>
                 </Button>
               </div>
@@ -460,8 +460,8 @@ export default function Index() {
                 <CardContent className="pt-5 pb-5 flex gap-4">
                   <Icon name={item.icon as any} className="text-primary flex-shrink-0" size={32} />
                   <div>
-                    <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
+                    <p className="text-foreground text-lg md:text-xl leading-relaxed">{item.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -512,7 +512,7 @@ export default function Index() {
                   <Icon name={item.icon as any} className="text-primary flex-shrink-0" size={48} />
                   <div>
                     <h3 className="text-xl md:text-2xl font-bold mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">{item.description}</p>
+                    <p className="text-foreground text-lg md:text-xl leading-relaxed font-medium">{item.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -537,9 +537,9 @@ export default function Index() {
             <div className="space-y-4 md:space-y-6 animate-slide-in-right flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">Светлана Алексеевна Кузикова</h3>
-                <p className="text-primary font-semibold text-lg">Режиссёр театра «Комильфо», психолог</p>
+                <p className="text-primary font-semibold text-xl md:text-2xl">Режиссёр театра «Комильфо», психолог</p>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed text-lg md:text-xl font-medium">
                 Светлана Алексеевна — практикующий психолог с режиссёрским образованием. 
                 Она создала уникальную методику перформанс-терапии, которая помогает людям 
                 решать психологические задачи через творчество.
@@ -547,23 +547,23 @@ export default function Index() {
               <div className="space-y-3">
                 <div className="flex gap-3 items-start">
                   <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Сертифицированный гештальт-терапевт, арт-терапевт, преподаватель психологии</p>
+                  <p className="text-foreground text-lg md:text-xl">Сертифицированный гештальт-терапевт, арт-терапевт, преподаватель психологии</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Образование: психолог, режиссёр театральных постановок, дополнительное профессиональное обучение по арт-терапии в Германии и Америке</p>
+                  <p className="text-foreground text-lg md:text-xl">Образование: психолог, режиссёр театральных постановок, дополнительное профессиональное обучение по арт-терапии в Германии и Америке</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Briefcase" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Опыт работы психолога: 15 лет</p>
+                  <p className="text-foreground text-lg md:text-xl">Опыт работы психолога: 15 лет</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="CheckCircle" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">Член Российской арт-терапевтической Ассоциации</p>
+                  <p className="text-foreground text-lg md:text-xl">Член Российской арт-терапевтической Ассоциации</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Theater" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-muted-foreground">В 2017 году создала театр «Комильфо» из выпускников своих курсов, поставила более 20 спектаклей</p>
+                  <p className="text-foreground text-lg md:text-xl">В 2017 году создала театр «Комильфо» из выпускников своих курсов, поставила более 20 спектаклей</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Mic" className="text-primary mt-1 flex-shrink-0" size={24} />
@@ -589,7 +589,7 @@ export default function Index() {
 
           <div className="space-y-6 md:space-y-8">
             <h3 className="text-2xl md:text-3xl font-heading font-bold text-center">Театр «Комильфо»</h3>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-center text-foreground max-w-3xl mx-auto leading-relaxed text-lg md:text-xl font-medium">
               Театр «Комильфо» — это творческое пространство, где рождаются уникальные спектакли. 
               Каждая постановка — результат совместной работы участников курса перформанс-терапии.
             </p>
@@ -675,20 +675,20 @@ export default function Index() {
                 <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                   <CardContent className="pt-6">
                     <div className="flex items-center justify-between mb-3">
-                      <h4 className="font-semibold text-lg">{review.name}</h4>
+                      <h4 className="font-semibold text-xl md:text-2xl">{review.name}</h4>
                       <div className="flex gap-1">
                         {[...Array(review.rating)].map((_, i) => (
                           <Icon key={i} name="Star" className="text-yellow-500 fill-yellow-500" size={18} />
                         ))}
                       </div>
                     </div>
-                    <div className={`text-muted-foreground leading-relaxed transition-all duration-300 ${expandedReviews[index] ? '' : 'line-clamp-3'}`}>
+                    <div className={`text-foreground text-lg md:text-xl leading-relaxed transition-all duration-300 ${expandedReviews[index] ? '' : 'line-clamp-3'}`}>
                       {review.text}
                     </div>
                     {review.text.length > 200 && (
                       <button 
                         onClick={() => toggleReview(index)}
-                        className="text-primary font-semibold mt-2 hover:underline transition-all duration-300 hover:translate-x-1"
+                        className="text-primary font-semibold text-lg mt-2 hover:underline transition-all duration-300 hover:translate-x-1"
                       >
                         {expandedReviews[index] ? 'Скрыть' : 'Читать полностью'}
                       </button>
@@ -725,44 +725,44 @@ export default function Index() {
                   <span className="text-primary font-bold">Полный курс</span>
                 </div>
                 <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">15 000 ₽</div>
-                <p className="text-muted-foreground text-lg">за весь курс</p>
+                <p className="text-foreground text-xl md:text-2xl font-medium">за весь курс</p>
               </div>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">3 месяца обучения (12 занятий)</p>
+                  <p className="text-xl md:text-2xl">3 месяца обучения (12 занятий)</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Занятия 1 раз в неделю по 3 часа</p>
+                  <p className="text-xl md:text-2xl">Занятия 1 раз в неделю по 3 часа</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Работа с профессиональным режиссёром и психологом</p>
+                  <p className="text-xl md:text-2xl">Работа с профессиональным режиссёром и психологом</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Индивидуальный подход к каждому участнику</p>
+                  <p className="text-xl md:text-2xl">Индивидуальный подход к каждому участнику</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Создание уникального персонажа и пьесы</p>
+                  <p className="text-xl md:text-2xl">Создание уникального персонажа и пьесы</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-lg">Выступление на сцене театра «Комильфо»</p>
+                  <p className="text-xl md:text-2xl">Выступление на сцене театра «Комильфо»</p>
                 </div>
               </div>
               
-              <Button size="lg" className="w-full text-lg hover:scale-105 transition-transform duration-300" asChild>
+              <Button size="lg" className="w-full text-xl md:text-2xl hover:scale-105 transition-transform duration-300" asChild>
                 <a href="#signup">Записаться на курс</a>
               </Button>
             </CardContent>
           </Card>
 
-          <div className="mt-8 text-center text-muted-foreground">
-            <p className="text-sm">Возможна оплата частями. Подробности уточняйте при записи.</p>
+          <div className="mt-8 text-center text-foreground">
+            <p className="text-lg md:text-xl font-medium">Возможна оплата частями. Подробности уточняйте при записи.</p>
           </div>
         </div>
       </section>
@@ -771,7 +771,7 @@ export default function Index() {
       <section id="signup" className="py-12 md:py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4 animate-fade-in">Запишитесь на курс</h2>
-          <p className="text-center text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">
+          <p className="text-center text-foreground mb-8 md:mb-12 text-xl md:text-2xl font-medium">
             Оставьте заявку, и мы свяжемся с вами для уточнения деталей
           </p>
           
@@ -779,7 +779,7 @@ export default function Index() {
             <CardContent className="pt-6">
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">Ваше имя</label>
+                  <label htmlFor="name" className="block text-lg md:text-xl font-medium mb-2">Ваше имя</label>
                   <Input
                     id="name"
                     type="text"
@@ -787,12 +787,12 @@ export default function Index() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="text-base"
+                    className="text-lg md:text-xl"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">Телефон</label>
+                  <label htmlFor="phone" className="block text-lg md:text-xl font-medium mb-2">Телефон</label>
                   <Input
                     id="phone"
                     type="tel"
@@ -800,12 +800,12 @@ export default function Index() {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     required
-                    className="text-base"
+                    className="text-lg md:text-xl"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">Сообщение (необязательно)</label>
+                  <label htmlFor="message" className="block text-lg md:text-xl font-medium mb-2">Сообщение (необязательно)</label>
                   <Textarea
                     id="message"
                     placeholder="Расскажите о своих ожиданиях от курса..."
@@ -824,7 +824,7 @@ export default function Index() {
                     required
                     className="mt-1"
                   />
-                  <label htmlFor="consent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
+                  <label htmlFor="consent" className="text-base md:text-lg text-foreground leading-relaxed cursor-pointer">
                     Я согласен на обработку персональных данных в соответствии с{" "}
                     <Link to="/privacy" className="text-primary hover:underline" target="_blank">
                       Политикой конфиденциальности
@@ -841,7 +841,7 @@ export default function Index() {
                   </label>
                 </div>
                 
-                <Button type="submit" size="lg" className="w-full text-lg hover:scale-105 transition-transform duration-300" disabled={!formData.consent}>
+                <Button type="submit" size="lg" className="w-full text-xl md:text-2xl hover:scale-105 transition-transform duration-300" disabled={!formData.consent}>
                   Отправить заявку
                 </Button>
               </form>
@@ -853,8 +853,8 @@ export default function Index() {
               <CardContent className="pt-6 flex gap-4">
                 <Icon name="Phone" className="text-primary flex-shrink-0" size={24} />
                 <div>
-                  <h3 className="font-semibold mb-1">Телефон</h3>
-                  <a href="tel:+79183111712" className="text-muted-foreground hover:text-primary transition-colors">
+                  <h3 className="font-semibold text-xl md:text-2xl mb-1">Телефон</h3>
+                  <a href="tel:+79183111712" className="text-foreground text-lg md:text-xl hover:text-primary transition-colors">
                     +7 918 311 17 12
                   </a>
                 </div>
@@ -865,8 +865,8 @@ export default function Index() {
               <CardContent className="pt-6 flex gap-4">
                 <Icon name="Mail" className="text-primary flex-shrink-0" size={24} />
                 <div>
-                  <h3 className="font-semibold mb-1">Email</h3>
-                  <a href="mailto:s_kuzikova@mail.ru" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                  <h3 className="font-semibold text-xl md:text-2xl mb-1">Email</h3>
+                  <a href="mailto:s_kuzikova@mail.ru" className="text-foreground text-lg md:text-xl hover:text-primary transition-colors break-all">
                     s_kuzikova@mail.ru
                   </a>
                 </div>
@@ -881,24 +881,24 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
             <div>
-              <h3 className="font-heading font-bold text-lg mb-3">Перформанс-терапия</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="font-heading font-bold text-xl md:text-2xl mb-3">Перформанс-терапия</h3>
+              <p className="text-lg md:text-xl text-foreground">
                 Психологический актёрский курс для решения внутренних задач через творчество
               </p>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-3">Контакты</h4>
-              <div className="space-y-2 text-sm">
-                <div className="flex items-center gap-2 text-muted-foreground">
+              <h4 className="font-semibold text-xl md:text-2xl mb-3">Контакты</h4>
+              <div className="space-y-2 text-lg md:text-xl">
+                <div className="flex items-center gap-2 text-foreground">
                   <Icon name="Phone" size={16} />
                   <a href="tel:+79183111712" className="hover:text-primary transition-colors">+7 918 311 17 12</a>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   <Icon name="Mail" size={16} />
                   <a href="mailto:s_kuzikova@mail.ru" className="hover:text-primary transition-colors">s_kuzikova@mail.ru</a>
                 </div>
-                <div className="flex items-start gap-2 text-muted-foreground">
+                <div className="flex items-start gap-2 text-foreground"
                   <Icon name="MapPin" size={16} className="mt-0.5" />
                   <span>г. Краснодар, ул. Горького, 104, офис 26</span>
                 </div>
@@ -906,27 +906,27 @@ export default function Index() {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-3">Навигация</h4>
-              <nav className="space-y-2 text-sm">
-                <a href="#about" className="block text-muted-foreground hover:text-primary transition-colors">О курсе</a>
-                <a href="#program" className="block text-muted-foreground hover:text-primary transition-colors">Программа</a>
-                <a href="#teacher" className="block text-muted-foreground hover:text-primary transition-colors">Педагог</a>
-                <a href="#price" className="block text-muted-foreground hover:text-primary transition-colors">Стоимость</a>
+              <h4 className="font-semibold text-xl md:text-2xl mb-3">Навигация</h4>
+              <nav className="space-y-2 text-lg md:text-xl">
+                <a href="#about" className="block text-foreground hover:text-primary transition-colors">О курсе</a>
+                <a href="#program" className="block text-foreground hover:text-primary transition-colors">Программа</a>
+                <a href="#teacher" className="block text-foreground hover:text-primary transition-colors">Педагог</a>
+                <a href="#price" className="block text-foreground hover:text-primary transition-colors">Стоимость</a>
               </nav>
             </div>
           </div>
           
           <div className="pt-6 border-t space-y-4">
-            <div className="text-center text-xs text-muted-foreground space-y-1">
+            <div className="text-center text-base md:text-lg text-foreground space-y-1">
               <p className="font-semibold">ИП Кузикова Светлана Алексеевна</p>
               <p>ОГРНИП: 318237500160591</p>
               <p>Адрес: г. Краснодар, ул. Горького, 104, офис 26</p>
               <p>Телефон: +7 918 311 17 12 | E-mail: s_kuzikova@mail.ru</p>
             </div>
             
-            <div className="flex flex-wrap justify-center gap-4 text-xs">
-              <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Политика конфиденциальности</a>
-              <a href="/offer" className="text-muted-foreground hover:text-primary transition-colors">Публичная оферта</a>
+            <div className="flex flex-wrap justify-center gap-4 text-base md:text-lg">
+              <a href="/privacy" className="text-foreground hover:text-primary transition-colors">Политика конфиденциальности</a>
+              <a href="/offer" className="text-foreground hover:text-primary transition-colors">Публичная оферта</a>
               <a href="/consent" className="text-muted-foreground hover:text-primary transition-colors">Согласие на обработку персональных данных</a>
             </div>
             
