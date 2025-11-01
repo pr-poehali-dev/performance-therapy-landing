@@ -845,17 +845,17 @@ export default function Index() {
                     required
                     className="mt-1"
                   />
-                  <label htmlFor="consent" className="text-base md:text-lg text-foreground leading-relaxed cursor-pointer">
+                  <label htmlFor="consent" className="text-base md:text-lg text-muted-foreground leading-relaxed cursor-pointer">
                     Я согласен на обработку персональных данных в соответствии с{" "}
-                    <Link to="/privacy" className="text-primary hover:underline" target="_blank">
+                    <Link to="/privacy" className="text-primary hover:underline font-medium" target="_blank">
                       Политикой конфиденциальности
                     </Link>
                     {" "}и{" "}
-                    <Link to="/consent" className="text-primary hover:underline" target="_blank">
+                    <Link to="/consent" className="text-primary hover:underline font-medium" target="_blank">
                       Согласием на обработку персональных данных
                     </Link>
                     . Принимаю условия{" "}
-                    <Link to="/offer" className="text-primary hover:underline" target="_blank">
+                    <Link to="/offer" className="text-primary hover:underline font-medium" target="_blank">
                       Публичной оферты
                     </Link>
                     .
