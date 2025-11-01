@@ -192,7 +192,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 md:gap-4">
             <img 
-              src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/cf40df2a-7a30-46cf-b5c3-0f732913d5a8.jpg" 
+              src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/0c5a0d9e-4edf-4f1f-b553-a15c1a1232c8.jpg" 
               alt="Комильфо Театр Студия - Театральные маски" 
               className="h-10 md:h-12 w-auto object-contain"
             />
