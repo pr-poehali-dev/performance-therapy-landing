@@ -381,7 +381,7 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     1
                   </div>
-                  <h4 className="font-heading font-bold text-xl">Поиск идеальной роли</h4>
+                  <h4 className="font-sans font-bold text-2xl tracking-wide">Поиск идеальной роли</h4>
                   <p className="text-foreground leading-relaxed text-lg">
                     С помощью специальных упражнений находим вашу идеальную роль — скрытые качества, которые нужно раскрыть для уверенности и успеха.
                   </p>
@@ -391,7 +391,7 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     2
                   </div>
-                  <h4 className="font-heading font-bold text-xl">Создание персонажа</h4>
+                  <h4 className="font-sans font-bold text-2xl tracking-wide">Создание персонажа</h4>
                   <p className="text-foreground leading-relaxed text-lg">
                     Создаём уникального персонажа для пьесы на основе вашего запроса. Пьеса пишется под конкретную группу и её участников.
                   </p>
@@ -401,7 +401,7 @@ export default function Index() {
                   <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                     3
                   </div>
-                  <h4 className="font-heading font-bold text-xl">Трансформация через игру</h4>
+                  <h4 className="font-sans font-bold text-2xl tracking-wide">Трансформация через игру</h4>
                   <p className="text-foreground leading-relaxed text-lg">
                     Проживая роль на сцене, развиваете недостающие качества и становитесь более уверенными, адаптивными и результативными.
                   </p>
