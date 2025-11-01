@@ -289,7 +289,7 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-40 pb-12 md:pb-20 px-4 relative overflow-hidden min-h-[85vh] flex items-center justify-center">
+      <section className="pt-28 md:pt-32 pb-8 md:pb-12 px-4 relative overflow-hidden min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/a5dabef9-cd10-4ae7-9bb9-1717bd3ffad3.jpg)'}} />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/70" />
         <div className="absolute inset-0 bg-velvet-texture bg-[length:20px_20px] opacity-10" />
@@ -333,7 +333,7 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-12 md:py-20 px-4 bg-secondary/50 border-y-2 border-primary/30 relative">
+      <section id="about" className="py-10 md:py-14 px-4 bg-secondary/50 border-y-2 border-primary/30 relative">
         <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
         <div className="container mx-auto max-w-7xl relative z-10">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-6 animate-fade-in text-primary drop-shadow-lg">🎭 Что такое перформанс-терапия?</h2>
@@ -453,7 +453,7 @@ export default function Index() {
       </section>
 
       {/* Program Section */}
-      <section id="program" className="py-12 md:py-20 px-4">
+      <section id="program" className="py-10 md:py-14 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Программа курса</h2>
           <div className="grid md:grid-cols-2 gap-4 md:gap-6">
@@ -526,7 +526,7 @@ export default function Index() {
       </section>
 
       {/* Results Section */}
-      <section id="results" className="py-12 md:py-20 px-4 bg-secondary/30">
+      <section id="results" className="py-10 md:py-14 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Что вы получите</h2>
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
@@ -577,7 +577,7 @@ export default function Index() {
       </section>
 
       {/* Teacher Section */}
-      <section id="teacher" className="py-12 md:py-20 px-4">
+      <section id="teacher" className="py-10 md:py-14 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Ваш педагог</h2>
           
@@ -701,7 +701,7 @@ export default function Index() {
       </section>
 
       {/* Graduates Section */}
-      <section id="graduates" className="py-12 md:py-20 px-4 bg-secondary/30">
+      <section id="graduates" className="py-10 md:py-14 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Наши выпускники</h2>
           
@@ -765,7 +765,7 @@ export default function Index() {
       </section>
 
       {/* Price Section */}
-      <section id="price" className="py-12 md:py-20 px-4">
+      <section id="price" className="py-10 md:py-14 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Стоимость курса</h2>
           
@@ -819,7 +819,7 @@ export default function Index() {
       </section>
 
       {/* Signup Section */}
-      <section id="signup" className="py-12 md:py-20 px-4 bg-secondary/30">
+      <section id="signup" className="py-10 md:py-14 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4 animate-fade-in">Запишитесь на курс</h2>
           <p className="text-center text-foreground mb-8 md:mb-12 text-xl md:text-2xl font-medium">
@@ -952,7 +952,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 md:py-12 px-4 bg-secondary/50 border-t">
+      <footer className="py-6 md:py-10 px-4 bg-secondary/50 border-t">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
             <div>

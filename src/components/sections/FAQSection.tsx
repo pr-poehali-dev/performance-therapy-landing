@@ -45,7 +45,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-background to-secondary/20">
+    <section className="py-10 md:py-14 px-4 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4 text-primary">
