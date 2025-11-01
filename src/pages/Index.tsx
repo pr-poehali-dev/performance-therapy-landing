@@ -307,10 +307,20 @@ export default function Index() {
               <h2 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-foreground mb-6 md:mb-8 leading-tight">
                 Решайте психологические задачи через <span className="text-primary text-5xl md:text-7xl lg:text-8xl drop-shadow-[0_0_30px_rgba(255,215,0,0.6)]">творчество</span>
               </h2>
-              <p className="text-2xl md:text-3xl text-foreground mb-8 md:mb-10 leading-relaxed font-medium max-w-4xl mx-auto">
+              <p className="text-2xl md:text-3xl text-foreground mb-6 md:mb-8 leading-relaxed font-medium max-w-4xl mx-auto">
                 На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
                 мягко, креативно и эффективно
               </p>
+              <div className="mb-6 md:mb-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                <div className="flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full border border-primary/50">
+                  <Icon name="CalendarCheck" className="text-primary" size={24} />
+                  <span className="text-foreground font-semibold text-lg md:text-xl">Старт: 3 декабря 2025</span>
+                </div>
+                <div className="flex items-center gap-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/50 animate-pulse">
+                  <Icon name="Users" className="text-red-500" size={24} />
+                  <span className="text-foreground font-semibold text-lg md:text-xl">Осталось мест: до 12</span>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
                 <Button onClick={scrollToForm} size="lg" className="text-xl md:text-2xl px-8 md:px-10 py-6 md:py-7 hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/50">
                   🎭 Записаться на курс
@@ -774,11 +784,11 @@ export default function Index() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Calendar" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-xl md:text-2xl">3 месяца обучения (24 занятия)</p>
+                  <p className="text-xl md:text-2xl">3 месяца обучения (12 занятий)</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Clock" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-xl md:text-2xl">Занятия 2 раза в неделю по 2 часа</p>
+                  <p className="text-xl md:text-2xl">Занятия 1 раз в неделю по 3 часа</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="CreditCard" className="text-primary mt-1 flex-shrink-0" size={24} />
