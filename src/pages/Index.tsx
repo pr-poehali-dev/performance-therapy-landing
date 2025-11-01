@@ -315,7 +315,7 @@ export default function Index() {
             <div className="animate-scale-in relative">
               <div className="absolute -inset-4 bg-primary/20 blur-2xl rounded-full" />
               <img 
-                src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/4bcfeacf-95c5-4147-a3d3-55655fc50ed7.jpg" 
+                src="https://cdn.poehali.dev/files/de12cb10-f76a-44a7-beea-179dc6beb425.JPG" 
                 alt="Перформанс-терапия"
                 className="rounded-2xl shadow-2xl shadow-primary/30 w-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500 border-2 border-primary/30 relative z-10"
               />
