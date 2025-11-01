@@ -296,11 +296,11 @@ export default function Index() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center">
             <div className="animate-fade-in">
-              <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/20 border border-primary/50 rounded-full mb-4 md:mb-6 animate-shimmer bg-[length:200%_100%] bg-gold-shimmer max-w-full">
-                <span className="text-primary font-semibold text-sm md:text-lg tracking-wide md:tracking-wider">✨ Психологический актёрский курс</span>
+              <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/20 border border-primary/50 rounded-full mb-4 md:mb-6 animate-shimmer bg-[length:200%_100%] bg-gold-shimmer">
+                <span className="text-primary font-semibold text-base md:text-lg tracking-wider">✨ Психологический актёрский курс</span>
               </div>
-              <h2 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-foreground mb-6 md:mb-8 leading-tight">
-                Решайте психологические задачи через <span className="text-primary text-5xl md:text-7xl lg:text-8xl drop-shadow-[0_0_30px_rgba(255,215,0,0.6)]">творчество</span>
+              <h2 className="text-3xl md:text-7xl lg:text-8xl font-heading font-bold text-foreground mb-6 md:mb-8 leading-tight">
+                Решайте психологические задачи через <span className="text-primary text-3xl md:text-7xl lg:text-8xl drop-shadow-[0_0_30px_rgba(255,215,0,0.6)]">творчество</span>
               </h2>
               <p className="text-2xl md:text-3xl text-foreground mb-6 md:mb-8 leading-relaxed font-medium max-w-4xl mx-auto">
                 На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
@@ -445,7 +445,8 @@ export default function Index() {
             >
               <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer">
                 <Icon name="MessageCircle" className="mr-2" size={28} />
-                Записаться на пробное бесплатно
+                <span className="hidden sm:inline">Записаться на пробное бесплатно</span>
+                <span className="sm:hidden">Пробное бесплатно</span>
               </a>
             </Button>
           </div>
