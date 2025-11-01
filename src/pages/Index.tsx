@@ -931,10 +931,10 @@ export default function Index() {
       <FAQSection />
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-b from-secondary/30 to-background relative overflow-hidden">
+      <section className="py-8 md:py-12 px-4 bg-gradient-to-b from-secondary/30 to-background relative overflow-hidden">
         <div className="absolute inset-0 bg-velvet-texture bg-[length:25px_25px] opacity-5" />
         <div className="container mx-auto max-w-4xl text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-primary">Готовы открыть новые грани себя?</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-6 text-primary">Готовы открыть новые грани себя?</h2>
           <p className="text-xl md:text-2xl text-foreground mb-8 md:mb-10 leading-relaxed">
             Запишитесь на пробное бесплатное занятие и почувствуйте силу перформанс-терапии
           </p>
