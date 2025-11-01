@@ -288,10 +288,12 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-28 md:pt-40 pb-12 md:pb-20 px-4 relative">
-        <div className="absolute inset-0 bg-velvet-texture bg-[length:20px_20px] opacity-20" />
+      <section className="pt-28 md:pt-40 pb-12 md:pb-20 px-4 relative overflow-hidden min-h-[80vh] flex items-center">
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/f0431441-f69c-49c8-9a9d-ffcb4793b022.jpg)'}} />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/60" />
+        <div className="absolute inset-0 bg-velvet-texture bg-[length:20px_20px] opacity-10" />
         <div className="container mx-auto max-w-7xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div className="max-w-3xl">
             <div className="animate-fade-in">
               <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary/20 border border-primary/50 rounded-full mb-3 md:mb-4 animate-shimmer bg-[length:200%_100%] bg-gold-shimmer">
                 <span className="text-primary font-semibold text-base md:text-lg tracking-wider">✨ Психологический актёрский курс</span>
@@ -311,14 +313,6 @@ export default function Index() {
                   <a href="#about">Узнать подробнее</a>
                 </Button>
               </div>
-            </div>
-            <div className="animate-scale-in relative">
-              <div className="absolute -inset-4 bg-primary/20 blur-2xl rounded-full" />
-              <img 
-                src="https://cdn.poehali.dev/files/de12cb10-f76a-44a7-beea-179dc6beb425.JPG" 
-                alt="Перформанс-терапия"
-                className="rounded-2xl shadow-2xl shadow-primary/30 w-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-500 border-2 border-primary/30 relative z-10"
-              />
             </div>
           </div>
         </div>
