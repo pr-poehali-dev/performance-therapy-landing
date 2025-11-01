@@ -191,7 +191,7 @@ export default function Index() {
       <header className="fixed top-8 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-primary/30 shadow-xl">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 md:gap-4">
-            <h1 className="text-xl md:text-2xl font-heading font-bold text-primary tracking-wider drop-shadow-lg">🎭 Перформанс-терапия</h1>
+            <h1 className="text-xl md:text-2xl font-heading font-bold text-primary tracking-wider drop-shadow-lg">Перформанс-терапия</h1>
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#about" className="text-lg hover:text-primary transition-all duration-300 hover:scale-105 font-medium relative group">
