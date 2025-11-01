@@ -318,7 +318,7 @@ export default function Index() {
                 </div>
                 <div className="flex items-center gap-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/50 animate-pulse">
                   <Icon name="Users" className="text-red-500" size={24} />
-                  <span className="text-foreground font-semibold text-lg md:text-xl">Осталось мест: до 12</span>
+                  <span className="text-foreground font-semibold text-lg md:text-xl">Осталось мест: до 10</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
@@ -425,17 +425,17 @@ export default function Index() {
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary">
               <Icon name="Users" className="text-primary mb-4" size={56} />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Групповой формат</h4>
-              <p className="text-lg md:text-xl text-foreground font-medium">Работа в группе до 12 человек</p>
+              <p className="text-lg md:text-xl text-foreground font-medium">Работа в группе до 10 человек</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.1s' }}>
               <Icon name="Clock" className="text-primary mb-4" size={56} />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Регулярные занятия</h4>
-              <p className="text-lg md:text-xl text-foreground font-medium">1 раз в неделю по 3 часа</p>
+              <p className="text-lg md:text-xl text-foreground font-medium">2 раза в неделю по 2 часа</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.2s' }}>
               <Icon name="Calendar" className="text-primary mb-4" size={56} />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
-              <p className="text-lg md:text-xl text-foreground font-medium">3 месяца (12 занятий)</p>
+              <p className="text-lg md:text-xl text-foreground font-medium">3 месяца (24 занятия)</p>
             </div>
           </div>
 
@@ -784,11 +784,11 @@ export default function Index() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Calendar" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-xl md:text-2xl">3 месяца обучения (12 занятий)</p>
+                  <p className="text-xl md:text-2xl">3 месяца обучения (24 занятия)</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="Clock" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-xl md:text-2xl">Занятия 1 раз в неделю по 3 часа</p>
+                  <p className="text-xl md:text-2xl">Занятия 2 раза в неделю по 2 часа</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="CreditCard" className="text-primary mt-1 flex-shrink-0" size={24} />
