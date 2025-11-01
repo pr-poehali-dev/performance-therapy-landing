@@ -585,7 +585,7 @@ export default function Index() {
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
-                  <p className="text-foreground text-lg md:text-xl">Образование: психолог, режиссёр театральных постановок, дополнительное профессиональное обучение по арт-терапии в Германии и Америке</p>
+                  <p className="text-foreground text-lg md:text-xl">Образование: психолог, театральный режиссёр, дополнительное профессиональное обучение по арт-терапии в Германии и Америке</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Icon name="Briefcase" className="text-primary mt-1 flex-shrink-0" size={24} />
