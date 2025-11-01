@@ -110,7 +110,7 @@ export default function Index() {
   ];
 
   const scrollToForm = () => {
-    const formElement = document.getElementById('contact-form');
+    const formElement = document.getElementById('signup');
     if (formElement) {
       formElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
