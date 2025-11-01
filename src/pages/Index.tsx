@@ -224,8 +224,11 @@ export default function Index() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           </nav>
-          <Button onClick={scrollToForm} className="hidden md:inline-flex hover:scale-105 transition-transform duration-300 bg-primary text-primary-foreground shadow-lg shadow-primary/50">
-            Записаться
+          <Button className="hidden md:inline-flex hover:scale-105 transition-transform duration-300 bg-primary text-primary-foreground shadow-lg shadow-primary/50" asChild>
+            <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer">
+              <Icon name="MessageCircle" className="mr-2" size={18} />
+              Пробное бесплатно
+            </a>
           </Button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -280,8 +283,11 @@ export default function Index() {
             >
               Стоимость
             </a>
-            <Button className="w-full" onClick={() => { scrollToForm(); setMobileMenuOpen(false); }}>
-              Записаться на курс
+            <Button className="w-full" asChild>
+              <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                <Icon name="MessageCircle" className="mr-2" size={18} />
+                Пробное бесплатно
+              </a>
             </Button>
           </nav>
         </div>
