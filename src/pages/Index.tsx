@@ -192,8 +192,8 @@ export default function Index() {
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 md:gap-4">
             <img 
-              src="https://cdn.poehali.dev/files/d2f56f8d-e933-4cb2-87e4-c664e879c628.PNG" 
-              alt="Комильфо Театр Студия" 
+              src="https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/cf40df2a-7a30-46cf-b5c3-0f732913d5a8.jpg" 
+              alt="Комильфо Театр Студия - Театральные маски" 
               className="h-10 md:h-12 w-auto object-contain"
             />
             <h1 className="text-xl md:text-2xl font-heading font-bold text-primary tracking-wider drop-shadow-lg">Перформанс-терапия</h1>
@@ -322,8 +322,11 @@ export default function Index() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
-                <Button onClick={scrollToForm} size="lg" className="text-xl md:text-2xl px-8 md:px-10 py-6 md:py-7 hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/50">
-                  🎭 Записаться на курс
+                <Button onClick={scrollToForm} size="lg" className="text-xl md:text-2xl px-8 md:px-10 py-6 md:py-7 hover:scale-105 transition-all duration-300 shadow-2xl shadow-primary/60 relative overflow-hidden group bg-gradient-to-r from-primary via-amber-500 to-primary">
+                  <span className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/cf40df2a-7a30-46cf-b5c3-0f732913d5a8.jpg')] bg-contain bg-center bg-no-repeat opacity-20 group-hover:opacity-30 transition-opacity duration-300 mix-blend-overlay" />
+                  <span className="relative z-10 flex items-center gap-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                    <span className="text-3xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">🎭</span> Записаться на курс
+                  </span>
                 </Button>
                 <Button size="lg" variant="outline" className="text-xl md:text-2xl px-8 md:px-10 py-6 md:py-7 hover:scale-105 transition-all duration-300 border-primary/50 hover:bg-primary/10" asChild>
                   <a href="#about">Узнать подробнее</a>
