@@ -413,6 +413,19 @@ export default function Index() {
               <p className="text-lg md:text-xl text-foreground font-medium">3 месяца (12 занятий)</p>
             </div>
           </div>
+
+          <div className="mt-12 text-center">
+            <Button 
+              size="lg" 
+              className="text-xl md:text-2xl px-10 md:px-12 py-6 md:py-8 hover:scale-105 transition-all duration-300 shadow-xl shadow-primary/50 bg-gradient-to-r from-primary to-primary/80"
+              asChild
+            >
+              <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer">
+                <Icon name="MessageCircle" className="mr-2" size={28} />
+                Записаться на пробное бесплатно
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -893,6 +906,27 @@ export default function Index() {
 
       {/* FAQ Section */}
       <FAQSection />
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-b from-secondary/30 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-velvet-texture bg-[length:25px_25px] opacity-5" />
+        <div className="container mx-auto max-w-4xl text-center relative z-10">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-primary">Готовы открыть новые грани себя?</h2>
+          <p className="text-xl md:text-2xl text-foreground mb-8 md:mb-10 leading-relaxed">
+            Запишитесь на пробное бесплатное занятие и почувствуйте силу перформанс-терапии
+          </p>
+          <Button 
+            size="lg" 
+            className="text-xl md:text-2xl px-10 md:px-12 py-7 md:py-9 hover:scale-105 transition-all duration-300 shadow-2xl shadow-primary/60 bg-gradient-to-r from-primary via-primary to-primary/80 animate-shimmer bg-[length:200%_100%]"
+            asChild
+          >
+            <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer">
+              <Icon name="MessageCircle" className="mr-3" size={32} />
+              Записаться на пробное в WhatsApp
+            </a>
+          </Button>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="py-8 md:py-12 px-4 bg-secondary/50 border-t">
