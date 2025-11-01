@@ -951,7 +951,7 @@ export default function Index() {
             <div className="flex flex-wrap justify-center gap-4 text-base md:text-lg">
               <a href="/privacy" className="text-foreground hover:text-primary transition-colors">Политика конфиденциальности</a>
               <a href="/offer" className="text-foreground hover:text-primary transition-colors">Публичная оферта</a>
-              <a href="/consent" className="text-muted-foreground hover:text-primary transition-colors">Согласие на обработку персональных данных</a>
+              <a href="/consent" className="text-foreground hover:text-primary transition-colors">Согласие на обработку персональных данных</a>
             </div>
             
             <p className="text-center text-sm text-muted-foreground">© 2018-2025 гг. Все права защищены.</p>
