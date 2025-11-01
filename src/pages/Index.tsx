@@ -402,6 +402,15 @@ export default function Index() {
             </CardContent>
           </Card>
           
+          <div className="mb-8 p-6 md:p-8 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/40 rounded-2xl text-center animate-pulse-slow">
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <Icon name="CalendarCheck" className="text-primary" size={32} />
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Старт курса</h3>
+            </div>
+            <p className="text-3xl md:text-4xl font-bold text-foreground">3 декабря 2025 года</p>
+            <p className="text-lg md:text-xl text-foreground/80 mt-2">Не упустите возможность начать свою трансформацию!</p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary">
               <Icon name="Users" className="text-primary mb-4" size={56} />
