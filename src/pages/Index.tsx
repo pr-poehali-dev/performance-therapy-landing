@@ -642,8 +642,7 @@ export default function Index() {
           <div className="space-y-6 md:space-y-8">
             <h3 className="text-2xl md:text-3xl font-heading font-bold text-center">Театр «Комильфо»</h3>
             <p className="text-center text-foreground max-w-3xl mx-auto leading-relaxed text-lg md:text-xl font-medium">
-              Театр «Комильфо» — это творческое пространство, где рождаются уникальные спектакли. 
-              Наши выпускники выступают на профессиональной сцене, демонстрируя высокий уровень актёрского мастерства.
+              Выпускники курса играют на сцене театра «Комильфо».
             </p>
             
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group max-w-4xl mx-auto" style={{ height: '450px' }}>
