@@ -332,6 +332,95 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Schedule Section */}
+      <section id="schedule" className="py-10 md:py-14 px-4 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in text-primary drop-shadow-lg">
+            📅 Расписание пробных мероприятий
+          </h2>
+          <p className="text-center text-foreground/80 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+            Приходите на бесплатное пробное занятие и почувствуйте атмосферу курса
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* Event 1 */}
+            <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 text-sm font-bold rounded-bl-lg">
+                Осталось 3 места
+              </div>
+              <CardContent className="pt-8 pb-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
+                  <div>
+                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">5 декабря (четверг)</h3>
+                    <div className="flex items-center gap-2 text-foreground text-lg mb-2">
+                      <Icon name="Clock" size={20} className="text-primary" />
+                      <span>19:00 - 21:00</span>
+                    </div>
+                    <div className="flex items-start gap-2 text-foreground text-lg">
+                      <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
+                      <span>ул. Красная, 176, 2 этаж</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-foreground/90 leading-relaxed mb-4 text-base">
+                  Познакомимся с методами перформанс-терапии, попробуем упражнения на раскрепощение и освоим базовые актёрские техники
+                </p>
+                <Button className="w-full text-lg py-6" asChild>
+                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%205%20декабря" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageCircle" className="mr-2" size={20} />
+                    Записаться на 5 декабря
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Event 2 */}
+            <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-amber-500 text-white px-4 py-1 text-sm font-bold rounded-bl-lg">
+                Осталось 5 мест
+              </div>
+              <CardContent className="pt-8 pb-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
+                  <div>
+                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">10 декабря (вторник)</h3>
+                    <div className="flex items-center gap-2 text-foreground text-lg mb-2">
+                      <Icon name="Clock" size={20} className="text-primary" />
+                      <span>19:00 - 21:00</span>
+                    </div>
+                    <div className="flex items-start gap-2 text-foreground text-lg">
+                      <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
+                      <span>ул. Красная, 176, 2 этаж</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-foreground/90 leading-relaxed mb-4 text-base">
+                  Исследуем эмоциональную выразительность через театральные этюды и узнаем, как творчество помогает решать личные задачи
+                </p>
+                <Button className="w-full text-lg py-6" asChild>
+                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%2010%20декабря" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageCircle" className="mr-2" size={20} />
+                    Записаться на 10 декабря
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-6 md:p-8 text-center">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4">
+              <Icon name="Gift" className="text-primary" size={40} />
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Пробное занятие — бесплатно!</h3>
+            </div>
+            <p className="text-foreground text-lg md:text-xl max-w-2xl mx-auto">
+              После пробного занятия вы поймёте, подходит ли вам этот курс, и сможете принять взвешенное решение о записи на полную программу
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-10 md:py-14 px-4 bg-secondary/50 border-y-2 border-primary/30 relative">
         <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
