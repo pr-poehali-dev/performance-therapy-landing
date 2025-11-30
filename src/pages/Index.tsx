@@ -818,7 +818,7 @@ export default function Index() {
                   <a href="http://kuzikova.robo.market/buy/1676/" target="_blank" rel="noopener noreferrer">Забронировать</a>
                 </Button>
                 <Button size="lg" variant="outline" className="flex-1 text-xl md:text-2xl hover:scale-105 transition-transform duration-300" asChild>
-                  <a href="#signup">Записаться на курс</a>
+                  <a href="#signup">Подать заявку</a>
                 </Button>
               </div>
             </CardContent>
