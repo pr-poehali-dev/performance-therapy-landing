@@ -297,7 +297,7 @@ export default function Index() {
           <div className="text-center">
             <div className="animate-fade-in">
               <div className="inline-block px-3 py-1 md:px-4 md:py-2 bg-primary/20 border border-primary/50 rounded-full mb-4 md:mb-6 animate-shimmer bg-[length:200%_100%] bg-gold-shimmer leading-none">
-                <span className="text-primary font-semibold text-base md:text-lg tracking-wider leading-none inline-block">✨ Психологический актёрский курс</span>
+                <span className="text-primary font-semibold text-base md:text-lg tracking-wider leading-none inline-block">✨ Психотерапевтический актёрский курс</span>
               </div>
               <h2 className="text-3xl md:text-7xl lg:text-8xl font-heading font-bold text-foreground mb-6 md:mb-8 leading-tight">
                 Решайте психологические задачи через <span className="text-primary text-3xl md:text-7xl lg:text-8xl drop-shadow-[0_0_30px_rgba(255,215,0,0.6)]">творчество</span>
