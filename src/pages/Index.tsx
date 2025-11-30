@@ -337,7 +337,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
         <div className="container mx-auto max-w-6xl relative z-10">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in text-primary drop-shadow-lg">
-            📅 Расписание пробных мероприятий
+            📅 Расписание пробных мероприятий в Краснодаре
           </h2>
           <p className="text-center text-foreground/80 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
             Приходите на бесплатное пробное занятие и почувствуйте атмосферу курса
@@ -360,7 +360,7 @@ export default function Index() {
                     </div>
                     <div className="flex items-start gap-2 text-foreground text-lg mb-2">
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
-                      <span>ул. Горького, 104, офис 26</span>
+                      <span>г. Краснодар, ул. Горького, 104, офис 26</span>
                     </div>
                     <div className="flex items-center gap-2 text-foreground text-base text-foreground/70">
                       <Icon name="Key" size={18} className="text-primary" />
@@ -396,7 +396,7 @@ export default function Index() {
                     </div>
                     <div className="flex items-start gap-2 text-foreground text-lg mb-2">
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
-                      <span>ул. Горького, 104, офис 26</span>
+                      <span>г. Краснодар, ул. Горького, 104, офис 26</span>
                     </div>
                     <div className="flex items-center gap-2 text-foreground text-base text-foreground/70">
                       <Icon name="Key" size={18} className="text-primary" />
