@@ -782,7 +782,7 @@ export default function Index() {
                 </div>
                 <p className="text-foreground text-xl md:text-2xl font-medium">в месяц</p>
                 <div className="inline-block mt-3 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full">
-                  <span className="text-red-600 font-semibold text-base md:text-lg">⏰ Цена 9 500 ₽ при бронировании до 1 января</span>
+                  <span className="text-red-600 font-semibold text-base md:text-lg">⏰ при бронировании до 01 января 2026 г.</span>
                 </div>
               </div>
               
