@@ -309,11 +309,11 @@ export default function Index() {
               <div className="mb-6 md:mb-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
                 <div className="flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full border border-primary/50">
                   <Icon name="CalendarCheck" className="text-primary" size={24} />
-                  <span className="text-foreground font-semibold text-lg md:text-xl">Старт: 3 декабря 2025</span>
+                  <span className="text-foreground font-semibold text-lg md:text-xl">Старт: 19 января 2026</span>
                 </div>
                 <div className="flex items-center gap-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/50 animate-pulse">
                   <Icon name="Users" className="text-red-500" size={24} />
-                  <span className="text-foreground font-semibold text-lg md:text-xl">Всего 10 мест</span>
+                  <span className="text-foreground font-semibold text-lg md:text-xl">Всего 10 мест, осталось 4</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
