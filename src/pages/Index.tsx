@@ -353,14 +353,18 @@ export default function Index() {
                 <div className="flex items-start gap-4 mb-4">
                   <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
                   <div>
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">5 декабря (четверг)</h3>
+                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">17 декабря (вторник)</h3>
                     <div className="flex items-center gap-2 text-foreground text-lg mb-2">
                       <Icon name="Clock" size={20} className="text-primary" />
                       <span>19:00 - 21:00</span>
                     </div>
-                    <div className="flex items-start gap-2 text-foreground text-lg">
+                    <div className="flex items-start gap-2 text-foreground text-lg mb-2">
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
-                      <span>ул. Красная, 176, 2 этаж</span>
+                      <span>ул. Горького, 104, офис 26</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-foreground text-base text-foreground/70">
+                      <Icon name="Key" size={18} className="text-primary" />
+                      <span>Код двери: 26</span>
                     </div>
                   </div>
                 </div>
@@ -368,9 +372,9 @@ export default function Index() {
                   Познакомимся с методами перформанс-терапии, попробуем упражнения на раскрепощение и освоим базовые актёрские техники
                 </p>
                 <Button className="w-full text-lg py-6" asChild>
-                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%205%20декабря" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%2017%20декабря" target="_blank" rel="noopener noreferrer">
                     <Icon name="MessageCircle" className="mr-2" size={20} />
-                    Записаться на 5 декабря
+                    Записаться на 17 декабря
                   </a>
                 </Button>
               </CardContent>
@@ -385,14 +389,18 @@ export default function Index() {
                 <div className="flex items-start gap-4 mb-4">
                   <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
                   <div>
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">10 декабря (вторник)</h3>
+                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">22 декабря (воскресенье)</h3>
                     <div className="flex items-center gap-2 text-foreground text-lg mb-2">
                       <Icon name="Clock" size={20} className="text-primary" />
                       <span>19:00 - 21:00</span>
                     </div>
-                    <div className="flex items-start gap-2 text-foreground text-lg">
+                    <div className="flex items-start gap-2 text-foreground text-lg mb-2">
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
-                      <span>ул. Красная, 176, 2 этаж</span>
+                      <span>ул. Горького, 104, офис 26</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-foreground text-base text-foreground/70">
+                      <Icon name="Key" size={18} className="text-primary" />
+                      <span>Код двери: 26</span>
                     </div>
                   </div>
                 </div>
@@ -400,9 +408,9 @@ export default function Index() {
                   Исследуем эмоциональную выразительность через театральные этюды и узнаем, как творчество помогает решать личные задачи
                 </p>
                 <Button className="w-full text-lg py-6" asChild>
-                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%2010%20декабря" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%2022%20декабря" target="_blank" rel="noopener noreferrer">
                     <Icon name="MessageCircle" className="mr-2" size={20} />
-                    Записаться на 10 декабря
+                    Записаться на 22 декабря
                   </a>
                 </Button>
               </CardContent>
