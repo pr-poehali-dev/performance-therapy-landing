@@ -415,7 +415,7 @@ export default function Index() {
               <Icon name="CalendarCheck" className="text-primary" size={32} />
               <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Старт курса</h3>
             </div>
-            <p className="text-3xl md:text-4xl font-bold text-foreground">3 декабря 2025 года</p>
+            <p className="text-3xl md:text-4xl font-bold text-foreground">19 января 2026 года</p>
             <p className="text-lg md:text-xl text-foreground/80 mt-2">Не упустите возможность начать свою трансформацию!</p>
           </div>
 
