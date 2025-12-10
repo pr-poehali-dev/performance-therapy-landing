@@ -372,8 +372,8 @@ export default function Index() {
                   Познакомимся с методами перформанс-терапии, попробуем упражнения на раскрепощение и освоим базовые актёрские техники
                 </p>
                 <Button className="w-full text-lg py-6" asChild>
-                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%2017%20декабря" target="_blank" rel="noopener noreferrer">
-                    <Icon name="MessageCircle" className="mr-2" size={20} />
+                  <a href="#signup">
+                    <Icon name="Calendar" className="mr-2" size={20} />
                     Записаться на 17 декабря
                   </a>
                 </Button>
@@ -408,8 +408,8 @@ export default function Index() {
                   Исследуем эмоциональную выразительность через театральные этюды и узнаем, как творчество помогает решать личные задачи
                 </p>
                 <Button className="w-full text-lg py-6" asChild>
-                  <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%2022%20декабря" target="_blank" rel="noopener noreferrer">
-                    <Icon name="MessageCircle" className="mr-2" size={20} />
+                  <a href="#signup">
+                    <Icon name="Calendar" className="mr-2" size={20} />
                     Записаться на 22 декабря
                   </a>
                 </Button>
