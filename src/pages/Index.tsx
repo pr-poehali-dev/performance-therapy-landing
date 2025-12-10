@@ -1054,12 +1054,13 @@ export default function Index() {
           <Button 
             size="lg" 
             className="text-base md:text-xl lg:text-2xl px-6 md:px-10 lg:px-12 py-5 md:py-7 lg:py-9 hover:scale-105 transition-all duration-300 shadow-2xl shadow-primary/60 bg-gradient-to-r from-primary via-primary to-primary/80 animate-shimmer bg-[length:200%_100%]"
+            onClick={() => handleEventClick('пробное занятие')}
             asChild
           >
-            <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer">
-              <Icon name="MessageCircle" className="mr-2 md:mr-3" size={24} />
-              <span className="hidden sm:inline">Записаться на пробное в WhatsApp</span>
-              <span className="sm:hidden">Пробное в WhatsApp</span>
+            <a href="#signup">
+              <Icon name="Calendar" className="mr-2 md:mr-3" size={24} />
+              <span className="hidden sm:inline">Записаться на пробное занятие</span>
+              <span className="sm:hidden">Записаться</span>
             </a>
           </Button>
         </div>
