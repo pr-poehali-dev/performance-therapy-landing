@@ -103,4 +103,8 @@
     font-size: 22px;
     line-height: 1.8;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
