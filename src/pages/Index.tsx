@@ -220,8 +220,8 @@ export default function Index() {
             </a>
           </nav>
           <Button className="hidden md:inline-flex hover:scale-105 transition-transform duration-300 bg-primary text-primary-foreground shadow-lg shadow-primary/50" asChild>
-            <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer">
-              <Icon name="MessageCircle" className="mr-2" size={18} />
+            <a href="#signup">
+              <Icon name="Calendar" className="mr-2" size={18} />
               Пробное бесплатно
             </a>
           </Button>
