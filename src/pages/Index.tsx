@@ -18,6 +18,10 @@ export default function Index() {
     consent: false
   });
 
+  const handleEventClick = (date: string) => {
+    setFormData({ ...formData, message: `Хочу записаться на пробное занятие ${date}` });
+  };
+
   const [expandedReviews, setExpandedReviews] = useState<Record<number, boolean>>({});
   const [currentSlide, setCurrentSlide] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -371,7 +375,7 @@ export default function Index() {
                 <p className="text-foreground/90 leading-relaxed mb-4 text-base">
                   Познакомимся с методами перформанс-терапии, попробуем упражнения на раскрепощение и освоим базовые актёрские техники
                 </p>
-                <Button className="w-full text-lg py-6" asChild>
+                <Button className="w-full text-lg py-6" onClick={() => handleEventClick('17 декабря (среда)')} asChild>
                   <a href="#signup">
                     <Icon name="Calendar" className="mr-2" size={20} />
                     Записаться на 17 декабря
@@ -407,7 +411,7 @@ export default function Index() {
                 <p className="text-foreground/90 leading-relaxed mb-4 text-base">
                   Исследуем эмоциональную выразительность через театральные этюды и узнаем, как творчество помогает решать личные задачи
                 </p>
-                <Button className="w-full text-lg py-6" asChild>
+                <Button className="w-full text-lg py-6" onClick={() => handleEventClick('22 декабря (понедельник)')} asChild>
                   <a href="#signup">
                     <Icon name="Calendar" className="mr-2" size={20} />
                     Записаться на 22 декабря
