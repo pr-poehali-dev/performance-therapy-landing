@@ -542,10 +542,11 @@ export default function Index() {
             <Button 
               size="lg" 
               className="text-base md:text-xl lg:text-2xl px-6 md:px-10 lg:px-12 py-5 md:py-6 lg:py-8 hover:scale-105 transition-all duration-300 shadow-xl shadow-primary/50 bg-gradient-to-r from-primary to-primary/80"
+              onClick={() => handleEventClick('пробное занятие')}
               asChild
             >
-              <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer">
-                <Icon name="MessageCircle" className="mr-2" size={24} />
+              <a href="#signup">
+                <Icon name="Calendar" className="mr-2" size={24} />
                 <span className="hidden sm:inline">Записаться на пробное бесплатно</span>
                 <span className="sm:hidden">Пробное бесплатно</span>
               </a>
