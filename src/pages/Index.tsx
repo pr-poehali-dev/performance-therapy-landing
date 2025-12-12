@@ -927,7 +927,11 @@ export default function Index() {
           </Card>
 
           <div className="mt-8 text-center text-foreground">
-            <p className="text-lg md:text-xl font-medium">Итоговая стоимость курса: 28 500 ₽ за 3 месяца</p>
+            <p className="text-lg md:text-xl font-medium">
+              Итоговая стоимость курса: <span className="line-through text-muted-foreground mr-2">36 000 ₽</span> 
+              <span className="text-primary font-bold">28 500 ₽</span> за 3 месяца
+            </p>
+            <p className="text-base md:text-lg text-primary font-semibold mt-2">при бронировании до 25 декабря 2025 г.</p>
           </div>
         </div>
       </section>
