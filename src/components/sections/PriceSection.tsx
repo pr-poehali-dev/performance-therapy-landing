@@ -14,8 +14,12 @@ export default function PriceSection() {
               <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4 animate-pulse">
                 <span className="text-primary font-bold">Полный курс</span>
               </div>
+              <div className="mb-2">
+                <span className="text-3xl md:text-4xl font-heading font-bold text-muted-foreground line-through mr-4">36 000 ₽</span>
+              </div>
               <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">15 000 ₽</div>
               <p className="text-muted-foreground text-lg">за весь курс</p>
+              <p className="text-primary font-semibold mt-2">при бронировании до 25 декабря 2025 г.</p>
             </div>
             
             <div className="space-y-4 mb-8">
