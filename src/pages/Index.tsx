@@ -379,10 +379,11 @@ export default function Index() {
                 <p className="text-foreground/90 leading-relaxed mb-4 text-base">
                   Познакомимся с методами перформанс-терапии, попробуем упражнения на раскрепощение и освоим базовые актёрские техники
                 </p>
-                <Button className="w-full text-lg py-6" onClick={() => handleEventClick('17 декабря (среда)')} asChild>
+                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('17 декабря (среда)')} asChild>
                   <a href="#signup">
                     <Icon name="Calendar" className="mr-2" size={20} />
-                    Записаться на 17 декабря
+                    <span className="hidden sm:inline">Записаться на 17 декабря</span>
+                    <span className="sm:hidden">Записаться 17.12</span>
                   </a>
                 </Button>
               </CardContent>
@@ -415,10 +416,11 @@ export default function Index() {
                 <p className="text-foreground/90 leading-relaxed mb-4 text-base">
                   Исследуем эмоциональную выразительность через театральные этюды и узнаем, как творчество помогает решать личные задачи
                 </p>
-                <Button className="w-full text-lg py-6" onClick={() => handleEventClick('22 декабря (понедельник)')} asChild>
+                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('22 декабря (понедельник)')} asChild>
                   <a href="#signup">
                     <Icon name="Calendar" className="mr-2" size={20} />
-                    Записаться на 22 декабря
+                    <span className="hidden sm:inline">Записаться на 22 декабря</span>
+                    <span className="sm:hidden">Записаться 22.12</span>
                   </a>
                 </Button>
               </CardContent>
