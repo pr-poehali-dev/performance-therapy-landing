@@ -921,7 +921,7 @@ export default function Index() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="flex-1 text-xl md:text-2xl hover:scale-105 transition-transform duration-300 bg-gradient-to-r from-primary via-amber-500 to-primary" asChild>
-                  <a href="http://kuzikova.robo.market/buy/1676/" target="_blank" rel="noopener noreferrer">Забронировать</a>
+                  <a href="http://kuzikova.robo.market/buy/1676/" target="_blank" rel="noopener noreferrer">Оплатить бронь</a>
                 </Button>
                 <Button size="lg" variant="outline" className="flex-1 text-xl md:text-2xl hover:scale-105 transition-transform duration-300" asChild>
                   <a href="#signup">Подать заявку</a>
