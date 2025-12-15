@@ -25,6 +25,7 @@ export default function Index() {
   const [expandedReviews, setExpandedReviews] = useState<Record<number, boolean>>({});
   const [currentSlide, setCurrentSlide] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const theaterPhotos = [
     {
@@ -137,6 +138,7 @@ export default function Index() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     try {
       const response = await fetch('https://functions.poehali.dev/6898c753-5ace-4e4f-88f6-4c15b6ba9c76', {
@@ -172,6 +174,8 @@ export default function Index() {
         description: "Попробуйте позже или свяжитесь с нами по телефону.",
         variant: "destructive"
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -1010,8 +1014,15 @@ export default function Index() {
                   </label>
                 </div>
                 
-                <Button type="submit" size="lg" className="w-full text-xl md:text-2xl hover:scale-105 transition-transform duration-300" disabled={!formData.consent}>
-                  Отправить заявку
+                <Button type="submit" size="lg" className="w-full text-xl md:text-2xl hover:scale-105 transition-transform duration-300" disabled={!formData.consent || isSubmitting}>
+                  {isSubmitting ? (
+                    <span className="flex items-center gap-2">
+                      <Icon name="Loader2" className="animate-spin" size={20} />
+                      Отправка...
+                    </span>
+                  ) : (
+                    "Отправить заявку"
+                  )}
                 </Button>
               </form>
             </CardContent>
