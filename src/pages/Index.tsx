@@ -884,9 +884,9 @@ export default function Index() {
                 <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4 animate-pulse">
                   <span className="text-primary font-bold">Помесячная оплата</span>
                 </div>
-                <div className="flex items-center justify-center gap-4 mb-2">
-                  <span className="text-3xl md:text-4xl font-heading font-bold text-muted-foreground line-through opacity-60">12 000 ₽</span>
-                  <div className="text-5xl md:text-6xl font-heading font-bold text-primary">9 500 ₽</div>
+                <div className="flex items-center justify-center gap-2 sm:gap-4 mb-2 flex-wrap">
+                  <span className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-muted-foreground line-through opacity-60 whitespace-nowrap">12 000 ₽</span>
+                  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary whitespace-nowrap">9 500 ₽</div>
                 </div>
                 <p className="text-foreground text-xl md:text-2xl font-medium">в месяц</p>
                 <div className="inline-block mt-3 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full">
