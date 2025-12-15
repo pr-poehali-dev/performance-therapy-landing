@@ -1158,7 +1158,7 @@ export default function Index() {
       {/* Phone Floating Button */}
       <a
         href="tel:+79183111712"
-        className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-110 group"
+        className="fixed bottom-20 sm:bottom-6 right-6 z-50 bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-110 group"
         aria-label="Позвонить по телефону"
       >
         <Icon name="Phone" size={32} />
