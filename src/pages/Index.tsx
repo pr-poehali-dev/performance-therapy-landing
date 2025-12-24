@@ -326,7 +326,7 @@ export default function Index() {
                 </div>
                 <div className="flex items-center gap-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/50 animate-pulse">
                   <Icon name="Users" className="text-red-500" size={24} />
-                  <span className="text-foreground font-semibold text-base md:text-lg lg:text-xl whitespace-nowrap">Всего 10 мест, осталось 4</span>
+                  <span className="text-foreground font-semibold text-base md:text-lg lg:text-xl whitespace-nowrap">Всего 10 мест, осталось 1</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
