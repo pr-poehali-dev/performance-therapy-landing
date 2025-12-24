@@ -354,17 +354,14 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* Event 1 */}
             <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 text-sm font-bold rounded-bl-lg">
-                Осталось 3 места
-              </div>
-              <CardContent className="pt-8 pb-6">
+              <CardContent className="pt-6 pb-6">
                 <div className="flex items-start gap-4 mb-4">
                   <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
                   <div>
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">17 декабря (среда)</h3>
+                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">5 января (понедельник)</h3>
                     <div className="flex items-center gap-2 text-foreground text-lg mb-2">
                       <Icon name="Clock" size={20} className="text-primary" />
-                      <span>19:00 - 21:00</span>
+                      <span>13:00</span>
                     </div>
                     <div className="flex items-start gap-2 text-foreground text-lg mb-2">
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
@@ -379,11 +376,11 @@ export default function Index() {
                 <p className="text-foreground/90 leading-relaxed mb-4 text-base">
                   Познакомимся с методами перформанс-терапии, попробуем упражнения на раскрепощение и освоим базовые актёрские техники
                 </p>
-                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('17 декабря (среда)')} asChild>
+                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('5 января (понедельник)')} asChild>
                   <a href="#signup">
                     <Icon name="Calendar" className="mr-2" size={20} />
-                    <span className="hidden sm:inline">Записаться на 17 декабря</span>
-                    <span className="sm:hidden">Записаться 17.12</span>
+                    <span className="hidden sm:inline">Записаться на 5 января</span>
+                    <span className="sm:hidden">Записаться 05.01</span>
                   </a>
                 </Button>
               </CardContent>
@@ -391,17 +388,14 @@ export default function Index() {
 
             {/* Event 2 */}
             <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-amber-500 text-white px-4 py-1 text-sm font-bold rounded-bl-lg">
-                Осталось 5 мест
-              </div>
-              <CardContent className="pt-8 pb-6">
+              <CardContent className="pt-6 pb-6">
                 <div className="flex items-start gap-4 mb-4">
                   <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
                   <div>
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">22 декабря (понедельник)</h3>
+                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">8 января (четверг)</h3>
                     <div className="flex items-center gap-2 text-foreground text-lg mb-2">
                       <Icon name="Clock" size={20} className="text-primary" />
-                      <span>19:00 - 21:00</span>
+                      <span>13:00</span>
                     </div>
                     <div className="flex items-start gap-2 text-foreground text-lg mb-2">
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
@@ -416,11 +410,11 @@ export default function Index() {
                 <p className="text-foreground/90 leading-relaxed mb-4 text-base">
                   Исследуем эмоциональную выразительность через театральные этюды и узнаем, как творчество помогает решать личные задачи
                 </p>
-                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('22 декабря (понедельник)')} asChild>
+                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('8 января (четверг)')} asChild>
                   <a href="#signup">
                     <Icon name="Calendar" className="mr-2" size={20} />
-                    <span className="hidden sm:inline">Записаться на 22 декабря</span>
-                    <span className="sm:hidden">Записаться 22.12</span>
+                    <span className="hidden sm:inline">Записаться на 8 января</span>
+                    <span className="sm:hidden">Записаться 08.01</span>
                   </a>
                 </Button>
               </CardContent>
