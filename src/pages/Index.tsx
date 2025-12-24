@@ -153,6 +153,9 @@ export default function Index() {
         })
       });
       
+      const result = await response.json();
+      console.log('Response:', result);
+      
       if (response.ok) {
         toast({
           title: "Заявка отправлена!",
@@ -166,9 +169,11 @@ export default function Index() {
           consent: false
         });
       } else {
-        throw new Error('Failed to send');
+        console.error('Error response:', result);
+        throw new Error(result.error || 'Failed to send');
       }
     } catch (error) {
+      console.error('Submit error:', error);
       toast({
         title: "Ошибка отправки",
         description: "Попробуйте позже или свяжитесь с нами по телефону.",
