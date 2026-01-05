@@ -138,6 +138,16 @@ export default function Index() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!formData.consent) {
+      toast({
+        title: "Требуется согласие",
+        description: "Пожалуйста, подтвердите согласие на обработку персональных данных",
+        variant: "destructive"
+      });
+      return;
+    }
+    
     setIsSubmitting(true);
     
     try {
