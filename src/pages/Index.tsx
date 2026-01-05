@@ -356,43 +356,8 @@ export default function Index() {
             Приходите на бесплатное пробное занятие и почувствуйте атмосферу курса
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {/* Event 1 */}
-            <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden">
-              <CardContent className="pt-6 pb-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
-                  <div>
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">5 января (понедельник)</h3>
-                    <div className="flex items-center gap-2 text-foreground text-lg mb-2">
-                      <Icon name="Clock" size={20} className="text-primary" />
-                      <span>13:00</span>
-                    </div>
-                    <div className="flex items-start gap-2 text-foreground text-lg mb-2">
-                      <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
-                      <span>г. Краснодар, ул. Горького, 104, офис 26</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-foreground text-base text-foreground/70">
-                      <Icon name="Key" size={18} className="text-primary" />
-                      <span>Код двери: 26</span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-foreground/90 leading-relaxed mb-4 text-base">
-                  Познакомимся с методами перформанс-терапии, попробуем упражнения на раскрепощение и освоим базовые актёрские техники
-                </p>
-                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('5 января (понедельник)')} asChild>
-                  <a href="#signup">
-                    <Icon name="Calendar" className="mr-2" size={20} />
-                    <span className="hidden sm:inline">Записаться на 5 января</span>
-                    <span className="sm:hidden">Записаться 05.01</span>
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Event 2 */}
-            <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden">
+          <div className="flex justify-center mb-8">
+            <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden max-w-lg w-full">
               <CardContent className="pt-6 pb-6">
                 <div className="flex items-start gap-4 mb-4">
                   <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
@@ -400,7 +365,7 @@ export default function Index() {
                     <h3 className="text-2xl font-heading font-bold text-primary mb-2">8 января (четверг)</h3>
                     <div className="flex items-center gap-2 text-foreground text-lg mb-2">
                       <Icon name="Clock" size={20} className="text-primary" />
-                      <span>13:00</span>
+                      <span>15:00</span>
                     </div>
                     <div className="flex items-start gap-2 text-foreground text-lg mb-2">
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
