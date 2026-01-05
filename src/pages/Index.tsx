@@ -849,13 +849,9 @@ export default function Index() {
                   <span className="text-primary font-bold">Помесячная оплата</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 sm:gap-4 mb-2 flex-wrap">
-                  <span className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-muted-foreground line-through opacity-60 whitespace-nowrap">12 000 ₽</span>
-                  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary whitespace-nowrap">9 500 ₽</div>
+                  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary whitespace-nowrap">12 000 ₽</div>
                 </div>
                 <p className="text-foreground text-xl md:text-2xl font-medium">в месяц</p>
-                <div className="inline-block mt-3 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full">
-                  <span className="text-red-600 font-semibold text-base md:text-lg">⏰ при бронировании до 25 декабря 2025 г.</span>
-                </div>
               </div>
               
               <div className="space-y-4 mb-8">
@@ -898,10 +894,8 @@ export default function Index() {
 
           <div className="mt-8 text-center text-foreground">
             <p className="text-lg md:text-xl font-medium">
-              Итоговая стоимость курса: <span className="line-through text-muted-foreground mr-2">36 000 ₽</span> 
-              <span className="text-primary font-bold">28 500 ₽</span> за 3 месяца
+              Итоговая стоимость курса: <span className="text-primary font-bold">36 000 ₽</span> за 3 месяца
             </p>
-            <p className="text-base md:text-lg text-primary font-semibold mt-2">при бронировании до 25 декабря 2025 г.</p>
           </div>
         </div>
       </section>
