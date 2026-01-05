@@ -864,6 +864,10 @@ export default function Index() {
                   <p className="text-xl md:text-2xl">Занятия 2 раза в неделю по 2 часа</p>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
+                  <Icon name="Theater" className="text-primary mt-1 flex-shrink-0" size={24} />
+                  <p className="text-xl md:text-2xl">48 часов групповой терапии + выпускной спектакль</p>
+                </div>
+                <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                   <Icon name="CreditCard" className="text-primary mt-1 flex-shrink-0" size={24} />
                   <p className="text-xl md:text-2xl">Различные формы оплаты: онлайн, наличные, картой, QR-код</p>
                 </div>
