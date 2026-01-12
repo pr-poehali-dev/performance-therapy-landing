@@ -493,8 +493,8 @@ export default function ContentSections({
                 <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Users" className="text-primary" size={40} />
                 </div>
-                <div className="text-4xl font-bold text-primary mb-2">200+</div>
-                <p className="text-lg text-foreground">Выпускников</p>
+                <div className="text-4xl font-bold text-primary mb-2">6000+</div>
+                <p className="text-lg text-foreground">Учеников</p>
               </CardContent>
             </Card>
 
@@ -513,7 +513,7 @@ export default function ContentSections({
                 <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="TrendingUp" className="text-primary" size={40} />
                 </div>
-                <div className="text-4xl font-bold text-primary mb-2">15+</div>
+                <div className="text-4xl font-bold text-primary mb-2">30+</div>
                 <p className="text-lg text-foreground">Лет опыта</p>
               </CardContent>
             </Card>
