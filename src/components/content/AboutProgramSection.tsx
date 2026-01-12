@@ -229,10 +229,6 @@ export default function AboutProgramSection() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
-                  <span>3 индивидуальных сессии</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <span>3 индивидуальных занятия</span>
                 </li>
                 <li className="flex items-start gap-2">
