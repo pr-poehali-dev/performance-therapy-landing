@@ -50,6 +50,9 @@ export default function GraduatesSection({ expandedReviews, toggleReview }: Grad
     <section id="graduates" className="py-12 md:py-20 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 md:mb-12 animate-fade-in">Наши выпускники</h2>
+        <p className="text-xl md:text-2xl text-center text-foreground/90 mb-8 max-w-3xl mx-auto">
+          Более 6000 человек уже прошли курс и изменили свою жизнь
+        </p>
         
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
           {graduatePhotos.map((photoUrl, index) => (

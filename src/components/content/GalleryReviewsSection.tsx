@@ -226,7 +226,7 @@ export default function GalleryReviewsSection({
         <div className="container mx-auto max-w-6xl relative z-10">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 text-primary drop-shadow-lg">Отзывы выпускников</h2>
           <p className="text-xl md:text-2xl text-center text-foreground/90 mb-12 max-w-3xl mx-auto">
-            Истории трансформации от людей, которые прошли этот путь
+            Что говорят участники курса о своём опыте
           </p>
           
           <div className="grid md:grid-cols-2 gap-6">
