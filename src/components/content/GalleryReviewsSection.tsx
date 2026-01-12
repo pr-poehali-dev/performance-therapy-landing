@@ -172,11 +172,11 @@ export default function GalleryReviewsSection({
           </p>
           
           <div className="relative max-w-5xl mx-auto">
-            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl">
+            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl bg-black/5">
               <img 
                 src={theaterPhotos[currentSlide].url}
                 alt={theaterPhotos[currentSlide].alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
