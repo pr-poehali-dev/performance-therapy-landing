@@ -34,6 +34,9 @@ export default function HeroSection({ scrollToForm }: HeroSectionProps) {
                 <span className="text-foreground font-semibold text-base md:text-lg lg:text-xl whitespace-nowrap">Мест нет</span>
               </div>
             </div>
+            <p className="text-center text-foreground mb-6 text-lg md:text-xl font-semibold max-w-3xl mx-auto bg-primary/10 py-3 px-6 rounded-lg border border-primary/30">
+              Запись на следующий поток начнётся с июля 2026 года, старт нового курса в сентябре 2026 года
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
               <Button onClick={scrollToForm} size="lg" className="text-xl md:text-2xl px-8 md:px-10 py-4 sm:py-5 md:py-6 lg:py-7 hover:scale-105 transition-all duration-300 shadow-2xl shadow-primary/60 relative overflow-hidden group bg-gradient-to-r from-primary via-amber-500 to-primary">
                 <span className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/cf40df2a-7a30-46cf-b5c3-0f732913d5a8.jpg')] bg-contain bg-center bg-no-repeat opacity-20 group-hover:opacity-30 transition-opacity duration-300 mix-blend-overlay" />
@@ -45,9 +48,6 @@ export default function HeroSection({ scrollToForm }: HeroSectionProps) {
                 <a href="#about">Узнать подробнее</a>
               </Button>
             </div>
-            <p className="text-center text-foreground/70 text-base md:text-lg mt-4 max-w-2xl mx-auto">
-              Запись на следующий поток начнется с июля 2026г. Старт курса в сентябре
-            </p>
           </div>
         </div>
       </div>
