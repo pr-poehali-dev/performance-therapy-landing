@@ -160,6 +160,14 @@ export default function AboutProgramSection() {
                         <Icon name="Dot" size={20} className="text-primary flex-shrink-0 mt-1" />
                         <span className="text-base text-foreground">Импровизация и спонтанность</span>
                       </li>
+                      <li className="flex items-start gap-2">
+                        <Icon name="Dot" size={20} className="text-primary flex-shrink-0 mt-1" />
+                        <span className="text-base text-foreground">Вокалотерапия</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Icon name="Dot" size={20} className="text-primary flex-shrink-0 mt-1" />
+                        <span className="text-base text-foreground">Танцевально-двигательная терапия</span>
+                      </li>
                     </ul>
                     <div className="flex items-center gap-2 text-foreground/80">
                       <Icon name="Clock" size={20} className="text-primary" />
