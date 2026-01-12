@@ -6,7 +6,7 @@ from typing import Dict, Any
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     '''
-    Обработка заявок с формы сайта и отправка уведомлений в Telegram
+    Обработка заявок с формы сайта и отправка уведомлений в Telegram.
     '''
     method: str = event.get('httpMethod', 'GET')
     
