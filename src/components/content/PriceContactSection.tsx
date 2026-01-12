@@ -40,7 +40,7 @@ export default function PriceContactSection({
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-primary/5 to-transparent animate-shimmer bg-[length:200%_100%]" />
         
         <div className="container mx-auto max-w-5xl relative z-10">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 text-primary drop-shadow-lg">Стоимость обучения</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 text-primary drop-shadow-lg">Стоимость курса</h2>
           <p className="text-xl md:text-2xl text-center text-foreground/90 mb-12 max-w-3xl mx-auto">
             Инвестиция в себя, которая окупится многократно
           </p>
