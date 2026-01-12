@@ -388,7 +388,7 @@ export default function ContentSections({
       <section id="teacher" className="py-12 md:py-16 px-4 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 relative overflow-hidden">
         <div className="absolute inset-0 bg-velvet-texture bg-[length:40px_40px] opacity-10" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-12 text-primary drop-shadow-lg">Ваш наставник</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-12 text-primary drop-shadow-lg">Ваш педагог</h2>
           
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div className="order-2 md:order-1">
@@ -402,9 +402,13 @@ export default function ContentSections({
                   <div className="flex items-start gap-3">
                     <Icon name="GraduationCap" className="text-primary flex-shrink-0 mt-1" size={24} />
                     <div>
-                      <p className="font-semibold text-primary">Образование:</p>
-                      <p>Московский институт психоанализа, факультет психологии</p>
-                      <p className="mt-1">ГИТИС им. Луначарского, режиссёрский факультет</p>
+                      <p className="font-semibold text-primary">Образование и сертификация:</p>
+                      <p>Высшее психологическое образование</p>
+                      <p className="mt-1">Высшее театрально-режиссерское образование</p>
+                      <p className="mt-1">Сертификация по гештальтерапии МГИ</p>
+                      <p className="mt-1">Сертификация по арт-терапии и обучение в Германии (Фрайбург)</p>
+                      <p className="mt-1">Член Российской арт-терапевтической ассоциации</p>
+                      <p className="mt-1">Повышение квалификации по режиссуре, сценической речи и актерскому мастерству в ГИТИС и на курсе И.Я. Стависского</p>
                     </div>
                   </div>
                   
@@ -412,8 +416,9 @@ export default function ContentSections({
                     <Icon name="Award" className="text-primary flex-shrink-0 mt-1" size={24} />
                     <div>
                       <p className="font-semibold text-primary">Опыт работы:</p>
-                      <p>Более 15 лет в театральной режиссуре</p>
-                      <p className="mt-1">10+ лет практики как психолог-консультант</p>
+                      <p>Более 30 лет общего опыта</p>
+                      <p className="mt-1">17 лет психологической практики</p>
+                      <p className="mt-1">8 лет назад создала свой театр "Комильфо"</p>
                       <p className="mt-1">Автор уникальной методики перформанс-терапии</p>
                     </div>
                   </div>
@@ -422,9 +427,9 @@ export default function ContentSections({
                     <Icon name="Users" className="text-primary flex-shrink-0 mt-1" size={24} />
                     <div>
                       <p className="font-semibold text-primary">Достижения:</p>
-                      <p>Более 200 выпускников школы</p>
+                      <p>Более 6000 учеников</p>
                       <p className="mt-1">20+ поставленных спектаклей</p>
-                      <p className="mt-1">Индивидуальный подход к каждому ученику</p>
+                      <p className="mt-1">Победитель грантового конкурса Президентского Фонда культурных инициатив в 2026 году</p>
                     </div>
                   </div>
                 </div>
@@ -435,7 +440,7 @@ export default function ContentSections({
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary to-amber-500 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity blur-xl" />
                 <img 
-                  src="https://cdn.poehali.dev/files/1b38d1a0-c2a5-4b6d-8f85-6aff6084c62e.JPG" 
+                  src="https://cdn.poehali.dev/files/photo_2026-01-05_11-22-56.jpg" 
                   alt="Светлана Кузикова" 
                   className="relative w-full rounded-2xl shadow-2xl border-4 border-primary/30 group-hover:scale-[1.02] transition-transform duration-300"
                 />
