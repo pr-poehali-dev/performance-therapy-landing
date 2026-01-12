@@ -468,7 +468,7 @@ export default function ContentSections({
         <div className="container mx-auto max-w-7xl relative z-10">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 text-primary drop-shadow-lg">Наши выпускники</h2>
           <p className="text-xl md:text-2xl text-center text-foreground/90 mb-12 max-w-3xl mx-auto">
-            Более 200 человек прошли путь трансформации через перформанс-терапию
+            Более 6000 учеников прошли путь трансформации через курсы школы
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
