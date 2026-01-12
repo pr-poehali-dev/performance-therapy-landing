@@ -703,7 +703,7 @@ export default function ContentSections({
                   <h3 className="text-2xl font-bold text-primary">Специальное предложение</h3>
                 </div>
                 <p className="text-lg text-foreground mb-2">
-                  Первое пробное занятие — <span className="font-bold text-primary">БЕСПЛАТНО!</span>
+                  Пробное занятие — <span className="font-bold text-primary">БЕСПЛАТНО!</span>
                 </p>
                 <p className="text-base text-foreground/80">
                   Познакомьтесь с методикой, преподавателем и атмосферой курса без обязательств
@@ -719,7 +719,7 @@ export default function ContentSections({
                 >
                   <a href="#signup">
                     <Icon name="Calendar" className="mr-2" size={24} />
-                    Записаться на бесплатное занятие
+                    Подать заявку
                   </a>
                 </Button>
               </div>
