@@ -41,7 +41,7 @@ export default function GalleryReviewsSection({
                 
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <Icon name="GraduationCap" className="text-primary flex-shrink-0 mt-1" size={24} />
+                    <Icon name="GraduationCap" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                     <div>
                       <p className="font-semibold text-primary">Образование и сертификация:</p>
                       <p>Высшее психологическое образование</p>
@@ -54,7 +54,7 @@ export default function GalleryReviewsSection({
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Icon name="Award" className="text-primary flex-shrink-0 mt-1" size={24} />
+                    <Icon name="Award" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                     <div>
                       <p className="font-semibold text-primary">Опыт работы:</p>
                       <p>Более 30 лет общего опыта</p>
@@ -65,7 +65,7 @@ export default function GalleryReviewsSection({
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Icon name="Users" className="text-primary flex-shrink-0 mt-1" size={24} />
+                    <Icon name="Users" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                     <div>
                       <p className="font-semibold text-primary">Достижения:</p>
                       <p>Более 6000 учеников</p>
@@ -92,7 +92,7 @@ export default function GalleryReviewsSection({
           <Card className="bg-gradient-to-r from-primary/10 via-amber-500/10 to-primary/10 border-2 border-primary/40 backdrop-blur-sm">
             <CardContent className="pt-8 pb-8">
               <div className="text-center max-w-4xl mx-auto">
-                <Icon name="Quote" className="text-primary mx-auto mb-4" size={40} />
+                <Icon name="Quote" className="text-primary mx-auto mb-4 w-8 h-8 md:w-10 md:h-10" />
                 <blockquote className="text-xl md:text-2xl text-foreground leading-relaxed italic mb-4">
                   "Театр — это волшебное пространство, где каждый может стать героем своей истории. Моя задача — помочь вам раскрыть те грани личности, которые откроют новые возможности в жизни"
                 </blockquote>
@@ -131,8 +131,8 @@ export default function GalleryReviewsSection({
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="border-2 border-primary/30 bg-card/95 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="pt-8 pb-8 text-center">
-                <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Users" className="text-primary" size={40} />
+                <div className="bg-primary/10 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Users" className="text-primary w-8 h-8 md:w-10 md:h-10" />
                 </div>
                 <div className="text-4xl font-bold text-primary mb-2">6000+</div>
                 <p className="text-lg text-foreground">Учеников</p>
@@ -141,8 +141,8 @@ export default function GalleryReviewsSection({
 
             <Card className="border-2 border-primary/30 bg-card/95 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="pt-8 pb-8 text-center">
-                <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Star" className="text-primary" size={40} />
+                <div className="bg-primary/10 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Star" className="text-primary w-8 h-8 md:w-10 md:h-10" />
                 </div>
                 <div className="text-4xl font-bold text-primary mb-2">20+</div>
                 <p className="text-lg text-foreground">Спектаклей</p>
@@ -151,8 +151,8 @@ export default function GalleryReviewsSection({
 
             <Card className="border-2 border-primary/30 bg-card/95 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="pt-8 pb-8 text-center">
-                <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="TrendingUp" className="text-primary" size={40} />
+                <div className="bg-primary/10 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="TrendingUp" className="text-primary w-8 h-8 md:w-10 md:h-10" />
                 </div>
                 <div className="text-4xl font-bold text-primary mb-2">30+</div>
                 <p className="text-lg text-foreground">Лет опыта</p>
@@ -192,7 +192,7 @@ export default function GalleryReviewsSection({
               variant="outline"
               className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white border-2 border-primary/30 hover:border-primary w-12 h-12 rounded-full shadow-xl"
             >
-              <Icon name="ChevronLeft" size={24} />
+              <Icon name="ChevronLeft" className="w-5 h-5 md:w-6 md:h-6" />
             </Button>
 
             <Button
@@ -201,7 +201,7 @@ export default function GalleryReviewsSection({
               variant="outline"
               className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white border-2 border-primary/30 hover:border-primary w-12 h-12 rounded-full shadow-xl"
             >
-              <Icon name="ChevronRight" size={24} />
+              <Icon name="ChevronRight" className="w-5 h-5 md:w-6 md:h-6" />
             </Button>
 
             <div className="flex justify-center gap-2 mt-6">
@@ -235,7 +235,7 @@ export default function GalleryReviewsSection({
                 <CardContent className="pt-6 pb-6">
                   <div className="flex items-center gap-2 mb-4">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Icon key={i} name="Star" className="text-amber-500 fill-amber-500" size={20} />
+                      <Icon key={i} name="Star" className="text-amber-500 fill-amber-500 w-4 h-4 md:w-5 md:h-5" />
                     ))}
                   </div>
                   <h4 className="text-xl font-bold mb-3 text-primary">{review.name}</h4>

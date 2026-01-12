@@ -23,7 +23,7 @@ export default function AboutProgramSection() {
             <Card className="border-2 border-primary/30 hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 bg-card/80 backdrop-blur-sm hover:scale-105">
               <CardContent className="pt-6 pb-6">
                 <div className="flex items-start gap-4 mb-4">
-                  <Icon name="Heart" className="text-primary flex-shrink-0 mt-1" size={32} />
+                  <Icon name="Heart" className="text-primary flex-shrink-0 mt-1 w-6 h-6 md:w-8 md:h-8" />
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Для кого этот курс?</h3>
                 </div>
                 <p className="text-foreground leading-relaxed text-lg">
@@ -35,7 +35,7 @@ export default function AboutProgramSection() {
             <Card className="border-2 border-primary/20 hover:shadow-xl transition-all duration-300">
               <CardContent className="pt-6 pb-6">
                 <div className="flex items-start gap-4 mb-4">
-                  <Icon name="Target" className="text-primary flex-shrink-0 mt-1" size={32} />
+                  <Icon name="Target" className="text-primary flex-shrink-0 mt-1 w-6 h-6 md:w-8 md:h-8" />
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Главная цель</h3>
                 </div>
                 <p className="text-foreground leading-relaxed text-lg">
@@ -50,7 +50,7 @@ export default function AboutProgramSection() {
               <h3 className="text-2xl md:text-3xl font-heading font-bold mb-6 text-center text-primary">Как проходит работа</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="space-y-3">
-                  <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="bg-primary text-primary-foreground w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
                     1
                   </div>
                   <h4 className="font-sans font-bold text-xl tracking-wide">Поиск идеальной роли</h4>
@@ -60,7 +60,7 @@ export default function AboutProgramSection() {
                 </div>
 
                 <div className="space-y-3">
-                  <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="bg-primary text-primary-foreground w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
                     2
                   </div>
                   <h4 className="font-sans font-bold text-xl tracking-wide">Создание персонажа</h4>
@@ -70,7 +70,7 @@ export default function AboutProgramSection() {
                 </div>
 
                 <div className="space-y-3">
-                  <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="bg-primary text-primary-foreground w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
                     3
                   </div>
                   <h4 className="font-sans font-bold text-xl tracking-wide">Трансформация через игру</h4>
@@ -84,7 +84,7 @@ export default function AboutProgramSection() {
           
           <div className="mb-8 p-6 md:p-8 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/40 rounded-2xl text-center animate-pulse-slow">
             <div className="flex items-center justify-center gap-3 mb-2">
-              <Icon name="CalendarCheck" className="text-primary" size={32} />
+              <Icon name="CalendarCheck" className="text-primary w-6 h-6 md:w-8 md:h-8" />
               <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Старт курса</h3>
             </div>
             <p className="text-3xl md:text-4xl font-bold text-foreground">19 января 2026 года</p>
@@ -93,17 +93,17 @@ export default function AboutProgramSection() {
 
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary">
-              <Icon name="Users" className="text-primary mb-4" size={56} />
+              <Icon name="Users" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Групповой формат</h4>
               <p className="text-lg md:text-xl text-foreground font-medium">Работа в группе до 10 человек</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.1s' }}>
-              <Icon name="Clock" className="text-primary mb-4" size={56} />
+              <Icon name="Clock" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Регулярные занятия</h4>
               <p className="text-lg md:text-xl text-foreground font-medium">2 раза в неделю по 2 часа</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.2s' }}>
-              <Icon name="Calendar" className="text-primary mb-4" size={56} />
+              <Icon name="Calendar" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
               <p className="text-lg md:text-xl text-foreground font-medium">3 месяца (24 занятия)</p>
             </div>
@@ -124,7 +124,7 @@ export default function AboutProgramSection() {
             <Card className="border-2 border-primary/30 hover:shadow-xl transition-all duration-300 bg-card/95 backdrop-blur-sm hover:scale-[1.02]">
               <CardContent className="pt-8 pb-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-2xl flex-shrink-0">
+                  <div className="bg-primary text-primary-foreground w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center font-bold text-xl md:text-2xl flex-shrink-0">
                     1
                   </div>
                   <div>
@@ -144,7 +144,7 @@ export default function AboutProgramSection() {
             <Card className="border-2 border-primary/30 hover:shadow-xl transition-all duration-300 bg-card/95 backdrop-blur-sm hover:scale-[1.02]">
               <CardContent className="pt-8 pb-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-2xl flex-shrink-0">
+                  <div className="bg-primary text-primary-foreground w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center font-bold text-xl md:text-2xl flex-shrink-0">
                     2
                   </div>
                   <div>
@@ -182,7 +182,7 @@ export default function AboutProgramSection() {
             <Card className="border-2 border-primary/30 hover:shadow-xl transition-all duration-300 bg-card/95 backdrop-blur-sm hover:scale-[1.02]">
               <CardContent className="pt-8 pb-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-2xl flex-shrink-0">
+                  <div className="bg-primary text-primary-foreground w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center font-bold text-xl md:text-2xl flex-shrink-0">
                     3
                   </div>
                   <div>
@@ -202,7 +202,7 @@ export default function AboutProgramSection() {
             <Card className="border-2 border-primary/30 hover:shadow-xl transition-all duration-300 bg-card/95 backdrop-blur-sm hover:scale-[1.02]">
               <CardContent className="pt-8 pb-8">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-2xl flex-shrink-0">
+                  <div className="bg-primary text-primary-foreground w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center font-bold text-xl md:text-2xl flex-shrink-0">
                     4
                   </div>
                   <div>

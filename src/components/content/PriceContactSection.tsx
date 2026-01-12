@@ -60,7 +60,7 @@ export default function PriceContactSection({
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
+                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <div>
                     <p className="font-semibold text-foreground">48 часов групповой терапии</p>
                     <p className="text-sm text-foreground/70">24 занятия по 2 часа в группе</p>
@@ -68,7 +68,7 @@ export default function PriceContactSection({
                 </div>
 
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
+                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <div>
                     <p className="font-semibold text-foreground">3 индивидуальных сессии</p>
                     <p className="text-sm text-foreground/70">Персональная работа с педагогом</p>
@@ -76,7 +76,7 @@ export default function PriceContactSection({
                 </div>
 
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
+                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <div>
                     <p className="font-semibold text-foreground">Выпускной показ</p>
                     <p className="text-sm text-foreground/70">Выступление перед реальными зрителями</p>
@@ -84,7 +84,7 @@ export default function PriceContactSection({
                 </div>
 
                 <div className="flex items-start gap-3 p-4 bg-amber-500/10 rounded-lg border-2 border-amber-500/30">
-                  <Icon name="UserCheck" className="text-amber-500 flex-shrink-0 mt-1" size={24} />
+                  <Icon name="UserCheck" className="text-amber-500 flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <div>
                     <p className="font-semibold text-foreground">Предварительное собеседование</p>
                     <p className="text-sm text-foreground/70">Обязательно для каждого участника до зачисления на курс</p>
@@ -103,7 +103,7 @@ export default function PriceContactSection({
 
               <div className="p-6 bg-gradient-to-r from-amber-500/20 to-primary/20 border-2 border-amber-500/40 rounded-xl mb-8">
                 <div className="flex items-center gap-3 mb-3">
-                  <Icon name="Gift" className="text-amber-500" size={32} />
+                  <Icon name="Gift" className="text-amber-500 w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                   <h3 className="text-2xl font-bold text-primary">Специальное предложение</h3>
                 </div>
                 <p className="text-lg text-foreground mb-2">
@@ -122,7 +122,7 @@ export default function PriceContactSection({
                   asChild
                 >
                   <a href="#signup">
-                    <Icon name="Calendar" className="mr-2" size={24} />
+                    <Icon name="Calendar" className="mr-2 w-5 h-5 md:w-6 md:h-6" />
                     Подать заявку
                   </a>
                 </Button>
@@ -160,7 +160,7 @@ export default function PriceContactSection({
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="text-lg p-6 border-2 border-primary/30 focus:border-primary"
+                    className="text-lg p-4 md:p-5 lg:p-6 border-2 border-primary/30 focus:border-primary"
                     placeholder="Как к вам обращаться?"
                   />
                 </div>
@@ -175,7 +175,7 @@ export default function PriceContactSection({
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     required
-                    className="text-lg p-6 border-2 border-primary/30 focus:border-primary"
+                    className="text-lg p-4 md:p-5 lg:p-6 border-2 border-primary/30 focus:border-primary"
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
@@ -218,12 +218,12 @@ export default function PriceContactSection({
                 >
                   {isSubmitting ? (
                     <>
-                      <Icon name="Loader2" className="mr-2 animate-spin" size={24} />
+                      <Icon name="Loader2" className="mr-2 animate-spin w-5 h-5 md:w-6 md:h-6" />
                       Отправка...
                     </>
                   ) : (
                     <>
-                      <Icon name="Send" className="mr-2" size={24} />
+                      <Icon name="Send" className="mr-2 w-5 h-5 md:w-6 md:h-6" />
                       Отправить заявку
                     </>
                   )}
@@ -241,7 +241,7 @@ export default function PriceContactSection({
                 href="tel:+79183111712" 
                 className="flex items-center gap-2 text-primary hover:text-primary/80 text-lg font-medium"
               >
-                <Icon name="Phone" size={24} />
+                <Icon name="Phone" className="w-5 h-5 md:w-6 md:h-6" />
                 +7 918 311 17 12
               </a>
               <a 
@@ -250,7 +250,7 @@ export default function PriceContactSection({
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary hover:text-primary/80 text-lg font-medium"
               >
-                <Icon name="MessageCircle" size={24} />
+                <Icon name="MessageCircle" className="w-5 h-5 md:w-6 md:h-6" />
                 WhatsApp
               </a>
             </div>

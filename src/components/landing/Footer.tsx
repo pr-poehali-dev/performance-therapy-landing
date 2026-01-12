@@ -17,7 +17,7 @@ export default function Footer() {
               <h4 className="font-heading font-semibold text-xl md:text-2xl mb-3">Контакты</h4>
               <div className="space-y-2 text-lg md:text-xl">
                 <div className="flex items-center gap-2 text-foreground">
-                  <Icon name="Phone" size={16} />
+                  <Icon name="Phone" className="w-4 h-4 md:w-5 md:h-5" />
                   <a href="tel:+79183111712" className="hover:text-primary transition-colors">+7 918 311 17 12</a>
                 </div>
                 <div className="flex items-center gap-2 text-foreground">
@@ -80,7 +80,7 @@ export default function Footer() {
         className="fixed bottom-20 sm:bottom-6 right-6 z-50 bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-110 group"
         aria-label="Позвонить по телефону"
       >
-        <Icon name="Phone" size={32} />
+        <Icon name="Phone" className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
       </a>
     </>
   );
