@@ -644,53 +644,57 @@ export default function ContentSections({
           <Card className="border-4 border-primary/40 bg-card/95 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-300 max-w-2xl mx-auto">
             <CardContent className="pt-10 pb-10">
               <div className="text-center mb-8">
-                <div className="inline-block px-4 py-2 bg-primary/20 border-2 border-primary rounded-full mb-4">
-                  <span className="text-lg font-bold text-primary">Полный курс перформанс-терапии</span>
+                <div className="inline-block px-4 py-2 bg-red-500/20 border-2 border-red-500 rounded-full mb-4">
+                  <span className="text-lg font-bold text-red-500">При раннем бронировании</span>
                 </div>
-                <div className="text-6xl md:text-7xl font-bold text-primary mb-2">30 000₽</div>
-                <p className="text-xl text-foreground/80">за весь курс (3 месяца)</p>
+                <div className="mb-4">
+                  <div className="text-6xl md:text-7xl font-bold text-primary mb-2">12 000₽</div>
+                  <div className="text-3xl text-foreground/50 line-through mb-2">16 000₽</div>
+                  <p className="text-xl text-foreground/80">в месяц</p>
+                </div>
               </div>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <p className="font-semibold text-foreground">24 занятия по 2 часа</p>
-                    <p className="text-sm text-foreground/70">48 часов практической работы</p>
+                    <p className="font-semibold text-foreground">48 часов групповой терапии</p>
+                    <p className="text-sm text-foreground/70">24 занятия по 2 часа в группе</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <p className="font-semibold text-foreground">Индивидуальная роль</p>
-                    <p className="text-sm text-foreground/70">Созданная специально под вас</p>
+                    <p className="font-semibold text-foreground">3 индивидуальных сессии</p>
+                    <p className="text-sm text-foreground/70">Персональная работа с педагогом</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <p className="font-semibold text-foreground">Психологическая поддержка</p>
-                    <p className="text-sm text-foreground/70">На протяжении всего курса</p>
+                    <p className="font-semibold text-foreground">Выпускной показ</p>
+                    <p className="text-sm text-foreground/70">Выступление перед реальными зрителями</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
+                <div className="flex items-start gap-3 p-4 bg-amber-500/10 rounded-lg border-2 border-amber-500/30">
+                  <Icon name="UserCheck" className="text-amber-500 flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <p className="font-semibold text-foreground">Выступление на сцене</p>
-                    <p className="text-sm text-foreground/70">Итоговый показ спектакля</p>
+                    <p className="font-semibold text-foreground">Предварительное собеседование</p>
+                    <p className="text-sm text-foreground/70">Обязательно для каждого участника до зачисления на курс</p>
                   </div>
                 </div>
+              </div>
 
-                <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <p className="font-semibold text-foreground">Все материалы включены</p>
-                    <p className="text-sm text-foreground/70">Реквизит, костюмы, пьеса</p>
-                  </div>
+              <div className="text-center mb-8 p-6 bg-gradient-to-r from-primary/20 to-amber-500/20 border-2 border-primary/40 rounded-xl">
+                <p className="text-lg text-foreground/80 mb-2">Полная стоимость курса (3 месяца):</p>
+                <div className="flex items-center justify-center gap-4">
+                  <div className="text-5xl font-bold text-primary">36 000₽</div>
+                  <div className="text-3xl text-foreground/50 line-through">48 000₽</div>
                 </div>
+                <p className="text-base text-foreground/70 mt-2">при раннем бронировании</p>
               </div>
 
               <div className="p-6 bg-gradient-to-r from-amber-500/20 to-primary/20 border-2 border-amber-500/40 rounded-xl mb-8">
