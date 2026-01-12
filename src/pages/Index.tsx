@@ -557,15 +557,23 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-primary/20 via-amber-500/20 to-primary/20 border-4 border-primary/50 rounded-3xl p-8 md:p-12 text-center shadow-2xl shadow-primary/40 animate-pulse-slow">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Icon name="Trophy" className="text-primary" size={48} />
-              <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary">Лучшая альтернатива индивидуальным сессиям</h3>
+          <div className="bg-gradient-to-r from-primary/20 via-amber-500/20 to-primary/20 border-3 border-primary/50 rounded-3xl p-8 md:p-12 text-center shadow-2xl shadow-primary/40 relative overflow-hidden">
+            <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
+            <div className="relative z-10">
+              <div className="flex justify-center mb-6">
+                <div className="flex items-center gap-3 bg-primary/30 px-6 py-3 rounded-full border-2 border-primary">
+                  <Icon name="Sparkles" className="text-primary" size={32} />
+                  <span className="text-2xl md:text-3xl font-heading font-bold text-primary">Лучшая альтернатива индивидуальным сессиям</span>
+                </div>
+              </div>
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto mb-6">
+                Если вы хотите стать увереннее в себе и раскрыть свой творческий потенциал — этот курс для вас
+              </p>
+              <p className="text-lg md:text-xl text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                В отличие от классической терапии, здесь вы не просто говорите о проблемах — вы <span className="font-bold text-primary">проживаете</span> их через творчество, 
+                получаете поддержку группы и <span className="font-bold text-primary">применяете навыки</span> для жизни и карьеры
+              </p>
             </div>
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-3xl mx-auto">
-              Групповой формат даёт в 5 раз больше пользы, чем индивидуальные сессии — 
-              вы работаете с собой через игру, получаете поддержку от группы и видите свои изменения в режиме реального времени
-            </p>
           </div>
         </div>
       </section>
