@@ -125,7 +125,7 @@ export default function AboutProgramSection() {
                     </p>
                     <div className="flex items-center gap-2 text-foreground/80">
                       <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">4-6 занятий</span>
+                      <span className="text-base">2 занятия</span>
                     </div>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export default function AboutProgramSection() {
                     </ul>
                     <div className="flex items-center gap-2 text-foreground/80">
                       <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">6-8 занятий</span>
+                      <span className="text-base">8 занятий</span>
                     </div>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export default function AboutProgramSection() {
                     </p>
                     <div className="flex items-center gap-2 text-foreground/80">
                       <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">8-10 занятий</span>
+                      <span className="text-base">10 занятий</span>
                     </div>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function AboutProgramSection() {
                     </p>
                     <div className="flex items-center gap-2 text-foreground/80">
                       <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">4-6 занятий</span>
+                      <span className="text-base">4 групповых занятия + 3 индивидуальных</span>
                     </div>
                   </div>
                 </div>
