@@ -1,8 +1,15 @@
+# Robots.txt для перформанс-терапии
+# Основные поисковики
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 0
 
 User-agent: Twitterbot
 Allow: /
@@ -10,10 +17,27 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: Yandex
+User-agent: Mail.RU_Bot
 Allow: /
 
+# Все остальные боты
 User-agent: *
 Allow: /
 
+# Запретить индексацию служебных файлов
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json$
+
+# Запретить ботам-парсерам
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap
 Sitemap: https://performance-therapy-landing--preview.poehali.dev/sitemap.xml
