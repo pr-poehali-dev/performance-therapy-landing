@@ -358,64 +358,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Schedule Section */}
-      <section id="schedule" className="py-10 md:py-14 px-4 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 animate-fade-in text-primary drop-shadow-lg">
-            📅 Расписание пробных мероприятий в Краснодаре
-          </h2>
-          <p className="text-center text-foreground/80 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
-            Приходите на бесплатное пробное занятие и почувствуйте атмосферу курса
-          </p>
-
-          <div className="flex justify-center mb-8">
-            <Card className="border-2 border-primary/40 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 bg-card/90 backdrop-blur-sm hover:scale-105 relative overflow-hidden max-w-lg w-full">
-              <CardContent className="pt-6 pb-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <Icon name="Calendar" className="text-primary flex-shrink-0 mt-1" size={32} />
-                  <div>
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-2">8 января (четверг)</h3>
-                    <div className="flex items-center gap-2 text-foreground text-lg mb-2">
-                      <Icon name="Clock" size={20} className="text-primary" />
-                      <span>15:00</span>
-                    </div>
-                    <div className="flex items-start gap-2 text-foreground text-lg mb-2">
-                      <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-1" />
-                      <span>г. Краснодар, ул. Горького, 104, офис 26</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-foreground text-base text-foreground/70">
-                      <Icon name="Key" size={18} className="text-primary" />
-                      <span>Код двери: 26</span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-foreground/90 leading-relaxed mb-4 text-base">
-                  Исследуем эмоциональную выразительность через театральные этюды и узнаем, как творчество помогает решать личные задачи
-                </p>
-                <Button className="w-full text-base sm:text-lg py-6" onClick={() => handleEventClick('8 января (четверг)')} asChild>
-                  <a href="#signup">
-                    <Icon name="Calendar" className="mr-2" size={20} />
-                    <span className="hidden sm:inline">Записаться на 8 января</span>
-                    <span className="sm:hidden">Записаться 08.01</span>
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-6 md:p-8 text-center">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4">
-              <Icon name="Gift" className="text-primary" size={40} />
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Пробное занятие — бесплатно!</h3>
-            </div>
-            <p className="text-foreground text-lg md:text-xl max-w-2xl mx-auto">
-              После пробного занятия вы поймёте, подходит ли вам этот курс, и сможете принять взвешенное решение о записи на полную программу
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <section id="about" className="py-10 md:py-14 px-4 bg-secondary/50 border-y-2 border-primary/30 relative">
         <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
