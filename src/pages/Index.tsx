@@ -334,22 +334,25 @@ export default function Index() {
                   <Icon name="CalendarCheck" className="text-primary" size={24} />
                   <span className="text-foreground font-semibold text-lg md:text-xl">Старт: 19 января 2026</span>
                 </div>
-                <div className="flex items-center gap-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/50 animate-pulse">
+                <div className="flex items-center gap-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/50">
                   <Icon name="Users" className="text-red-500" size={24} />
-                  <span className="text-foreground font-semibold text-base md:text-lg lg:text-xl whitespace-nowrap">Всего 10 мест, осталось 1</span>
+                  <span className="text-foreground font-semibold text-base md:text-lg lg:text-xl whitespace-nowrap">Мест нет</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
                 <Button onClick={scrollToForm} size="lg" className="text-xl md:text-2xl px-8 md:px-10 py-6 md:py-7 hover:scale-105 transition-all duration-300 shadow-2xl shadow-primary/60 relative overflow-hidden group bg-gradient-to-r from-primary via-amber-500 to-primary">
                   <span className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/b56a6071-ba85-42b9-8a98-12ef82c3c2c9/files/cf40df2a-7a30-46cf-b5c3-0f732913d5a8.jpg')] bg-contain bg-center bg-no-repeat opacity-20 group-hover:opacity-30 transition-opacity duration-300 mix-blend-overlay" />
                   <span className="relative z-10 flex items-center gap-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                    <span className="text-3xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">🎭</span> Записаться на курс
+                    <span className="text-3xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">🎭</span> Подать заявку
                   </span>
                 </Button>
                 <Button size="lg" variant="outline" className="text-xl md:text-2xl px-8 md:px-10 py-6 md:py-7 hover:scale-105 transition-all duration-300 border-primary/50 hover:bg-primary/10" asChild>
                   <a href="#about">Узнать подробнее</a>
                 </Button>
               </div>
+              <p className="text-center text-foreground/70 text-base md:text-lg mt-4 max-w-2xl mx-auto">
+                Запись на следующий поток начнется с июля 2026г. Старт курса в сентябре
+              </p>
             </div>
           </div>
         </div>
