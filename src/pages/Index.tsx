@@ -634,7 +634,7 @@ export default function Index() {
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            )))}
           </div>
           
           <div className="flex justify-center mt-4 md:mt-6">
