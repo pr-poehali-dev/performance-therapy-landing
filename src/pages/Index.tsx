@@ -358,6 +358,104 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Unique Value Proposition Section */}
+      <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-primary/10 via-amber-500/10 to-primary/10 relative overflow-hidden">
+        <div className="absolute inset-0 bg-velvet-texture bg-[length:40px_40px] opacity-20" />
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-primary/5 to-transparent animate-shimmer bg-[length:200%_100%]" />
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-10">
+            <div className="inline-block px-4 py-2 bg-primary/30 border-2 border-primary rounded-full mb-4 animate-pulse">
+              <span className="text-primary font-bold text-lg md:text-xl">✨ Полная трансформация за 3 месяца</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
+              Что вы получаете на курсе?
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
+            <Card className="border-3 border-primary/50 shadow-2xl shadow-primary/30 bg-gradient-to-br from-card to-primary/5 hover:scale-105 transition-all duration-300">
+              <CardContent className="pt-8 pb-8">
+                <div className="text-center mb-6">
+                  <div className="inline-block p-4 bg-primary/20 rounded-full mb-4">
+                    <Icon name="Clock" className="text-primary" size={48} />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">48 часов</h3>
+                  <p className="text-xl text-foreground">групповой терапии</p>
+                </div>
+                <p className="text-foreground/80 text-center text-lg leading-relaxed">
+                  Интенсивная работа в поддерживающей атмосфере группы — вы не одни в своих переживаниях
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-3 border-primary/50 shadow-2xl shadow-primary/30 bg-gradient-to-br from-card to-amber-500/5 hover:scale-105 transition-all duration-300">
+              <CardContent className="pt-8 pb-8">
+                <div className="text-center mb-6">
+                  <div className="inline-block p-4 bg-primary/20 rounded-full mb-4">
+                    <Icon name="User" className="text-primary" size={48} />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">3 сессии</h3>
+                  <p className="text-xl text-foreground">индивидуальной работы</p>
+                </div>
+                <p className="text-foreground/80 text-center text-lg leading-relaxed">
+                  Персональные встречи с психологом-режиссёром для глубокой проработки ваших запросов
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-3 border-primary/50 shadow-2xl shadow-primary/30 bg-gradient-to-br from-card to-primary/5 hover:scale-105 transition-all duration-300">
+              <CardContent className="pt-8 pb-8">
+                <div className="text-center mb-6">
+                  <div className="inline-block p-4 bg-primary/20 rounded-full mb-4">
+                    <Icon name="Calendar" className="text-primary" size={48} />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">3 месяца</h3>
+                  <p className="text-xl text-foreground">трансформации</p>
+                </div>
+                <p className="text-foreground/80 text-center text-lg leading-relaxed">
+                  Достаточно времени, чтобы изменения стали частью вашей жизни, а не временным эффектом
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-3 border-primary/50 shadow-2xl shadow-primary/30 bg-gradient-to-br from-card to-amber-500/5 hover:scale-105 transition-all duration-300">
+              <CardContent className="pt-8 pb-8">
+                <div className="text-center mb-6">
+                  <div className="inline-block p-4 bg-primary/20 rounded-full mb-4">
+                    <Icon name="Star" className="text-primary" size={48} />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">Спектакль</h3>
+                  <p className="text-xl text-foreground">выпускной перформанс</p>
+                </div>
+                <p className="text-foreground/80 text-center text-lg leading-relaxed">
+                  Кульминация курса — выход на сцену, где вы проявите всё, чему научились
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-gradient-to-r from-primary/20 via-amber-500/20 to-primary/20 border-3 border-primary/50 rounded-3xl p-8 md:p-12 text-center shadow-2xl shadow-primary/40 relative overflow-hidden">
+            <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
+            <div className="relative z-10">
+              <div className="flex justify-center mb-6">
+                <div className="flex items-center gap-3 bg-primary/30 px-6 py-3 rounded-full border-2 border-primary">
+                  <Icon name="Sparkles" className="text-primary" size={32} />
+                  <span className="text-2xl md:text-3xl font-heading font-bold text-primary">Лучшая альтернатива психологу</span>
+                </div>
+              </div>
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto mb-6">
+                Если вы хотите стать увереннее в себе и раскрыть свой творческий потенциал — этот курс для вас
+              </p>
+              <p className="text-lg md:text-xl text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                В отличие от классической терапии, здесь вы не просто говорите о проблемах — вы <span className="font-bold text-primary">проживаете</span> их через творчество, 
+                получаете поддержку группы и <span className="font-bold text-primary">применяете навыки</span> для жизни и карьеры
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-10 md:py-14 px-4 bg-secondary/50 border-y-2 border-primary/30 relative">
         <div className="absolute inset-0 bg-velvet-texture bg-[length:30px_30px] opacity-10" />
