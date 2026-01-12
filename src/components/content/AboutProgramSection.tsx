@@ -220,11 +220,26 @@ export default function AboutProgramSection() {
           </div>
 
           <div className="mt-12 text-center">
-            <div className="inline-block p-6 md:p-8 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/40 rounded-2xl">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Итого: 24 занятия за 3 месяца</h3>
-              <p className="text-lg md:text-xl text-foreground">
-                От первого знакомства до триумфа на сцене — полное погружение в искусство трансформации
-              </p>
+            <div className="inline-block p-6 md:p-8 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/40 rounded-2xl max-w-3xl">
+              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4 text-primary">Итого за 3 месяца</h3>
+              <ul className="text-left space-y-2 text-lg md:text-xl text-foreground">
+                <li className="flex items-start gap-2">
+                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
+                  <span>48 часов групповой терапии</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
+                  <span>3 индивидуальных сессии</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
+                  <span>3 индивидуальных занятия</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
+                  <span>Выпускной спектакль</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
