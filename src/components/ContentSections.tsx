@@ -834,14 +834,14 @@ export default function ContentSections({
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href="tel:+79164168424" 
+                href="tel:+79183111712" 
                 className="flex items-center gap-2 text-primary hover:text-primary/80 text-lg font-medium"
               >
                 <Icon name="Phone" size={24} />
-                +7 (916) 416-84-24
+                +7 918 311 17 12
               </a>
               <a 
-                href="https://wa.me/79164168424" 
+                href="https://wa.me/79183111712" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary hover:text-primary/80 text-lg font-medium"

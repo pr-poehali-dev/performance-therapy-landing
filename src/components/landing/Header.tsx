@@ -46,8 +46,8 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
           </nav>
           <Button className="hidden md:inline-flex hover:scale-105 transition-transform duration-300 bg-primary text-primary-foreground shadow-lg shadow-primary/50" asChild>
             <a href="#signup">
-              <Icon name="Calendar" className="mr-2" size={18} />
-              Пробное бесплатно
+              <Icon name="Send" className="mr-2" size={18} />
+              Подать заявку
             </a>
           </Button>
           <button
@@ -104,9 +104,9 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
               Стоимость
             </a>
             <Button className="w-full" asChild>
-              <a href="https://wa.me/79183111712?text=Хочу%20на%20пробное%20перформанс-терапия" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                <Icon name="MessageCircle" className="mr-2" size={18} />
-                Пробное бесплатно
+              <a href="#signup" onClick={() => setMobileMenuOpen(false)}>
+                <Icon name="Send" className="mr-2" size={18} />
+                Подать заявку
               </a>
             </Button>
           </nav>
