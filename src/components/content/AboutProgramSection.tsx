@@ -96,7 +96,7 @@ export default function AboutProgramSection() {
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.2s' }}>
               <Icon name="Calendar" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
-              <p className="text-lg md:text-xl text-foreground font-medium">3 месяца (24 занятия)</p>
+              <p className="text-lg md:text-xl text-foreground font-medium">3 месяца: 24 групповых занятия, 3 индивидуальных сессии, выпускной спектакль</p>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function AboutProgramSection() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 text-primary drop-shadow-lg">Программа курса</h2>
           <p className="text-xl md:text-2xl text-center text-foreground/90 mb-12 max-w-3xl mx-auto">
-            Путь от знакомства с собой до триумфа на сцене за 24 занятия
+            Путь от знакомства с собой до триумфа на сцене за 3 месяца
           </p>
           
           <div className="space-y-6">
