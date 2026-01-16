@@ -146,34 +146,23 @@ export default function Index() {
     
     setIsSubmitting(true);
     
-    try {
-      console.log('Отправка заявки:', formData);
+    const requestData = {
+      name: formData.name,
+      phone: formData.phone,
+      message: formData.message
+    };
+    
+    console.log('Отправка заявки:', requestData);
+    
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://functions.poehali.dev/6898c753-5ace-4e4f-88f6-4c15b6ba9c76', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    
+    xhr.onload = function() {
+      console.log('XHR Status:', xhr.status);
+      console.log('XHR Response:', xhr.responseText);
       
-      const response = await fetch('https://functions.poehali.dev/6898c753-5ace-4e4f-88f6-4c15b6ba9c76', {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          phone: formData.phone,
-          message: formData.message
-        })
-      });
-      
-      console.log('Response status:', response.status);
-      
-      let result;
-      try {
-        result = await response.json();
-        console.log('Response data:', result);
-      } catch (e) {
-        console.error('Failed to parse JSON:', e);
-        result = {};
-      }
-      
-      if (response.ok || response.status === 200) {
+      if (xhr.status >= 200 && xhr.status < 300) {
         toast({
           title: "Заявка отправлена!",
           description: "Мы свяжемся с вами в ближайшее время.",
@@ -187,28 +176,25 @@ export default function Index() {
         });
       } else {
         toast({
-          title: "Ошибка",
-          description: "Не удалось отправить заявку. Попробуйте позже.",
+          title: "Ошибка отправки",
+          description: "Попробуйте позже или позвоните нам напрямую.",
           variant: "destructive"
         });
       }
-    } catch (error) {
-      console.error('Fetch error:', error);
-      
-      toast({
-        title: "Заявка принята!",
-        description: "Спасибо! Мы получили вашу заявку и скоро свяжемся с вами.",
-      });
-      
-      setFormData({
-        name: "",
-        phone: "",
-        message: "",
-        consent: false
-      });
-    } finally {
       setIsSubmitting(false);
-    }
+    };
+    
+    xhr.onerror = function() {
+      console.error('XHR Error');
+      toast({
+        title: "Ошибка сети",
+        description: "Проверьте подключение к интернету.",
+        variant: "destructive"
+      });
+      setIsSubmitting(false);
+    };
+    
+    xhr.send(JSON.stringify(requestData));
   };
 
   useEffect(() => {
