@@ -75,30 +75,57 @@ export default function SignupSection({ formData, setFormData, handleSubmit }: S
           </CardContent>
         </Card>
 
-        <div className="mt-8 md:mt-12 grid md:grid-cols-2 gap-4 md:gap-6">
-          <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg">
-            <CardContent className="pt-6 flex gap-4">
-              <Icon name="Phone" className="text-primary flex-shrink-0" size={24} />
-              <div>
-                <h3 className="font-semibold mb-1">Телефон</h3>
-                <a href="tel:+79000000000" className="text-muted-foreground hover:text-primary transition-colors">
-                  +7 (900) 000-00-00
-                </a>
-              </div>
-            </CardContent>
-          </Card>
+        <div className="mt-8 text-center">
+          <p className="text-muted-foreground mb-6">Или свяжитесь с нами удобным способом:</p>
+        </div>
+
+        <div className="mt-4 grid md:grid-cols-3 gap-4">
+          <a 
+            href="https://wa.me/79183111712" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <Card className="border-2 hover:border-green-500 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer bg-green-50/50">
+              <CardContent className="pt-6 flex flex-col items-center gap-3 text-center">
+                <div className="bg-green-500 text-white p-3 rounded-full">
+                  <Icon name="MessageCircle" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">WhatsApp</h3>
+                  <p className="text-sm text-muted-foreground">Написать сейчас</p>
+                </div>
+              </CardContent>
+            </Card>
+          </a>
+
+          <a href="tel:+79183111712" className="block">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
+              <CardContent className="pt-6 flex flex-col items-center gap-3 text-center">
+                <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                  <Icon name="Phone" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">Позвонить</h3>
+                  <p className="text-sm text-muted-foreground">+7 (918) 311-17-12</p>
+                </div>
+              </CardContent>
+            </Card>
+          </a>
           
-          <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg">
-            <CardContent className="pt-6 flex gap-4">
-              <Icon name="Mail" className="text-primary flex-shrink-0" size={24} />
-              <div>
-                <h3 className="font-semibold mb-1">Email</h3>
-                <a href="mailto:info@komilfo-theatre.ru" className="text-muted-foreground hover:text-primary transition-colors break-all">
-                  info@komilfo-theatre.ru
-                </a>
-              </div>
-            </CardContent>
-          </Card>
+          <a href="mailto:info@komilfo-theatre.ru" className="block">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
+              <CardContent className="pt-6 flex flex-col items-center gap-3 text-center">
+                <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                  <Icon name="Mail" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">Email</h3>
+                  <p className="text-sm text-muted-foreground break-all">info@komilfo-theatre.ru</p>
+                </div>
+              </CardContent>
+            </Card>
+          </a>
         </div>
       </div>
     </section>
