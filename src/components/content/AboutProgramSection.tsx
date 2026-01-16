@@ -11,10 +11,10 @@ export default function AboutProgramSection() {
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-6 animate-fade-in text-primary drop-shadow-lg">🎭 Что такое перформанс-терапия?</h2>
           
           <div className="max-w-4xl mx-auto text-center mb-12 space-y-3">
-            <p className="text-foreground leading-relaxed text-lg md:text-xl">
+            <p className="text-foreground leading-relaxed text-xl md:text-2xl">
               Это уникальный арт-терапевтический курс актёрского мастерства. Это театротерапия - групповая психотерапия и индивидуальные сессии, направленные на проработку своих страхов перед публикой и детских травм, связанных с тем, что "закрывали рот" или жестко одергивали яркие проявления вовне
             </p>
-            <p className="text-foreground leading-relaxed text-lg md:text-xl">
+            <p className="text-foreground leading-relaxed text-xl md:text-2xl">
               Перформанс (с англ. "выступление, показ") учит нас свободе самовыражения, помогает прожить невыраженные эмоции и расширить репертуар своих жизненных ролей
             </p>
           </div>
@@ -26,7 +26,7 @@ export default function AboutProgramSection() {
                   <Icon name="Heart" className="text-primary flex-shrink-0 mt-1 w-6 h-6 md:w-8 md:h-8" />
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Для кого этот курс?</h3>
                 </div>
-                <p className="text-foreground leading-relaxed text-lg">
+                <p className="text-foreground leading-relaxed text-xl">
                   Программа для взрослых, которые хотят вспомнить о своих талантах и овладеть актерским мастерством «для жизни», проработав психологические барьеры и раскрыв свой потенциал
                 </p>
               </CardContent>
@@ -38,7 +38,7 @@ export default function AboutProgramSection() {
                   <Icon name="Target" className="text-primary flex-shrink-0 mt-1 w-6 h-6 md:w-8 md:h-8" />
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Главная цель</h3>
                 </div>
-                <p className="text-foreground leading-relaxed text-lg">
+                <p className="text-foreground leading-relaxed text-xl">
                   Через творческое самовыражение мягко, креативно и эффективно проработать психологические запросы, найти и проявить скрытые грани личности
                 </p>
               </CardContent>
@@ -53,8 +53,8 @@ export default function AboutProgramSection() {
                   <div className="bg-primary text-primary-foreground w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
                     1
                   </div>
-                  <h4 className="font-sans font-bold text-xl tracking-wide">Поиск идеальной роли</h4>
-                  <p className="text-foreground leading-relaxed text-lg">
+                  <h4 className="font-sans font-bold text-xl md:text-2xl tracking-wide">Поиск идеальной роли</h4>
+                  <p className="text-foreground leading-relaxed text-xl">
                     С помощью специальных упражнений находим вашу идеальную роль — скрытые качества, которые нужно раскрыть для уверенности и успеха
                   </p>
                 </div>
@@ -63,8 +63,8 @@ export default function AboutProgramSection() {
                   <div className="bg-primary text-primary-foreground w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
                     2
                   </div>
-                  <h4 className="font-sans font-bold text-xl tracking-wide">Создание персонажа</h4>
-                  <p className="text-foreground leading-relaxed text-lg">
+                  <h4 className="font-sans font-bold text-xl md:text-2xl tracking-wide">Создание персонажа</h4>
+                  <p className="text-foreground leading-relaxed text-xl">
                     Создаём уникального персонажа для пьесы на основе вашего запроса. Пьеса пишется под конкретную группу и её участников
                   </p>
                 </div>
@@ -73,8 +73,8 @@ export default function AboutProgramSection() {
                   <div className="bg-primary text-primary-foreground w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
                     3
                   </div>
-                  <h4 className="font-sans font-bold text-xl tracking-wide">Трансформация через игру</h4>
-                  <p className="text-foreground leading-relaxed text-lg">
+                  <h4 className="font-sans font-bold text-xl md:text-2xl tracking-wide">Трансформация через игру</h4>
+                  <p className="text-foreground leading-relaxed text-xl">
                     Проживая роль на сцене, развиваете недостающие качества и становитесь более уверенными, адаптивными и результативными
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default function AboutProgramSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Знакомство и диагностика</h3>
-                    <p className="text-lg text-foreground leading-relaxed mb-3">
+                    <p className="text-xl text-foreground leading-relaxed mb-3">
                       Первые занятия посвящены созданию безопасной атмосферы в группе. Мы проводим психологическую диагностику через творческие упражнения, выявляем ваши запросы и цели
                     </p>
                     <div className="flex items-center gap-2 text-foreground/80">
@@ -140,7 +140,7 @@ export default function AboutProgramSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Актёрский тренинг</h3>
-                    <p className="text-lg text-foreground leading-relaxed mb-4">
+                    <p className="text-xl text-foreground leading-relaxed mb-4">
                       Осваиваем базовые техники актёрского мастерства: работу с телом, голосом, эмоциями. Развиваем воображение и креативность через специальные упражнения
                     </p>
                     <ul className="space-y-2 mb-3">
@@ -186,7 +186,7 @@ export default function AboutProgramSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Работа над ролью</h3>
-                    <p className="text-lg text-foreground leading-relaxed mb-3">
+                    <p className="text-xl text-foreground leading-relaxed mb-3">
                       Создание персонажа на основе вашего запроса. Погружение в роль, изучение характера, мотивации, особенностей поведения. Работа над текстом и подтекстом
                     </p>
                     <div className="flex items-center gap-2 text-foreground/80">
@@ -206,7 +206,7 @@ export default function AboutProgramSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Репетиции и выступление</h3>
-                    <p className="text-lg text-foreground leading-relaxed mb-4">
+                    <p className="text-xl text-foreground leading-relaxed mb-4">
                       Репетиции спектакля, работа над сценами, взаимодействием с партнёрами. Финальное выступление перед зрителями — кульминация вашей трансформации
                     </p>
                     <div className="flex items-center gap-2 text-foreground/80">

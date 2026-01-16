@@ -36,7 +36,7 @@ export default function TeacherSection({ currentSlide, nextSlide, prevSlide, the
               <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">Светлана Алексеевна Котлова</h3>
               <p className="text-primary font-semibold text-lg">Режиссёр театра «Комильфо», психолог</p>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-lg md:text-xl">
               Светлана Алексеевна — практикующий психолог с режиссёрским образованием. 
               Она создала уникальную методику перформанс-терапии, которая помогает людям 
               решать психологические задачи через творчество.
@@ -44,15 +44,15 @@ export default function TeacherSection({ currentSlide, nextSlide, prevSlide, the
             <div className="space-y-3">
               <div className="flex gap-3 items-start">
                 <Icon name="GraduationCap" className="text-primary mt-1 flex-shrink-0" size={24} />
-                <p className="text-muted-foreground">Образование: психолог, режиссёр театральных постановок</p>
+                <p className="text-muted-foreground text-lg">Образование: психолог, режиссёр театральных постановок</p>
               </div>
               <div className="flex gap-3 items-start">
                 <Icon name="Briefcase" className="text-primary mt-1 flex-shrink-0" size={24} />
-                <p className="text-muted-foreground">Опыт работы: более 10 лет в психологии и театре</p>
+                <p className="text-muted-foreground text-lg">Опыт работы: более 10 лет в психологии и театре</p>
               </div>
               <div className="flex gap-3 items-start">
                 <Icon name="Award" className="text-primary mt-1 flex-shrink-0" size={24} />
-                <p className="text-muted-foreground">Основатель и руководитель театра «Комильфо»</p>
+                <p className="text-muted-foreground text-lg">Основатель и руководитель театра «Комильфо»</p>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function TeacherSection({ currentSlide, nextSlide, prevSlide, the
 
         <div className="space-y-6 md:space-y-8">
           <h3 className="text-2xl md:text-3xl font-heading font-bold text-center">Театр «Комильфо»</h3>
-          <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed text-lg md:text-xl">
             Театр «Комильфо» — это творческое пространство, где рождаются уникальные спектакли. 
             Каждая постановка — результат совместной работы участников курса перформанс-терапии.
           </p>
