@@ -84,14 +84,6 @@ export default function PriceContactSection({
                 </div>
               </div>
 
-              <div className="text-center mb-8 p-6 bg-gradient-to-r from-primary/20 to-amber-500/20 border-2 border-primary/40 rounded-xl">
-                <p className="text-lg text-foreground/80 mb-2">Полная стоимость курса (4 месяца):</p>
-                <div className="flex items-center justify-center gap-4">
-                  <div className="text-5xl font-bold text-primary">48 000₽</div>
-                  <div className="text-3xl text-foreground/50 line-through">64 000₽</div>
-                </div>
-                <p className="text-base text-foreground/70 mt-2">при раннем бронировании</p>
-              </div>
 
               <div className="p-6 bg-gradient-to-r from-amber-500/20 to-primary/20 border-2 border-amber-500/40 rounded-xl mb-8">
                 <div className="flex items-center gap-3 mb-3">
