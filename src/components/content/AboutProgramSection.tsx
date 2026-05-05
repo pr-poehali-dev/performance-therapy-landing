@@ -108,7 +108,7 @@ export default function AboutProgramSection() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 text-primary drop-shadow-lg">Программа курса</h2>
           <p className="text-xl md:text-2xl text-center text-foreground/90 mb-12 max-w-3xl mx-auto">
-            Путь от знакомства с собой до триумфа на сцене за 3 месяца
+            Путь от знакомства с собой до триумфа на сцене за 4 месяца
           </p>
           
           <div className="space-y-6">
