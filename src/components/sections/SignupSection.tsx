@@ -79,7 +79,7 @@ export default function SignupSection({ formData, setFormData, handleSubmit }: S
           <p className="text-muted-foreground mb-6">Или свяжитесь с нами удобным способом:</p>
         </div>
 
-        <div className="mt-4 grid md:grid-cols-3 gap-4">
+        <div className="mt-4 grid md:grid-cols-4 gap-4">
           <a 
             href="https://wa.me/79183111712" 
             target="_blank" 
@@ -113,6 +113,25 @@ export default function SignupSection({ formData, setFormData, handleSubmit }: S
             </Card>
           </a>
           
+          <a
+            href="https://max.ru/u/f9LHodD0cOLvTbH1OK3umoWq_Fy3X11Wi5Hy97U7oooxquX7NJ9GnWOYoYw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <Card className="border-2 hover:border-blue-500 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer bg-blue-50/50">
+              <CardContent className="pt-6 flex flex-col items-center gap-3 text-center">
+                <div className="bg-blue-500 text-white p-3 rounded-full">
+                  <Icon name="Send" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">MAX</h3>
+                  <p className="text-sm text-muted-foreground">Написать в MAX</p>
+                </div>
+              </CardContent>
+            </Card>
+          </a>
+
           <a href="mailto:info@komilfo-theatre.ru" className="block">
             <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
               <CardContent className="pt-6 flex flex-col items-center gap-3 text-center">
