@@ -99,15 +99,26 @@ export default function FAQSection() {
           <p className="text-lg md:text-xl text-foreground mb-4">
             Не нашли ответ на свой вопрос?
           </p>
-          <a 
-            href="https://wa.me/79183111712" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-lg md:text-xl text-primary hover:text-primary/80 transition-colors font-semibold"
-          >
-            <Icon name="MessageCircle" size={24} />
-            Напишите нам в WhatsApp
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a 
+              href="https://wa.me/79183111712" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-lg md:text-xl text-primary hover:text-primary/80 transition-colors font-semibold"
+            >
+              <Icon name="MessageCircle" size={24} />
+              WhatsApp
+            </a>
+            <a 
+              href="https://max.ru/u/f9LHodD0cOLvTbH1OK3umoWq_Fy3X11Wi5Hy97U7oooxquX7NJ9GnWOYoYw" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-lg md:text-xl text-primary hover:text-primary/80 transition-colors font-semibold"
+            >
+              <Icon name="Send" size={24} />
+              MAX
+            </a>
+          </div>
         </div>
       </div>
     </section>

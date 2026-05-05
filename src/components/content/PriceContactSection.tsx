@@ -233,6 +233,15 @@ export default function PriceContactSection({
                 <Icon name="MessageCircle" className="w-5 h-5 md:w-6 md:h-6" />
                 WhatsApp
               </a>
+              <a 
+                href="https://max.ru/u/f9LHodD0cOLvTbH1OK3umoWq_Fy3X11Wi5Hy97U7oooxquX7NJ9GnWOYoYw" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-primary hover:text-primary/80 text-lg font-medium"
+              >
+                <Icon name="Send" className="w-5 h-5 md:w-6 md:h-6" />
+                MAX
+              </a>
             </div>
           </div>
         </div>
