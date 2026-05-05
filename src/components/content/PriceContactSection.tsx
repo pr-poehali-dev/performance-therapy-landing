@@ -70,14 +70,6 @@ export default function PriceContactSection({
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <div>
-                    <p className="font-semibold text-foreground">2 индивидуальных занятия</p>
-                    <p className="text-sm text-foreground/70">Персональная работа с педагогом</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
-                  <div>
                     <p className="font-semibold text-foreground">Выпускной показ</p>
                     <p className="text-sm text-foreground/70">Выступление перед реальными зрителями</p>
                   </div>

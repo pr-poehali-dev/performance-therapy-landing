@@ -96,7 +96,7 @@ export default function AboutProgramSection() {
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.2s' }}>
               <Icon name="Calendar" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
-              <p className="text-lg md:text-xl text-foreground font-medium">4 месяца: 64 часа групповой терапии, 2 индивидуальных занятия, выпускной спектакль</p>
+              <p className="text-lg md:text-xl text-foreground font-medium">4 месяца: 64 часа групповой терапии, выпускной спектакль</p>
             </div>
           </div>
         </div>
@@ -226,10 +226,6 @@ export default function AboutProgramSection() {
                 <li className="flex items-start gap-2">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <span>64 часа групповой терапии</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
-                  <span>2 индивидуальных занятия</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
