@@ -55,9 +55,7 @@ export default function PriceSection() {
           </CardContent>
         </Card>
 
-        <div className="mt-8 text-center text-muted-foreground">
-          <p className="text-sm">Возможна оплата частями. Подробности уточняйте при записи.</p>
-        </div>
+
       </div>
     </section>
   );
