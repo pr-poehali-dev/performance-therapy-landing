@@ -86,7 +86,7 @@ export default function AboutProgramSection() {
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary">
               <Icon name="Users" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Групповой формат</h4>
-              <p className="text-lg md:text-xl text-foreground font-medium">Работа в группе до 10 человек</p>
+              <p className="text-lg md:text-xl text-foreground font-medium">Работа в группе до 8 человек</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.1s' }}>
               <Icon name="Clock" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
