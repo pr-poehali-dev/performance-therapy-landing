@@ -27,15 +27,15 @@ export default function HeroSection({ scrollToForm }: HeroSectionProps) {
             <div className="mb-6 md:mb-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
               <div className="flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full border border-primary/50">
                 <Icon name="CalendarCheck" className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
-                <span className="text-foreground font-semibold text-lg md:text-xl">Старт: 19 января 2026</span>
+                <span className="text-foreground font-semibold text-lg md:text-xl">Старт: 28 сентября 2026</span>
               </div>
-              <div className="flex items-center gap-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/50">
-                <Icon name="Users" className="text-red-500 w-5 h-5 sm:w-6 sm:h-6" />
-                <span className="text-foreground font-semibold text-base md:text-lg lg:text-xl whitespace-nowrap">Мест нет</span>
+              <div className="flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full border border-primary/50">
+                <Icon name="Users" className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-foreground font-semibold text-base md:text-lg lg:text-xl whitespace-nowrap">Всего 8 мест</span>
               </div>
             </div>
             <p className="text-center text-foreground mb-6 text-lg md:text-xl font-semibold max-w-3xl mx-auto bg-primary/10 py-3 px-6 rounded-lg border border-primary/30">
-              Запись на следующий поток начнётся с июля 2026 года, старт нового курса в сентябре 2026 года
+              Запись открыта — старт курса 28 сентября 2026 года
             </p>
             <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center">
               <Button onClick={scrollToForm} size="lg" className="text-xl md:text-2xl px-8 md:px-10 py-4 sm:py-5 md:py-6 lg:py-7 hover:scale-105 transition-all duration-300 shadow-2xl shadow-primary/60 relative overflow-hidden group bg-gradient-to-r from-primary via-amber-500 to-primary">
