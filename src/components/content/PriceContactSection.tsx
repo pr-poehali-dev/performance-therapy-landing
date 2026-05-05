@@ -114,11 +114,7 @@ export default function PriceContactSection({
             </CardContent>
           </Card>
 
-          <div className="mt-8 text-center">
-            <p className="text-lg text-foreground/80">
-              Возможна рассрочка платежа. Подробности уточняйте при записи
-            </p>
-          </div>
+
         </div>
       </section>
 
