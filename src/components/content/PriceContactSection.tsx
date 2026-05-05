@@ -49,7 +49,7 @@ export default function PriceContactSection({
             <CardContent className="pt-10 pb-10">
               <div className="text-center mb-8">
                 <div className="inline-block px-4 py-2 bg-red-500/20 border-2 border-red-500 rounded-full mb-4">
-                  <span className="text-lg font-bold text-red-500">При раннем бронировании</span>
+                  <span className="text-lg font-bold text-red-500">При раннем бронировании до 01 августа 2026 г.</span>
                 </div>
                 <div className="mb-4">
                   <div className="text-6xl md:text-7xl font-bold text-primary mb-2">12 000₽</div>
