@@ -96,7 +96,7 @@ export default function AboutProgramSection() {
             <div className="flex flex-col items-center text-center p-6 md:p-8 bg-card/95 backdrop-blur rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 border-primary/30 hover:border-primary" style={{ animationDelay: '0.2s' }}>
               <Icon name="Calendar" className="text-primary mb-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
               <h4 className="font-heading font-bold mb-3 text-xl md:text-2xl text-foreground">Длительность</h4>
-              <p className="text-lg md:text-xl text-foreground font-medium">3 месяца: 24 групповых занятия, 3 индивидуальных сессии, выпускной спектакль</p>
+              <p className="text-lg md:text-xl text-foreground font-medium">4 месяца: 64 часа групповой терапии, 2 индивидуальных занятия, выпускной спектакль</p>
             </div>
           </div>
         </div>
@@ -221,15 +221,15 @@ export default function AboutProgramSection() {
 
           <div className="mt-12 text-center">
             <div className="inline-block p-6 md:p-8 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/40 rounded-2xl max-w-3xl">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4 text-primary">Итого за 3 месяца</h3>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4 text-primary">Итого 4 месяца</h3>
               <ul className="text-left space-y-2 text-lg md:text-xl text-foreground">
                 <li className="flex items-start gap-2">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
-                  <span>48 часов групповой терапии</span>
+                  <span>64 часа групповой терапии</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
-                  <span>3 индивидуальных занятия</span>
+                  <span>2 индивидуальных занятия</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />

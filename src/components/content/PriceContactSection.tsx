@@ -62,15 +62,15 @@ export default function PriceContactSection({
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <div>
-                    <p className="font-semibold text-foreground">48 часов групповой терапии</p>
-                    <p className="text-sm text-foreground/70">24 занятия по 2 часа в группе</p>
+                    <p className="font-semibold text-foreground">64 часа групповой терапии</p>
+                    <p className="text-sm text-foreground/70">32 занятия по 2 часа в группе</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 p-4 bg-primary/5 rounded-lg">
                   <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1 w-5 h-5 md:w-6 md:h-6" />
                   <div>
-                    <p className="font-semibold text-foreground">3 индивидуальных сессии</p>
+                    <p className="font-semibold text-foreground">2 индивидуальных занятия</p>
                     <p className="text-sm text-foreground/70">Персональная работа с педагогом</p>
                   </div>
                 </div>
@@ -93,10 +93,10 @@ export default function PriceContactSection({
               </div>
 
               <div className="text-center mb-8 p-6 bg-gradient-to-r from-primary/20 to-amber-500/20 border-2 border-primary/40 rounded-xl">
-                <p className="text-lg text-foreground/80 mb-2">Полная стоимость курса (3 месяца):</p>
+                <p className="text-lg text-foreground/80 mb-2">Полная стоимость курса (4 месяца):</p>
                 <div className="flex items-center justify-center gap-4">
-                  <div className="text-5xl font-bold text-primary">36 000₽</div>
-                  <div className="text-3xl text-foreground/50 line-through">48 000₽</div>
+                  <div className="text-5xl font-bold text-primary">48 000₽</div>
+                  <div className="text-3xl text-foreground/50 line-through">64 000₽</div>
                 </div>
                 <p className="text-base text-foreground/70 mt-2">при раннем бронировании</p>
               </div>

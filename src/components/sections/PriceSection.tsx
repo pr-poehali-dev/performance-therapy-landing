@@ -15,17 +15,17 @@ export default function PriceSection() {
                 <span className="text-primary font-bold">Полный курс</span>
               </div>
               <div className="mb-2">
-                <span className="text-3xl md:text-4xl font-heading font-bold text-muted-foreground line-through mr-4">36 000 ₽</span>
+                <span className="text-3xl md:text-4xl font-heading font-bold text-muted-foreground line-through mr-4">64 000 ₽</span>
               </div>
-              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">15 000 ₽</div>
-              <p className="text-muted-foreground text-lg">за весь курс</p>
-              <p className="text-primary font-semibold mt-2">при бронировании до 25 декабря 2025 г.</p>
+              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">48 000 ₽</div>
+              <p className="text-muted-foreground text-lg">за весь курс (4 месяца)</p>
+              <p className="text-primary font-semibold mt-2">или 12 000 ₽ в месяц</p>
             </div>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                 <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />
-                <p className="text-lg">3 месяца обучения (12 занятий)</p>
+                <p className="text-lg">4 месяца обучения (32 занятия)</p>
               </div>
               <div className="flex items-start gap-3 hover:translate-x-2 transition-transform duration-300">
                 <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size={24} />

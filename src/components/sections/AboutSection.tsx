@@ -42,7 +42,7 @@ export default function AboutSection() {
           <div className="flex flex-col items-center text-center p-4 md:p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <Icon name="Calendar" className="text-primary mb-3" size={40} />
             <h4 className="font-semibold mb-2">Длительность</h4>
-            <p className="text-sm text-muted-foreground">3 месяца (12 занятий)</p>
+            <p className="text-sm text-muted-foreground">4 месяца (32 занятия)</p>
           </div>
         </div>
       </div>
