@@ -139,7 +139,7 @@ export default function AboutProgramSection() {
                     <p className="text-xl text-foreground leading-relaxed mb-4">
                       Осваиваем базовые техники актёрского мастерства: работу с телом, голосом, эмоциями. Развиваем воображение и креативность через специальные упражнения
                     </p>
-                    <ul className="space-y-2 mb-3">
+                    <ul className="space-y-2">
                       <li className="flex items-start gap-2">
                         <Icon name="Dot" size={20} className="text-primary flex-shrink-0 mt-1" />
                         <span className="text-base text-foreground">Техника речи и дикция</span>
@@ -165,10 +165,6 @@ export default function AboutProgramSection() {
                         <span className="text-base text-foreground">Танцевально-двигательная терапия</span>
                       </li>
                     </ul>
-                    <div className="flex items-center gap-2 text-foreground/80">
-                      <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">8 занятий</span>
-                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -182,13 +178,9 @@ export default function AboutProgramSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Работа над ролью</h3>
-                    <p className="text-xl text-foreground leading-relaxed mb-3">
+                    <p className="text-xl text-foreground leading-relaxed">
                       Создание персонажа на основе вашего запроса. Погружение в роль, изучение характера, мотивации, особенностей поведения. Работа над текстом и подтекстом
                     </p>
-                    <div className="flex items-center gap-2 text-foreground/80">
-                      <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">10 занятий</span>
-                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -202,13 +194,9 @@ export default function AboutProgramSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Репетиции и выступление</h3>
-                    <p className="text-xl text-foreground leading-relaxed mb-4">
+                    <p className="text-xl text-foreground leading-relaxed">
                       Репетиции спектакля, работа над сценами, взаимодействием с партнёрами. Финальное выступление перед зрителями — кульминация вашей трансформации
                     </p>
-                    <div className="flex items-center gap-2 text-foreground/80">
-                      <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">4 групповых занятия + 3 индивидуальных</span>
-                    </div>
                   </div>
                 </div>
               </CardContent>
