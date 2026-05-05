@@ -18,10 +18,10 @@ export default function HeroSection({ scrollToForm }: HeroSectionProps) {
               <span className="text-primary font-semibold text-base md:text-lg tracking-wider leading-none inline-block">✨ Психотерапевтический актёрский курс</span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-foreground mb-6 md:mb-8 leading-tight">
-              Решайте психологические задачи через <span className="text-primary text-4xl sm:text-5xl md:text-7xl lg:text-8xl drop-shadow-[0_0_30px_rgba(255,215,0,0.6)]">творчество</span>
+              Решаем психологические задачи через <span className="text-primary text-4xl sm:text-5xl md:text-7xl lg:text-8xl drop-shadow-[0_0_30px_rgba(255,215,0,0.6)]">творчество</span>
             </h2>
             <p className="text-2xl md:text-3xl text-foreground mb-6 md:mb-8 leading-relaxed font-medium max-w-4xl mx-auto">
-              На курсе «Перформанс-терапия» мы прорабатываем психологические запросы через творческое самовыражение — 
+              На курсе «Перформанс-терапия» вы проработаете психологические запросы через творческое самовыражение — 
               мягко, креативно и эффективно
             </p>
             <div className="mb-6 md:mb-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
