@@ -120,13 +120,9 @@ export default function AboutProgramSection() {
                   </div>
                   <div>
                     <h3 className="text-2xl md:text-3xl font-heading font-bold mb-3 text-primary">Знакомство и диагностика</h3>
-                    <p className="text-xl text-foreground leading-relaxed mb-3">
+                    <p className="text-xl text-foreground leading-relaxed">
                       Первые занятия посвящены созданию безопасной атмосферы в группе. Мы проводим психологическую диагностику через творческие упражнения, выявляем ваши запросы и цели
                     </p>
-                    <div className="flex items-center gap-2 text-foreground/80">
-                      <Icon name="Clock" size={20} className="text-primary" />
-                      <span className="text-base">2 занятия</span>
-                    </div>
                   </div>
                 </div>
               </CardContent>
