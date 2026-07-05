@@ -52,8 +52,8 @@ export default function PriceContactSection({
                   <span className="text-lg font-bold text-red-500">При раннем бронировании до 01 августа 2026 г.</span>
                 </div>
                 <div className="mb-4">
-                  <div className="text-6xl md:text-7xl font-bold text-primary mb-2">12 000₽</div>
-                  <div className="text-3xl text-foreground/50 line-through mb-2">16 000₽</div>
+                  <div className="text-6xl md:text-7xl font-bold text-primary mb-2">16 000₽</div>
+                  <div className="text-3xl text-foreground/50 line-through mb-2">18 000₽</div>
                   <p className="text-xl text-foreground/80">в месяц</p>
                 </div>
               </div>
