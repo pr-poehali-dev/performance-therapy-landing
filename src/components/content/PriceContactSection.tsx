@@ -53,7 +53,7 @@ export default function PriceContactSection({
                   <p className="text-xl text-foreground/80">в месяц</p>
                 </div>
                 <div className="inline-block px-4 py-2 bg-red-500/20 border-2 border-red-500 rounded-full">
-                  <span className="text-lg font-bold text-red-500">Скидка 2 000₽ при бронировании до 01 августа 2026 г. и оплате первого месяца</span>
+                  <span className="text-lg font-bold text-red-500">При бронировании до 01 августа 2026 г. скидка 2 000₽ на первый месяц занятий</span>
                 </div>
               </div>
 
