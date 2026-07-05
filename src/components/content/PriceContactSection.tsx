@@ -48,13 +48,12 @@ export default function PriceContactSection({
           <Card className="border-4 border-primary/40 bg-card/95 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-300 max-w-2xl mx-auto">
             <CardContent className="pt-10 pb-10">
               <div className="text-center mb-8">
-                <div className="inline-block px-4 py-2 bg-red-500/20 border-2 border-red-500 rounded-full mb-4">
-                  <span className="text-lg font-bold text-red-500">При раннем бронировании до 01 августа 2026 г.</span>
-                </div>
                 <div className="mb-4">
-                  <div className="text-6xl md:text-7xl font-bold text-primary mb-2">16 000₽</div>
-                  <div className="text-3xl text-foreground/50 line-through mb-2">18 000₽</div>
+                  <div className="text-6xl md:text-7xl font-bold text-primary mb-2">18 000₽</div>
                   <p className="text-xl text-foreground/80">в месяц</p>
+                </div>
+                <div className="inline-block px-4 py-2 bg-red-500/20 border-2 border-red-500 rounded-full">
+                  <span className="text-lg font-bold text-red-500">Скидка 2 000₽ при бронировании до 01 августа 2026 г. и оплате первого месяца</span>
                 </div>
               </div>
 
