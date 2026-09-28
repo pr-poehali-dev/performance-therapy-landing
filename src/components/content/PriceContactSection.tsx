@@ -53,7 +53,7 @@ export default function PriceContactSection({
                   <p className="text-xl text-foreground/80">в месяц</p>
                 </div>
                 <div className="inline-block px-4 py-2 bg-red-500/20 border-2 border-red-500 rounded-full">
-                  <span className="text-lg font-bold text-red-500">При бронировании до 01 августа 2026 г. скидка 2 000₽ на первый месяц занятий</span>
+                  <span className="text-lg font-bold text-red-500">При бронировании до 10 октября скидка 2 000₽ на первый месяц занятий</span>
                 </div>
               </div>
 
@@ -90,7 +90,10 @@ export default function PriceContactSection({
                   <h3 className="text-2xl font-bold text-primary">Специальное предложение</h3>
                 </div>
                 <p className="text-lg text-foreground mb-2">
-                  Пробное занятие — <span className="font-bold text-primary">БЕСПЛАТНО!</span>
+                  Пробные занятия — <span className="font-bold text-primary">БЕСПЛАТНО!</span>
+                </p>
+                <p className="text-base text-foreground/80 mb-2">
+                  02 октября, 09 октября и 13 октября
                 </p>
                 <p className="text-base text-foreground/80">
                   Познакомьтесь с методикой, преподавателем и атмосферой курса без обязательств
